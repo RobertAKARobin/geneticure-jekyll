@@ -1,0 +1,356 @@
+// Base variables
+
+$color--brand: #009ADE;
+$color--brand--sink: #007DB3;
+$color--error: #FF4444;
+$color--highlight: $color--brand;
+$color--highlight--offset: #E1F5FE;
+$color--highlight--sink: $color--brand--sink;
+$color--lowlight: #414042;
+$color--lowlight--sink: #000000;
+$color--offset: #E9E9E9;
+
+$font-size--base: 16;
+
+$width--screen--md: 600px;
+$width--screen--lg: 960px;
+$width--screen--xl: 1440px;
+
+@mixin get__disabled() {
+  &:disabled, &.disabled, &[disabled] {
+    @content;
+  }
+}
+
+@mixin get__disabled--not() {
+  &:not(:disabled):not(.disabled):not([disabled]) {
+    @content;
+  }
+}
+
+@mixin get__input--text() {
+  input:not([type='checkbox']):not([type='radio']):not([type='submit']),
+  select,
+  textarea {
+    @content;
+  }
+}
+
+@function rem ($size) {
+  @return #{$size / $font-size--base}rem;
+}
+
+// Calculated variables
+$background--base: #FFFFFF;
+$background--error: #FFE0E0;
+$background--highlight: $color--brand;
+$background--highlight--sink: $color--brand--sink;
+$background--lowlight: $color--lowlight;
+$background--lowlight--sink: $color--lowlight--sink;
+$background--offset: $color--offset;
+
+$border-color--soft: rgba(0, 0, 0, 0.25);
+$border-color--solid: $color--lowlight;
+
+$border-radius--main: 4px;
+
+$bp--sm: '(max-width: #{$width--screen--md - 1})';
+$bp--md: '(min-width: #{$width--screen--md}) and (max-width: #{$width--screen--lg - 1})';
+$bp--lg: '(min-width: #{$width--screen--lg})';
+
+$font-color--body: #231F20;
+$font-color--disabled: #888;
+$font-color--error: $color--error;
+$font-color--highlight: $color--brand; // TODO3: Rm all these duplicate colors
+$font-color--highlight--sink: $color--brand--sink;
+$font-color--lowlight: $color--lowlight;
+$font-color--lowlight--sink: $color--lowlight--sink;
+$font-color--on-dark: #FFFFFF;
+$font-color--warning: $color--error;
+
+$font-family--body: Oxygen, sans-serif;
+
+$font-weight--strong: 700;
+
+$margin--main: 1rem;
+
+$z--show-password: 9998;
+$z--overlay: 9999;
+
+$shadow--main: 0 1px 2px 0 rgba(0, 0, 0, 0.2); // stylelint-disable-line plugin/stylelint-no-indistinguishable-colors
+
+@mixin font--body () { // TODO3: Use __ instead of --
+  font-family: $font-family--body;
+  font-size: $font-size--base + px;
+  line-height: rem(24);
+}
+
+@mixin font--caption () {
+  font-size: rem(11);
+  line-height: rem(16);
+}
+
+@mixin font--cta () {
+  color: $font-color--body;
+  font-size: rem(15);
+  font-weight: bold;
+  letter-spacing: 1px;
+  line-height: rem(15);
+  text-decoration: none;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+@mixin font--headline--1 () {
+  font-size: rem(32);
+  letter-spacing: 0.1px;
+  line-height: rem(36);
+}
+
+@mixin font--headline--2 () {
+  font-size: rem(25);
+  letter-spacing: 0.1px;
+  line-height: rem(30);
+}
+
+@mixin font--link () {
+  color: $font-color--highlight;
+  cursor: pointer;
+  text-decoration: underline;
+  transition: color 0.1s;
+
+  &:hover,
+  &:focus {
+    color: $font-color--highlight--sink;
+  }
+
+  &:active {
+    color: $font-color--body;
+  }
+}
+
+@mixin font--smooth () { // TODO3: Remove these parens
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+@mixin transition--flip () {
+  transition: transform 0.2s;
+}
+
+@mixin transition--flip--flipped () {
+  transform: rotateZ(180deg);
+}
+
+@mixin button () {
+  @include font--cta;
+
+  align-items: center;
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: rem(17);
+  box-sizing: border-box;
+  cursor: pointer;
+  display: inline-flex;
+  height: rem(34);
+  padding: 0 $margin--main;
+  text-align: center;
+  
+  @include get__disabled {
+    &,
+    &:focus,
+    &:hover,
+    &:active {
+      background: rgba(150, 150, 150, 0.5);
+      box-shadow: none;
+      color: $font-color--on-dark;
+      cursor: default;
+    }
+  }
+}
+
+@mixin button--default () {
+  color: $font-color--body;
+  text-align: center;
+  transition: color 0.2s, background-color 0.2s;
+
+  &:focus,
+  &:hover {
+    background-color: $background--offset;
+  }
+}
+
+@mixin button--low () {
+  background: $background--lowlight;
+  box-shadow: $shadow--main;
+  color: $font-color--on-dark;
+  padding-left: $margin--main;
+  padding-right: $margin--main;
+
+  &:focus,
+  &:hover {
+    background: $background--lowlight--sink;
+    color: $font-color--on-dark;
+  }
+
+  &:active {
+    background: $background--lowlight--sink;
+    color: $font-color--highlight;
+  }
+}
+
+@mixin button--high () {
+  background: $background--highlight;
+  box-shadow: $shadow--main;
+  color: $font-color--on-dark;
+  padding-left: $margin--main;
+  padding-right: $margin--main;
+
+  &:focus,
+  &:hover {
+    background: $background--highlight--sink;
+    color: $font-color--on-dark;
+  }
+
+  &:active {
+    background: $background--highlight--sink;
+    color: $font-color--body;
+  }
+}
+
+@mixin content {
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@mixin content--sm {
+  @include content;
+}
+
+@mixin content--md {
+  @include content;
+
+  max-width: $width--screen--md;
+  width: 100%;
+}
+
+@mixin content--lg {
+  @include content;
+
+  max-width: $width--screen--lg;
+  width: 100%;
+}
+
+@mixin content--page {
+  @include content;
+
+  max-width: $width--screen--xl;
+  padding-left: $margin--main;
+  padding-right: $margin--main;
+  width: 100%;
+}
+
+@mixin cta () {
+  @include font--cta;
+  cursor: pointer;
+
+  @include get__disabled {
+    color: $font-color--lowlight;
+    cursor: default;
+    pointer-events: none;
+  }
+}
+
+@mixin cta--highlight() {
+  color: $font-color--highlight;
+
+  &:hover {
+    color: $font-color--highlight--sink;
+  }
+
+  &:active {
+    color: $font-color--body;
+  }
+}
+
+@mixin flex--center ($margin: $margin--main) {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-left: ($margin / 2);
+  padding-right: ($margin / 2);
+
+  > * {
+    margin-left: ($margin / 2);
+    margin-right: ($margin / 2);
+  }
+}
+
+@mixin hidden {
+  height: 1px;
+  left: 9999px;
+  opacity: 0.01;
+  overflow: hidden;
+  position: fixed;
+  top: 9999px;
+  width: 1px;
+}
+
+@mixin input--textual () {
+  background: transparent;
+  border: 1px solid $border-color--soft;
+  border-radius: 0;
+  border-width: 0 0 1px 0;
+  cursor: text;
+  display: block;
+  padding: ($margin--main / 2) 0;
+  transition: border-color 0.2s;
+  width: 100%;
+
+  &:focus {
+    border-color: $border-color--solid;
+    outline: none;
+  }
+
+  &:not(:focus).dirty:invalid {
+    background-color: $background--error;
+  }
+
+  @include get__disabled {
+    border-color: transparent;
+    color: $font-color--disabled;
+  }
+}
+
+@mixin margin--main--x ($mult: 1) {
+  margin-left: ($margin--main * $mult);
+  margin-right: ($margin--main * $mult);
+}
+
+@mixin margin--main--y ($mult: 1) {
+  margin-bottom: ($margin--main * $mult);
+  margin-top: ($margin--main * $mult);
+}
+
+@mixin overlay ($width: 300px) {
+  align-items: center;
+  background: $background--base;
+  border-radius: $border-radius--main;
+  box-shadow: $shadow--main;
+  display: flex;
+  flex-direction: column;
+  left: 50%;
+  margin-left: 0 - ($width / 2);
+  padding: $margin--main;
+  position: absolute;
+  width: $width;
+  z-index: $z--overlay;
+}
+
+@mixin tab () {
+  @include cta;
+  @include cta--highlight;
+}

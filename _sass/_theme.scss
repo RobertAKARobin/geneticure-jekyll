@@ -1,0 +1,295 @@
+// Text
+
+:root {
+  @include font--body;
+  @include font--smooth;
+
+  color: $font-color--body;
+}
+
+// Misc
+.hidden,
+[aria-hidden=true] {
+  @include hidden;
+}
+
+// Text
+
+a {
+  @include font--link;
+}
+
+a.on-dark {
+  color: $font-color--on-dark;
+}
+
+a.on-dark:hover {
+  color: $font-color--highlight;
+}
+
+h1 {
+  @include font--headline--1();
+}
+
+h2 {
+  @include font--headline--2();
+}
+
+h3 {
+  font-weight: $font-weight--strong;
+}
+
+small {
+  font-style: italic;
+}
+
+strong {
+  font-weight: $font-weight--strong;
+}
+
+.text {
+  h1, h2, p, ul, ol, details {
+    margin: $margin--main 0;
+  }
+
+  ul li {
+    list-style-position: inside;
+    list-style-type: disc;
+    margin: ($margin--main / 2) 0;
+  }
+}
+
+.material-icons {
+  color: inherit;
+  vertical-align: middle;
+}
+
+// Blocks
+
+details {
+  border-left: 0px solid $border-color--soft;
+  padding-left: 0;
+  transition: border 0.1s, padding 0.1s;
+}
+
+details[open] {
+  border-left-width: 2px;
+  padding-left: $margin--main;
+}
+
+details summary {
+  cursor: pointer;
+}
+
+img {
+  display: block;
+}
+
+hr {
+  @include margin--main--x();
+  @include margin--main--y($mult: 2);
+}
+
+.disclaimer {
+  @include font--caption();
+}
+
+// Buttons
+
+.button {
+  @include button;
+  @include button--default();
+}
+
+.button--low {
+  @include button--low();
+}
+
+.button--high {
+  @include button--high();
+}
+
+.buttonset {
+  @include flex--center();
+
+  margin-top: $margin--main;
+}
+
+.buttonset .button {
+  margin-bottom: $margin--main;
+}
+
+.cta {
+  @include cta;
+}
+
+.cta--highlight {
+  @include cta--highlight;
+}
+
+.tab {
+  @include tab;
+}
+
+// Forms
+
+@include get__input--text {
+  @include input--textual();
+}
+
+.fieldset {
+  display: flex;
+  width: 100%;
+
+  @media #{$bp--sm} {
+    display: block;
+  }
+}
+
+.fieldset > .input-wrap {
+  flex-basis: 50%;
+  flex-grow: 1;
+}
+
+.fieldset > .input-wrap:not(:last-child) {
+  margin-right: 5px;
+}
+
+.fieldset input {
+  min-width: 0;
+  width: 100%;
+}
+
+.input-wrap {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: $margin--main;
+  position: relative;
+}
+
+.input-wrap.warning {
+  color: $font-color--warning;
+  font-weight: $font-weight--strong;
+}
+
+.input-wrap--checkbox {
+  flex-direction: row;
+}
+
+.input-wrap__input {
+  position: relative;
+
+  @include get__input--text {
+    display: block;
+    width: 100%;
+  }
+
+  .input-wrap--select & {
+    select {
+      padding-left: 20px;
+    }
+
+    &:before {
+      color: $font-color--highlight;
+      content: '\025BE';
+      height: 20px;
+      left: 0;
+      line-height: 0;
+      position: absolute;
+      text-align: center;
+      top: 50%;
+      width: 20px;
+    }
+  }
+
+  .input-wrap--readonly & {
+    border: 1px solid $border-color--soft;
+    border-width: 0 0 1px 0;
+    cursor: default;
+    padding: ($margin--main / 2) 0;
+  }
+
+  .input-wrap--readonly & .material-icons {
+    color: $font-color--disabled;
+    font-size: inherit;
+  }
+}
+
+.input-wrap__text {
+  order: -1;
+
+  .input-wrap--required:not(.input-wrap--hidden) &:after {
+    color: $font-color--error;
+    content: '*';
+  }
+
+  .input-wrap--checkbox & {
+    order: 1;
+    padding-left: $margin--main;
+  }
+
+  .fieldset & {
+    white-space: nowrap;
+  }
+}
+
+[data-password-toggle] {
+  bottom: 0;
+  padding: ($margin--main) / 2 0;
+  position: absolute;
+  right: 0;
+  z-index: $z--show-password;
+}
+
+[data-password-toggle=hidden]::after {
+  content: 'Show';
+}
+
+[data-password-toggle=visible]::after {
+  content: 'Hide';
+}
+
+.errors {
+  color: $font-color--error;
+}
+
+select {
+  -webkit-appearance: none; // stylelint-disable-line property-no-vendor-prefix
+  -moz-appearance: none; // stylelint-disable-line property-no-vendor-prefix
+  appearance: none;
+  cursor: pointer;
+}
+
+textarea {
+  height: 4em;
+  resize: vertical;
+}
+
+input[type=radio]:disabled + span {
+  color: $font-color--disabled;
+}
+
+// JS
+
+.modal {
+  @include overlay($width: 300px);
+
+  animation: slidein 0.5s ease-in forwards;
+}
+
+.modal[data-popup-closed] {
+  animation: slideout 0.2s ease-in forwards;
+}
+
+
+[data-toggle] {
+  cursor: pointer;
+
+  .material-icons {
+    @include transition--flip;
+  }
+
+  &[data-toggle-is-active] .material-icons {
+    @include transition--flip--flipped;
+  }
+}
