@@ -8,19 +8,20 @@ title: Test
 
 At Geneticure, we use a unique approach that examines the genetics specific to each disease to help highlight the best prescription choice for each patient. The promise of personalized medicine has finally arrived.
 {% endcapture %}
-{% include hero.html align='center' alt='Geneticure' content=hero_content img='/assets/img/bg-video.jpg' video='/assets/img/bg-video.webm' %}
+{% include hero.html align='left' alt='Geneticure' content=hero_content img='/assets/img/bg-video.jpg' video='/assets/img/bg-video.webm' %}
 
-{% capture for_users %}
+{% capture for_patients %}
 ## For Patients & Caregivers
 
 ### Your DNA is unique. Your high blood pressure prescription should be, too.
 
 Your genes contain information that makes you different from everyone else, but did you know that your DNA can also help determine how well your body reacts to certain types of medications? This includes high blood pressure medications.
 
-No matter where you are in your treatment plan — whether you’ve been newly diagnosed or have been managing your blood pressure for years — with the help of your doctor, Geneticure’s test can help get you on the right path. 
+No matter where you are in your treatment plan — whether you’ve been newly diagnosed or have been managing your blood pressure for years — with the help of your doctor, Geneticure’s test can help get you on the right path.
+{% endcapture %}
+{% include hero.html align='left' alt='For patients' content=for_patients img='/assets/img/patients.jpg' %}
 
----
-
+{% capture for_providers %}
 ## For Healthcare Providers
 
 ### Proven DNA results to improve your patients' blood pressure therapy.
@@ -28,9 +29,10 @@ No matter where you are in your treatment plan — whether you’ve been newly d
 With a simple, non-invasive cheek-swab, Geneticure uses a proprietary algorithm to analyze 17 genotypes in 11 genes and identifies unique markers in a patient’s genetic code to determine how well their body will respond to each blood pressure medication.
 
 The test assesses hypertension treatment in a comprehensive integrative nature, from drug metabolizing enzymes to receptors that are important to heart, blood vessel and kidney function, with a focus on and appreciation of the complexity of the disease.
+{% endcapture %}
+{% include hero.html align='center' alt='For providers' content=for_providers img='/assets/img/providers.jpg' %}
 
----
-
+{% capture for_employers %}
 ## For Employers
 
 ### Increase your employees' quality of life while decreasing your healthcare costs.
@@ -38,10 +40,8 @@ The test assesses hypertension treatment in a comprehensive integrative nature, 
 High blood pressure is a leading contributor to your healthcare spending and likely affects over 1/3 of your employees. Chances are only half of them have it under control. Employees with cardiovascular disease (including high blood pressure) cost employers **an extra $1,100 per year** in lost productivity alone<sup>*</sup>, compared with healthier employees.
 
 With Geneticure, you may be able to significantly reduce your company’s chronic disease spending by an estimated **16x ROI** or **$1409 per year per employee**.<sup>**</sup>
-
-Sample report
 {% endcapture %}
-{% include cards.html cards=cards %}
+{% include hero.html align='right' alt='For employers' content=for_employers img='/assets/img/employers.jpg' %}
 
 {% capture research %}
 ## The Research
