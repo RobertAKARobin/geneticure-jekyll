@@ -3,14 +3,14 @@ layout: base
 title: Test
 ---
 
-{% capture hero__content %}
+{% capture hero_content %}
 # Prescriptions for your body.<br>_Decisions from your DNA._
 
 At Geneticure, we use a unique approach that examines the genetics specific to each disease to help highlight the best prescription choice for each patient. The promise of personalized medicine has finally arrived.
 {% endcapture %}
-{% include hero.html content=hero__content alt='Geneticure' img='/assets/img/bg-video.jpg' video='/assets/img/bg-video.webm' %}
+{% include hero.html align='center' alt='Geneticure' content=hero_content img='/assets/img/bg-video.jpg' video='/assets/img/bg-video.webm' %}
 
-{% capture cards %}
+{% capture for_users %}
 ## For Patients & Caregivers
 
 ### Your DNA is unique. Your high blood pressure prescription should be, too.

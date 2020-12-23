@@ -1,4 +1,4 @@
-<div class="hero">
+<div class="hero hero--align__{{ include.align|default: 'left' }}">
 	{% if include.video %}
 		<video class="hero__bg" autoplay loop muted playsinline preload="none" {% if include.img %}poster="{{ include.img }}{% endif %}" title="{{ include.alt }}">
 			<source src="{{ include.video }}" />
