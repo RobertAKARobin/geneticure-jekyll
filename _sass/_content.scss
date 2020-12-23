@@ -45,6 +45,12 @@
   padding-top: ($margin--main * 3);
 }
 
+@media #{$bp--sm} {
+  .hero__card {
+    text-align: center;
+  }
+}
+
 @media #{$bp--lg} {
   .hero__card__bg {
     border-bottom-right-radius: $margin--main;
@@ -59,6 +65,12 @@
 }
 
 .cards__item {
+  border-radius: $margin--main;
+  box-shadow: 0 0 10px 0 $background--offset;
+  box-sizing: border-box;
+  margin: ($margin--main * 2) 0;
+  padding: $margin--main;
+
   &:nth-of-type(3n + 1) {
     color: $font-color--body;
   }
@@ -71,6 +83,12 @@
 
   &:nth-of-type(3n + 3) {
     color: $font-color--body;
+  }
+}
+
+@media #{$bp--sm} {
+  .cards__item {
+    text-align: center;
   }
 }
 

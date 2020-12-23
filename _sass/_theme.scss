@@ -43,6 +43,15 @@ h3 {
   font-weight: $font-weight--strong;
 }
 
+cite {
+  font-weight: bold;
+}
+
+sup {
+  line-height: 0px;
+  vertical-align: super;
+}
+
 small {
   font-style: italic;
 }
@@ -54,6 +63,12 @@ strong {
 .text {
   h1, h2, p, ul, ol, details {
     margin: $margin--main 0;
+  }
+
+  ol li {
+    list-style-position: inside;
+    list-style-type: decimal;
+    margin: ($margin--main / 2) 0;
   }
 
   ul li {
@@ -117,6 +132,8 @@ hr {
   @include flex--center();
 
   margin-top: $margin--main;
+  padding-left: ($margin--main / 2);
+  padding-right: ($margin--main / 2);
 }
 
 .buttonset .button {
