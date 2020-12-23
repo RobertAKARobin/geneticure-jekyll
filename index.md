@@ -4,11 +4,11 @@ title: Test
 ---
 
 {% capture hero__content %}
-# Prescriptions for your body.<br>Decisions from your DNA.
+# Prescriptions for your body.<br>_Decisions from your DNA._
 
 At Geneticure, we use a unique approach that examines the genetics specific to each disease to help highlight the best prescription choice for each patient. The promise of personalized medicine has finally arrived.
 {% endcapture %}
-{% include hero.html content=hero__content %}
+{% include hero.html content=hero__content alt='Geneticure' img='/assets/img/bg-video.jpg' video='/assets/img/bg-video.webm' %}
 
 {% capture cards %}
 ## For Patients & Caregivers

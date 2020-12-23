@@ -1,7 +1,8 @@
 .hero {
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  height: calc(100vh - #{$nav--height});
+  height: 100vh;
   justify-content: center;
   position: relative;
   width: 100vw;
@@ -15,6 +16,7 @@
   background-color: $color--offset;
   height: 100%;
   left: 0;
+  object-fit: cover;
   position: absolute;
   top: 0;
   width: 100%;
@@ -52,6 +54,10 @@
 }
 
 @media #{$bp--lg} {
+  .hero {
+    padding-top: $nav--height;
+  }
+
   .hero__card__bg {
     border-bottom-right-radius: $margin--main;
     border-top-right-radius: $margin--main;

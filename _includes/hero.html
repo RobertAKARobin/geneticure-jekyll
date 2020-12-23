@@ -1,5 +1,15 @@
 <div class="hero">
-	<div class="hero__bg"></div>
+	{% if include.video %}
+		<video class="hero__bg" autoplay loop muted playsinline preload="none" {% if include.img %}poster="{{ include.img }}{% endif %}" title="{{ include.alt }}">
+			<source src="{{ include.video }}" />
+			{% if include.img %}
+				<source src="{{ include.img }}" />
+			{% endif %}
+		</video>
+	{% else if include.img %}
+		<img class="hero__bg" src="{{ include.img }}" alt="{{ include.alt }}" />
+	{% endif %}
+
 	<div class="hero__card">
 		<div class="hero__card__bg"></div>
 		<div class="hero__card__body">
