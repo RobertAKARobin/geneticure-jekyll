@@ -1,8 +1,13 @@
 <div class="hero">
 	<div class="hero__bg"></div>
-	<div class="hero__container">
-		<div class="hero__content">
-			{{ include.content }}
+	<div class="hero__card">
+		<div class="hero__card__bg"></div>
+		<div class="hero__card__body">
+			<div class="hero__card__body__content">
+				<div class="text">
+					{{ include.content|markdownify }}
+				</div>
+			</div>
 		</div>
 	</div>
 </div>

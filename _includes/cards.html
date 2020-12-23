@@ -1,0 +1,8 @@
+<div class="cards">
+	{% assign cards = include.cards|split: "---" %}
+	{% for card in cards %}
+		<div class="cards__item text">
+			{{ card|markdownify }}
+		</div>
+	{% endfor %}
+</div>

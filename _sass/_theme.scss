@@ -28,11 +28,15 @@ a.on-dark:hover {
 }
 
 h1 {
-  @include font--headline--1();
+  font-size: rem(32);
+  letter-spacing: 0.1px;
+  line-height: 3rem;
 }
 
 h2 {
-  @include font--headline--2();
+  font-size: rem(25);
+  letter-spacing: 0.1px;
+  line-height: rem(30);
 }
 
 h3 {
