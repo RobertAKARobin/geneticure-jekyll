@@ -1,14 +1,15 @@
-<div class="hero hero--align__{{ include.align|default: 'left' }}">
+<div class="hero hero--{{ include.type|default:
+	'full' }} hero--align__{{ include.img_align|default: 'left' }}">
 	<div class="hero__display">
 		{% if include.video %}
-			<video autoplay loop muted playsinline preload="none" {% if include.img %}poster="{{ include.img }}{% endif %}" title="{{ include.alt }}">
+			<video autoplay loop muted playsinline preload="none" {% if include.img_src %}poster="{{ include.img_src }}{% endif %}" title="{{ include.img_alt }}">
 				<source src="{{ include.video }}" />
 				{% if include.img %}
-					<source src="{{ include.img }}" />
+					<source src="{{ include.img_src }}" />
 				{% endif %}
 			</video>
-		{% else if include.img %}
-			<img src="{{ include.img }}" alt="{{ include.alt }}" />
+		{% else if include.img_src %}
+			<img src="{{ include.img_src }}" alt="{{ include.img_alt }}" />
 		{% endif %}
 	</div>
 

@@ -1,4 +1,4 @@
-.hero {
+& {
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -38,18 +38,6 @@
 @media #{$bp--lg}, #{$bp--xl} {
   .hero__content {
     display: flex;
-
-    .hero--align__center & {
-      justify-content: center;
-    }
-
-    .hero--align__left & {
-      justify-content: flex-start;
-    }
-
-    .hero--align__right & {
-      justify-content: flex-end;
-    }
   }
 
   .hero__content__body {
@@ -57,18 +45,36 @@
     border-radius: $margin--main;
     padding: ($margin--main * 3);
     width: 50vw;
+  }
 
-    .hero--align__center & {
+  &.hero--align__center {
+    .hero__content {
+      justify-content: center;
+    }
+
+    .hero__content__body {
       padding-left: ($margin--main * 4);
       padding-right: ($margin--main * 4);
     }
+  }
 
-    .hero--align__left & {
+  &.hero--align__left {
+    .hero__content {
+      justify-content: flex-start;
+    }
+
+    .hero__content__body {
       border-bottom-left-radius: 0;
       border-top-left-radius: 0;
     }
+  }
 
-    .hero--align__right & {
+  &.hero--align__right {
+    .hero__content {
+      justify-content: flex-end;
+    }
+
+    .hero__content__body {
       border-bottom-right-radius: 0;
       border-top-right-radius: 0;
     }
