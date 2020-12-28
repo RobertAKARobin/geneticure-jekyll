@@ -106,7 +106,7 @@
   }
 }
 
-@media #{$bp--md}, #{$bp--lg} {
+@media #{$bp--md}, #{$bp--lg}, #{$bp--xl} {
   .nav {
     border-bottom: 2px solid $color--brand;
     height: $nav--height;

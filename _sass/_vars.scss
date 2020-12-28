@@ -58,7 +58,8 @@ $border-radius--main: 4px;
 
 $bp--sm: '(max-width: #{$width--screen--md - 1})';
 $bp--md: '(min-width: #{$width--screen--md}) and (max-width: #{$width--screen--lg - 1})';
-$bp--lg: '(min-width: #{$width--screen--lg})';
+$bp--lg: '(min-width: #{$width--screen--lg}) and (max-width: #{$width--screen--xl - 1})';
+$bp--xl: '(min-width: #{$width--screen--xl})';
 
 $font-color--body: #231F20;
 $font-color--disabled: #888;

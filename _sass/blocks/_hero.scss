@@ -2,18 +2,17 @@
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  height: 100vh;
   justify-content: center;
-  position: relative;
-  width: 100vw;
-
-  .main > &:first-child {
-    margin-top: -$margin--main;
-  }
+  min-height: 100vh;
+  min-width: 100vw;
 }
 
-.hero__bg {
+.hero__display {
   background-color: $color--offset;
+}
+
+.hero__display img,
+.hero__display video {
   height: 100%;
   left: 0;
   object-fit: cover;
@@ -22,94 +21,62 @@
   width: 100%;
 }
 
-.hero__card {
-  position: relative;
-}
-
-.hero__card__bg {
+.hero__content__body {
   background-color: rgba(255, 255, 255, 0.9);
-  height: 100%;
-  position: absolute;
-  top: 0;
-  width: 100%;
-}
-
-.hero__card__body {
-  @include content--page;
-
-  display: flex;
-  padding: 0;
-  position: relative;
-}
-
-.hero__card__body__content {
   box-sizing: border-box;
-  padding: ($margin--main * 3);
+  position: relative;
+  z-index: 1;
 }
 
-@media #{$bp--sm} {
-  .hero__card {
+@media #{$bp--sm}, #{$bp--md} {
+  .hero__content__body {
+    padding: ($margin--main * 3) $margin--main;
     text-align: center;
   }
 }
 
-@media #{$bp--lg} {
-  .hero {
-    padding-top: $nav--height;
-  }
+@media #{$bp--lg}, #{$bp--xl} {
+  .hero__content {
+    display: flex;
 
-  .hero__card__bg {
-    width: 50%;
-  }
-
-  .hero__card__body__content {
-    width: 50%;
-  }
-
-  .hero--align__center {
-    .hero__card__bg {
-      border-radius: $margin--main;
-      left: 0;
-      margin-left: auto;
-      margin-right: auto;
-      right: 0;
-    }
-
-    .hero__card__body {
+    .hero--align__center & {
       justify-content: center;
     }
-  }
 
-  .hero--align__left {
-    .hero__card__bg {
-      border-bottom-right-radius: $margin--main;
-      border-top-right-radius: $margin--main;
-      left: 0;
-    }
-
-    .hero__card__body {
+    .hero--align__left & {
       justify-content: flex-start;
     }
 
-    .hero__card__body__content {
-      padding-left: $margin--main
-    }
-  }
-
-  .hero--align__right {
-    .hero__card__bg {
-      border-bottom-left-radius: $margin--main;
-      border-top-left-radius: $margin--main;
-      right: 0;
-    }
-
-    .hero__card__body {
+    .hero--align__right & {
       justify-content: flex-end;
     }
-    
-    .hero__card__body__content {
-      padding-right: $margin--main;
-    }
   }
 
+  .hero__content__body {
+    border-left: calc((100vw - #{$width--screen--xl}) / 2) solid transparent;
+    border-radius: $margin--main;
+    padding: ($margin--main * 3);
+    width: 50vw;
+
+    .hero--align__center & {
+      padding-left: ($margin--main * 4);
+      padding-right: ($margin--main * 4);
+    }
+
+    .hero--align__left & {
+      border-bottom-left-radius: 0;
+      border-top-left-radius: 0;
+    }
+
+    .hero--align__right & {
+      border-bottom-right-radius: 0;
+      border-top-right-radius: 0;
+    }
+  }
+}
+
+@media #{$bp--xl} {
+  .hero__content__body {
+    padding-left: $margin--main;
+  }
 }

@@ -19,7 +19,6 @@ Your genes contain information that makes you different from everyone else, but 
 
 No matter where you are in your treatment plan — whether you’ve been newly diagnosed or have been managing your blood pressure for years — with the help of your doctor, Geneticure’s test can help get you on the right path.
 {% endcapture %}
-{% include hero.html align='left' alt='For patients' content=for_patients img='/assets/img/patients.jpg' %}
 
 {% capture for_providers %}
 ## For Healthcare Providers
@@ -30,7 +29,6 @@ With a simple, non-invasive cheek-swab, Geneticure uses a proprietary algorithm 
 
 The test assesses hypertension treatment in a comprehensive integrative nature, from drug metabolizing enzymes to receptors that are important to heart, blood vessel and kidney function, with a focus on and appreciation of the complexity of the disease.
 {% endcapture %}
-{% include hero.html align='center' alt='For providers' content=for_providers img='/assets/img/providers.jpg' %}
 
 {% capture for_employers %}
 ## For Employers
@@ -41,7 +39,6 @@ High blood pressure is a leading contributor to your healthcare spending and lik
 
 With Geneticure, you may be able to significantly reduce your company’s chronic disease spending by an estimated **16x ROI** or **$1409 per year per employee**.<sup>**</sup>
 {% endcapture %}
-{% include hero.html align='right' alt='For employers' content=for_employers img='/assets/img/employers.jpg' %}
 
 {% capture research %}
 ## The Research
