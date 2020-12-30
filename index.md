@@ -11,11 +11,13 @@ At Geneticure, we use a unique approach that examines the genetics specific to e
 {% include hero.html type='full' content=header_content img_align='left' img_alt='Geneticure' img_src='/assets/img/bg-video.jpg' video='/assets/img/bg-video.webm' %}
 
 {% capture product_intro %}
-# Foo bar
+# The right treatment for<br>_high blood pressure._
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+All it takes is a simple cheek swab. Geneticure's Hypertension Panel analyzes the parts of your DNA that predict how your body will respond to different high blood pressure medications. Then our proprietary algorithm helps your doctor prescribe the best treatment for you.
+
+<a class="button button--high" href="#">See the research</a>
 {% endcapture %}
-{% include hero.html type='half' content=product_intro img_align='right' img_alt='Geneticure' img_src='/assets/img/bg-video.jpg' %}
+{% include hero.html type='half' content=product_intro img_align='right' img_alt='Geneticure' img_src='/assets/img/kit.jpg' %}
 
 {% capture for_patients %}
 ## For Patients & Caregivers

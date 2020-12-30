@@ -5,14 +5,18 @@
   justify-content: center;
   min-height: 100vh;
   min-width: 100vw;
+  position: relative;
+  
+  .main &:first-child {
+    margin-top: -$margin--main;
+  }
 }
 
 .hero__display {
   background-color: $color--offset;
 }
 
-.hero__display img,
-.hero__display video {
+.hero__display__media {
   height: 100%;
   left: 0;
   object-fit: cover;
