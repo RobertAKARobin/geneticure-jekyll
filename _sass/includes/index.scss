@@ -1,4 +1,4 @@
-.hero--full {
+.hero--full { // .hero--full and .hero--half contain the same classes. This makes it easier to specify separate styles for --full and --half without needing to manually nest all the code.
   @import 'hero-full';
 }
 
