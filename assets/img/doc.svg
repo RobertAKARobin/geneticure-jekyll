@@ -1,78 +1,97 @@
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 85 110">
-	<style type="text/css">
-		.lowlight{fill:#CCCCCC;}
-		.hilight{fill:#009ADE;}
-		.ok{fill:#02BF68;}
-		.warn{fill:#F9A825;}
-		.error{fill:#FF7676;}
-		.dark{fill:#414042;}
-	</style>
-	<rect x="0" y="0" style="fill: #fff" width="85" height="110"/>
-	<path class="lowlight" d="M83,2v106H2V2H83 M85,0H0v110h85V0L85,0z"/>
-
-	<rect x="5" y="19" class="hilight" width="75" height="2"/>
-	<rect x="5" y="23" class="lowlight" width="75" height="2"/>
-	<rect x="5" y="27" class="lowlight" width="75" height="2"/>
-	<rect x="5" y="31" class="lowlight" width="75" height="2"/>
-
-	<rect x="5" y="99" class="hilight" width="75" height="2"/>
-	<rect x="5" y="103" class="lowlight" width="75" height="2"/>
-
-	<rect x="5" y="79" class="lowlight" width="75" height="14"/>
-
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 25.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 85 110" style="enable-background:new 0 0 85 110;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#CCCCCC;}
+	.st1{fill:#009ADE;}
+	.st2{fill:#FFFFFF;}
+	.st3{fill:#02BF68;}
+	.st4{fill:#414042;}
+	.st5{fill:#F9A825;}
+	.st6{fill:#FF7676;}
+</style>
+<symbol  id="New_Symbol" viewBox="-34 -3 69.4 6">
+	<rect x="-34" y="-3" class="st0" width="36" height="4"/>
+	<path class="st1" d="M35.4,3H-34V1h68.1C34.3,1.8,34.8,2.5,35.4,3z"/>
+</symbol>
+<rect class="st2" width="85" height="110"/>
+<path class="st0" d="M83,2v106H2V2H83 M85,0H0v110h85V0L85,0z"/>
+<g>
+	<rect x="8" y="17" class="st1" width="72" height="2"/>
+	<rect x="8" y="21" class="st0" width="72" height="2"/>
+	<circle class="st1" cx="6" cy="18" r="1"/>
+	<circle class="st0" cx="6" cy="22" r="1"/>
+	<rect x="8" y="25" class="st0" width="72" height="2"/>
+	<circle class="st0" cx="6" cy="26" r="1"/>
+</g>
+<g>
+	<rect x="5" y="95" class="st1" width="75" height="2"/>
+	<rect x="5" y="99" class="st0" width="75" height="2"/>
+	<rect x="5" y="103" class="st0" width="75" height="2"/>
+</g>
+<g>
+	<rect x="5" y="59" class="st0" width="36" height="6"/>
+	<rect x="44" y="59" class="st0" width="36" height="6"/>
+</g>
+<g>
+	
+		<use xlink:href="#New_Symbol"  width="69.4" height="6" id="XMLID_2_" x="-34" y="-3" transform="matrix(1 0 0 -1 39 34)" style="overflow:visible;"/>
+	<g transform="translate(73 42)">
+		<circle class="st3" cx="4" cy="-8" r="3"/>
+		<g transform="translate(1.75 .75) rotate(45 1.25 2)">
+			
+				<rect x="-6.3" y="-6.2" transform="matrix(2.535182e-06 1 -1 2.535182e-06 -10.8063 0.8358)" class="st4" width="1" height="2.5"/>
+			<rect x="-7.1" y="-7" transform="matrix(2.535182e-06 1 -1 2.535182e-06 -11.5563 -1.4142)" class="st4" width="4" height="1"/>
+		</g>
+	</g>
+</g>
+<g>
+	<g transform="translate(73 54)">
+		<circle class="st5" cx="4" cy="-12" r="3"/>
+		<rect x="2.5" y="-12.5" class="st4" width="3" height="1"/>
+	</g>
+	
+		<use xlink:href="#New_Symbol"  width="69.4" height="6" id="XMLID_1_" x="-34" y="-3" transform="matrix(1 0 0 -1 39 42)" style="overflow:visible;"/>
+</g>
+<g>
+	<g transform="translate(73 66)">
+		<circle class="st6" cx="4" cy="-16" r="3"/>
+		<g transform="translate(1 2.5)">
+			<rect x="2.5" y="-20.5" transform="matrix(0.7071 -0.7071 0.7071 0.7071 13.9602 -3.2972)" class="st4" width="1" height="4"/>
+			<rect x="1" y="-19" transform="matrix(0.7071 -0.7071 0.7071 0.7071 13.9602 -3.2972)" class="st4" width="4" height="1"/>
+		</g>
+	</g>
+	
+		<use xlink:href="#New_Symbol"  width="69.4" height="6" id="XMLID_3_" x="-34" y="-3" transform="matrix(1 0 0 -1 39 50)" style="overflow:visible;"/>
+</g>
+<g id="logo">
+	<path class="st4" d="M21.1,10.2c-0.2,2-2.1,3.7-4.4,3.7c-2.4,0-4.3-1.8-4.3-4.3s1.9-4.3,4.3-4.3c1.5,0,3,0.8,3.8,2H20
+		c-0.8-1.1-2-1.7-3.4-1.7c-2.2,0-4,1.7-4,4s1.8,4,4,4c2.1,0,3.7-1.5,4-3.1h-5v-0.3L21.1,10.2"/>
+	<path class="st4" d="M27.1,5.4v0.3h-4.2v3.7h4.2v0.3h-4.2v3.7h4.2v0.3h-4.6V5.4H27.1"/>
+	<path class="st4" d="M35,13.3L35,13.3l0-7.9h0.3v8.3h-0.4l-5.8-8h0v8h-0.3V5.4h0.5L35,13.3"/>
+	<path class="st4" d="M41.8,5.4v0.3h-4.2v3.7h4.2v0.3h-4.2v3.7h4.2v0.3h-4.6V5.4H41.8"/>
+	<path class="st4" d="M47.6,5.4v0.3h-2.3v8H45v-8h-2.3V5.4H47.6"/>
+	<path class="st4" d="M48.7,13.7H49V5.4h-0.3V13.7z"/>
+	<path class="st1" d="M58.4,11.9c-0.6,1-1.9,2-3.6,2c-2.4,0-4.3-1.8-4.3-4.3s1.9-4.3,4.3-4.3c1.8,0,3,1.1,3.7,2h-0.4
+		c-0.3-0.4-1.4-1.7-3.3-1.7c-2.2,0-4,1.7-4,4s1.8,4,4,4c2,0,3-1.3,3.3-1.7H58.4"/>
+	<path class="st1" d="M59.9,5.4h0.3v5.4c0,0.8,0,1.3,0.5,2c0.4,0.5,1,0.8,1.7,0.8c0.6,0,1.3-0.3,1.7-0.8c0.5-0.7,0.5-1.2,0.5-2V5.4
+		H65v5.4c0,0.8,0,1.9-1,2.6c-0.4,0.3-1,0.5-1.5,0.5c-0.6,0-1.1-0.2-1.5-0.5c-1-0.7-1-1.8-1-2.6L59.9,5.4"/>
+	<path class="st1" d="M68.6,5.4c1.3,0,1.8,0.1,2.2,0.3C71.5,6.1,72,7,72,8c0.1,1-0.6,2.6-2.4,2.6l-0.3,0l2.2,3.1h-0.4l-2.4-3.4h0.5
+		c0.8,0,1.3-0.1,1.8-0.5c0.5-0.6,0.7-1.1,0.7-1.8c0-0.7-0.3-1.5-1-1.9c-0.5-0.3-1.1-0.3-2.1-0.3H67v8h-0.3V5.4L68.6,5.4"/>
+	<path class="st1" d="M77.8,5.4v0.3h-4.2v3.7h4.2v0.3h-4.2v3.7h4.2v0.3h-4.6V5.4H77.8"/>
 	<g>
-		<rect x="5" y="39" class="hilight" width="75" height="2"/>
-		<rect x="5" y="41" class="lowlight" width="37.5" height="8"/>
-		<g transform="translate(73 42)">
-			<circle class="ok" cx="3" cy="3" r="3"/>
-			<g transform="translate(1.75 .75) rotate(45 1.25 2)">
-				<rect class="dark" width="2.5" height="1" transform="translate(0 3)" />
-				<rect class="dark" width="4" height="1" transform="translate(2.5 0) rotate(90 0 0)" />
-			</g>
-		</g>
+		<path class="st4" d="M7.7,5.4H6.2C5.5,5.4,5,5.9,5,6.6s0.5,1.2,1.2,1.2h1.5V5.4"/>
+		<path class="st1" d="M8,7.8h1.5c0.7,0,1.2-0.5,1.2-1.2s-0.5-1.2-1.2-1.2H8V7.8"/>
+		<path class="st4" d="M7.7,11.4H6.2c-0.7,0-1.2,0.5-1.2,1.2s0.5,1.2,1.2,1.2h1.5V11.4"/>
+		<path class="st1" d="M8,13.7h1.5c0.7,0,1.2-0.5,1.2-1.2s-0.5-1.2-1.2-1.2H8V13.7"/>
+		<path class="st4" d="M8,8.4h1.5c0.7,0,1.2,0.5,1.2,1.2s-0.5,1.2-1.2,1.2H8V8.4"/>
+		<path class="st1" d="M7.7,10.8H6.2C5.5,10.8,5,10.2,5,9.6s0.5-1.2,1.2-1.2h1.5V10.8"/>
 	</g>
-
-	<g>
-		<rect x="5" y="51" class="hilight" width="75" height="2"/>
-		<rect x="5" y="53" class="lowlight" width="37.5" height="8"/>
-		<g transform="translate(73 54)">
-			<circle class="warn" cx="3" cy="3" r="3"/>
-			<rect class="dark" width="3" height="1" transform="translate(1.5 2.5)" />
-		</g>
-	</g>
-
-	<g>
-		<rect x="5" y="63" class="hilight" width="75" height="2"/>
-		<rect x="5" y="65" class="lowlight" width="37.5" height="8"/>
-		<g transform="translate(73 66)">
-			<circle class="error" cx="3" cy="3" r="3" />
-			<g transform="translate(1 2.5)">
-				<rect class="dark" width="4" height="1" transform="rotate(45 2 .5)" />
-				<rect class="dark" width="4" height="1" transform="rotate(-45 2 .5)" />
-			</g>
-		</g>
-	</g>
-
-	<g id="logo">
-		<path class="dark" d="M21.11,10.21c-0.24,2.02-2.11,3.67-4.44,3.67c-2.39,0-4.32-1.81-4.32-4.31s1.94-4.31,4.32-4.31 c1.53,0,3.03,0.75,3.78,1.99h-0.41c-0.83-1.09-2.02-1.69-3.38-1.69c-2.21,0-3.99,1.7-3.99,4.01c0,2.31,1.78,4.01,3.99,4.01 c2.12,0,3.73-1.51,4.03-3.06h-4.97v-0.3L21.11,10.21"/>
-		<path class="dark" d="M27.06,5.4v0.3h-4.23v3.68h4.23v0.3h-4.23v3.74h4.23v0.3h-4.57V5.4H27.06"/>
-		<path class="dark" d="M35.01,13.29h0.02V5.4h0.34v8.33h-0.43l-5.79-8h-0.02v8h-0.34V5.4h0.51L35.01,13.29"/>
-		<path class="dark" d="M41.81,5.4v0.3h-4.23v3.68h4.23v0.3h-4.23v3.74h4.23v0.3h-4.57V5.4H41.81"/>
-		<path class="dark" d="M47.59,5.4v0.3h-2.26v8.03h-0.34V5.71h-2.26V5.4H47.59"/>
-		<path class="dark" d="M48.66,13.74H49V5.4h-0.34V13.74z"/>
-		<path class="hilight" d="M58.44,11.93c-0.56,0.96-1.89,1.96-3.64,1.96c-2.39,0-4.32-1.81-4.32-4.31s1.94-4.31,4.32-4.31 c1.78,0.01,3.04,1.06,3.65,2h-0.39c-0.32-0.44-1.41-1.69-3.26-1.7c-2.21,0-3.99,1.7-3.99,4.01c0,2.31,1.78,4.01,3.99,4.01 c1.95,0,3.02-1.33,3.26-1.66L58.44,11.93"/>
-		<path class="hilight" d="M59.86,5.4h0.34v5.41c0,0.81,0,1.33,0.52,2c0.36,0.47,1.05,0.77,1.71,0.77c0.63,0,1.32-0.29,1.68-0.77 c0.52-0.68,0.52-1.19,0.52-2V5.4h0.34v5.41c0.01,0.75-0.02,1.88-1,2.57c-0.43,0.32-0.98,0.51-1.55,0.51 c-0.56,0-1.12-0.19-1.54-0.51c-0.98-0.69-1.01-1.81-1-2.57L59.86,5.4"/>
-		<path class="hilight" d="M68.61,5.4c1.29,0,1.81,0.11,2.22,0.35c0.68,0.34,1.2,1.25,1.2,2.22c0.05,1.04-0.64,2.6-2.45,2.61l-0.33,0.01 l2.24,3.14h-0.43l-2.44-3.45h0.52c0.79,0,1.3-0.07,1.85-0.53c0.53-0.55,0.71-1.13,0.71-1.78c0-0.72-0.35-1.52-0.99-1.94 c-0.51-0.33-1.12-0.34-2.09-0.34h-1.57v8.03h-0.34V5.41L68.61,5.4"/>
-		<path class="hilight" d="M77.77,5.4v0.3h-4.24v3.68h4.24v0.3h-4.24v3.74h4.24v0.3h-4.57V5.4H77.77"/>
-		<g>
-			<path class="dark" d="M7.71,5.41H6.2C5.54,5.41,5,5.95,5,6.61c0,0.66,0.54,1.2,1.2,1.2h1.51V5.41"/>
-			<path class="hilight" d="M8.01,7.81h1.51c0.66,0,1.2-0.54,1.2-1.2c0-0.66-0.54-1.2-1.2-1.2H8.01V7.81"/>
-			<path class="dark" d="M7.71,11.35H6.2c-0.66,0-1.2,0.54-1.2,1.2c0,0.66,0.54,1.2,1.2,1.2h1.51V11.35"/>
-			<path class="hilight" d="M8.01,13.74h1.51c0.66,0,1.2-0.54,1.2-1.2c0-0.66-0.54-1.2-1.2-1.2H8.01V13.74"/>
-			<path class="dark" d="M8.01,8.38h1.51c0.66,0,1.2,0.54,1.2,1.2c0,0.66-0.54,1.2-1.2,1.2H8.01V8.38"/>
-			<path class="hilight" d="M7.71,10.77H6.2c-0.66,0-1.2-0.54-1.2-1.2c0-0.66,0.54-1.2,1.2-1.2h1.51V10.77"/>
-		</g>
-		<path class="dark" d="M78.99,5.72v0.37h0.27c0.06-0.01,0.28,0,0.28-0.19c0-0.18-0.19-0.18-0.25-0.18H78.99z M79.29,5.67 c0.05,0,0.3,0,0.3,0.23c0,0.12-0.08,0.19-0.17,0.21v0c0.12,0.03,0.14,0.1,0.15,0.2c0.01,0.17,0.01,0.19,0.03,0.22h-0.06 c-0.01-0.02-0.01-0.04-0.02-0.2c-0.01-0.12-0.02-0.2-0.26-0.2h-0.28v0.39h-0.05V5.67L79.29,5.67L79.29,5.67z M78.56,6.1 c0,0.39,0.3,0.69,0.69,0.69c0.39,0,0.69-0.3,0.69-0.69c0-0.38-0.29-0.69-0.69-0.69C78.85,5.4,78.56,5.72,78.56,6.1z M80,6.1 c0,0.42-0.33,0.75-0.75,0.75c-0.42,0-0.75-0.32-0.75-0.75c0-0.41,0.31-0.74,0.75-0.74C79.68,5.35,80,5.68,80,6.1"/>
-	</g>
-
+	<path class="st4" d="M79,5.7v0.4h0.3c0.1,0,0.3,0,0.3-0.2c0-0.2-0.2-0.2-0.2-0.2H79z M79.3,5.7c0.1,0,0.3,0,0.3,0.2
+		c0,0.1-0.1,0.2-0.2,0.2l0,0c0.1,0,0.1,0.1,0.2,0.2c0,0.2,0,0.2,0,0.2h-0.1c0,0,0,0,0-0.2c0-0.1,0-0.2-0.3-0.2H79v0.4h-0.1V5.7H79.3
+		L79.3,5.7z M78.6,6.1c0,0.4,0.3,0.7,0.7,0.7s0.7-0.3,0.7-0.7c0-0.4-0.3-0.7-0.7-0.7C78.8,5.4,78.6,5.7,78.6,6.1z M80,6.1
+		c0,0.4-0.3,0.8-0.8,0.8s-0.8-0.3-0.8-0.8c0-0.4,0.3-0.7,0.8-0.7C79.7,5.3,80,5.7,80,6.1"/>
+</g>
+<rect x="5" y="68" class="st0" width="75" height="21"/>
 </svg>
