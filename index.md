@@ -8,7 +8,7 @@ title: Test
 
 At Geneticure, we use a unique approach that examines the genetics specific to each disease to help highlight the best prescription choice for each patient. The promise of personalized medicine has finally arrived.
 {% endcapture %}
-{% include hero.html type='full' content=header_content img_align='left' img_alt='Geneticure' img_src='/assets/img/bg-video.jpg' video='/assets/img/bg-video.webm' %}
+{% include hero.html type='full' content=header_content img_align='right' img_alt='Geneticure' img_src='/assets/img/bg-video.jpg' video='/assets/img/bg-video.webm' %}
 
 {% capture product_intro %}
 # The right treatment for<br>_high blood pressure._
@@ -29,7 +29,9 @@ assignment | Analyzed | Geneticure's proprietary algorithms produce unique recom
 assignment_turned_in | Reviewed | The report is double-checked by the Geneticure team.
 get_app | Released | The person who registered the Geneticure test kit receives an e-mail notification that the report is available for download.
 {% endcapture %}
-{% include icons-sequence.html content=product_sequence direction='x' %}
+{% include icons-sequence.html content=product_sequence direction='y' %}
+
+{% include laptop-frame.html src='/assets/img/doc.svg' alt='Ayy' %}
 
 {% capture for_patients %}
 ## For Patients & Caregivers

@@ -1,0 +1,26 @@
+$doc__height: 80;
+$doc__width: 100;
+$frame__height: 46;
+$frame__top: 15;
+$frame__width: 74;
+
+& {
+  position: relative;
+  width: 400px;
+}
+
+.lapfm__frame {
+  display: block;
+  width: 100%;
+}
+
+.lapfm__content {
+  height: percentage($frame__height / $doc__height);
+  left: #{50% - ($frame__width / 2)};
+  object-fit: cover;
+  object-position: top;
+  position: absolute;
+  top: percentage($frame__top / $doc__height);
+  width: percentage($frame__width / $doc__width);
+  z-index: -1;
+}
