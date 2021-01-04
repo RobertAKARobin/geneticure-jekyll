@@ -1,0 +1,60 @@
+$bubble__border: 5px;
+$bubble__radius: 5px;
+$line__border: 10px;
+$line__margin: ($margin--main * 3);
+
+& {
+  box-sizing: border-box;
+  display: flex;
+  overflow-x: scroll;
+  width: 100vw;
+}
+
+.isq__item {
+  flex-shrink: 0;
+  border: 0 solid transparent;
+  border-width: 0 calc(#{$margin--main} + (100vw - #{$width--screen--xl}) / 2);
+  width: 300px;
+}
+
+.isq__item:not(:first-child) {
+  border-left: 0;
+}
+
+.isq__item:not(:last-child) {
+  border-right: 0;
+}
+
+.isq__item__icon {
+  border-bottom: $line__border solid $color--lowlight;
+  padding-bottom: $margin--main;
+  position: relative;
+  text-align: center;
+}
+
+.isq__item__icon .material-icons {
+  color: $color--lowlight;
+  font-size: 90px;
+}
+
+.isq__item__icon:after {
+  background: #fff;
+  border: $bubble__border solid $color--lowlight;
+  border-radius: 50%;
+  bottom: #{0px - $bubble__border - $bubble__radius - ($line__border / 2)};
+  content: '\00a0';
+  height: $bubble__radius * 2;
+  left: calc(50% - #{$bubble__border + $bubble__radius});
+  position: absolute;
+  width: $bubble__radius * 2;
+}
+
+.isq__item__content {
+  padding: $margin--main;
+}
+
+.isq__item__content__title {
+  color: $color--brand;
+  font-weight: bold;
+  text-align: center;
+}

@@ -15,9 +15,21 @@ At Geneticure, we use a unique approach that examines the genetics specific to e
 
 All it takes is a simple cheek swab. Geneticure's Hypertension Panel analyzes the parts of your DNA that predict how your body will respond to different high blood pressure medications. Then our proprietary algorithm helps your doctor prescribe the best treatment for you.
 
-<a class="button button--high" href="#">See the research</a>
+<a class="button button--low" href="#">See the research</a>
 {% endcapture %}
 {% include hero.html type='half' content=product_intro img_align='right' img_alt='Geneticure' img_src='/assets/img/kit.jpg' %}
+
+{% capture product_sequence %}
+how_to_reg | Registered | The Geneticure test kit is linked to an online account.
+medical_services | Requisitioned | A physician confirms the Geneticure test is suitable for the patient.
+face | Collected | A specimen is taken using the cheek swab from the Geneticure test kit.
+mark_email_read | Accessioned | The cheek swab is mailed in and prepared for testing.
+biotech | Assayed | The DNA on the cheek swab is sequenced.
+assignment | Analyzed | Geneticure's proprietary algorithms produce unique recommendations based on the patient's DNA, and compile them into a report.
+assignment_turned_in | Reviewed | The report is double-checked by the Geneticure team.
+get_app | Released | The person who registered the Geneticure test kit receives an e-mail notification that the report is available for download.
+{% endcapture %}
+{% include icons-sequence.html content=product_sequence direction='x' %}
 
 {% capture for_patients %}
 ## For Patients & Caregivers

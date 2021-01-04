@@ -1,0 +1,18 @@
+<ol class="isq isq--{{ include.direction|default: 'x' }}">
+	{% assign steps = include.content|strip|newline_to_br|split: '<br />' %}
+	{% for _step in steps %}
+		{% assign step = _step|split: '|' %}
+		{% assign icon = step[0]|strip %}
+		{% assign title = step[1]|strip %}
+		{% assign description = step[2]|strip %}
+		<li class="isq__item">
+			<div class="isq__item__icon">
+				<i class="material-icons ">{{ icon }}</i>
+			</div>
+			<div class="isq__item__content">
+				<h6 class="isq__item__content__title">{{ title }}</h6>
+				<p class="isq__item__content__body">{{ description }}</p>
+			</div>
+		</li>
+	{% endfor %}
+</ol>
