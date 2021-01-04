@@ -15,12 +15,15 @@
   & {
     align-items: stretch;
     display: flex;
+    width: 100vw;
   }
 
   .hero__content {
+    border-left: calc((100vw - #{$width--screen--xl}) / 2) solid transparent;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    min-height: 100vh;
     padding: ($margin--main * 3);
   }
 
@@ -31,8 +34,10 @@
   }
 
   .hero__display__media {
-    height: 600px;
+    height: 100%;
     margin: 0 auto;
+    object-fit: cover;
+    width: 100%;
   }
 
   &.hero--align__right {

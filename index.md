@@ -17,7 +17,7 @@ All it takes is a simple cheek swab. Geneticure's Hypertension Panel analyzes th
 
 <a class="button button--low" href="#">See the research</a>
 {% endcapture %}
-{% include hero.html type='half' content=product_intro img_align='right' img_alt='Geneticure' img_src='/assets/img/kit.jpg' %}
+{% include hero.html type='half' content=product_intro img_align='right' img_alt='Geneticure' img_style='object-fit: contain' img_src='/assets/img/kit.jpg' %}
 
 {% capture product_sequence %}
 how_to_reg | Registered | The Geneticure test kit is linked to an online account.
