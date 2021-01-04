@@ -62,7 +62,7 @@
     }
   }
 
-  &.hero--align__left {
+  &.hero--align__right {
     .hero__content {
       justify-content: flex-start;
     }
@@ -73,7 +73,7 @@
     }
   }
 
-  &.hero--align__right {
+  &.hero--align__left {
     .hero__content {
       justify-content: flex-end;
     }
