@@ -17,20 +17,20 @@ Geneticure's Hypertension Panel analyzes the parts of your DNA that predict how 
 
 <a class="button button--low" href="#">See the research</a>
 {% endcapture %}
-{% include hero.html type='half' content=product_intro img_align='right' img_alt='Geneticure' img_style='object-fit: contain' img_src='/assets/img/kit.jpg' %}
+{% include hero.html type='half' content=product_intro img_align='right' img_alt='Geneticure kit' img_style='object-fit: contain' img_src='/assets/img/kit.jpg' %}
 
 {% capture product_description %}
 # _How does a Q-tip become_<br>a personalized health report?
 
-{% include laptop-frame.html src='/assets/img/doc.svg' alt='Ayy' %}
+{% include laptop-frame.html src='/assets/img/doc.svg' alt='Geneticure report' %}
 
-Geneticure uses your DNA to recommend blood pressure medications, summed up in a printable report. To collect a sample of your DNA, each Geneticure "test kit" contains a sterile cotton swab. [Register your kit](#) on this website, swipe the inside of your cheek with the swab, pop it in the mail, and you'll be notified when your report is ready.
+Geneticure uses your DNA to recommend blood pressure medications, summed up in a printable report. To collect a sample of your DNA, each Geneticure "test kit" contains a sterile cotton swab. [Register your kit](#) on this website, swab the inside of your cheek, and pop it in the mail. You'll be notified in 10-15 business days that your report is ready.
 {% endcapture %}
 {% capture product_sequence %}
 how_to_reg | Register | Register your kit on the Geneticure website. <a class="material-icons" href="#">launch</a>
 medical_services | Requisition | A physician confirms the Geneticure test is suitable for you.
 face | Collect | Take a specimen from your cheek using the swab in your kit.
-mark_email_read | Accession | When we receive your kit in the mail, we'll prepared it for testing.
+mark_email_read | Accession | When we receive your kit in the mail, we'll prepare it for testing.
 biotech | Assay | Our lab sequences the DNA on your cheek swab.
 assignment | Analyze | Our proprietary algorithms produce unique recommendations based on your DNA, and compile them into a report.
 assignment_turned_in | Review | Your report is double-checked by the Geneticure team.
