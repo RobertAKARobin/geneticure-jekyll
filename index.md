@@ -36,7 +36,7 @@ assignment | Analyze | Our proprietary algorithms produce unique recommendations
 assignment_turned_in | Review | Your report is double-checked by the Geneticure team.
 get_app | Release | You receive an e-mail notification that your report is available for download.
 {% endcapture %}
-{% include how-it-works.html sequence=product_sequence description=product_description %}
+{% include one-off/how-it-works.html sequence=product_sequence description=product_description %}
 
 {% capture for_patients %}
 ## For Patients & Caregivers
@@ -47,6 +47,7 @@ Your genes contain information that makes you different from everyone else, but 
 
 No matter where you are in your treatment plan — whether you’ve been newly diagnosed or have been managing your blood pressure for years — with the help of your doctor, Geneticure’s test can help get you on the right path.
 {% endcapture %}
+
 
 {% capture for_providers %}
 ## For Healthcare Providers
