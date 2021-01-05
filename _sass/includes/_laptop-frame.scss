@@ -6,7 +6,9 @@ $frame__width: 74;
 
 & {
   position: relative;
-  width: 400px;
+  margin: 0 auto;
+  max-width: 400px;
+  width: 100%;
 }
 
 .lapfm__frame {

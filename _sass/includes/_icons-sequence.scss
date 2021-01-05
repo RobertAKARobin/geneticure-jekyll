@@ -24,6 +24,10 @@ $line__margin: ($margin--main * 3);
   width: $bubble__radius * 2;
 }
 
+.isq__item__content {
+  text-align: left;
+}
+
 .isq__item__content__title {
   color: $font-color--highlight;
   font-size: 14px;

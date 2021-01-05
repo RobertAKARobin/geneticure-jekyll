@@ -11,27 +11,32 @@ At Geneticure, we use a unique approach that examines the genetics specific to e
 {% include hero.html type='full' content=header_content img_align='right' img_alt='Geneticure' img_src='/assets/img/bg-video.jpg' video='/assets/img/bg-video.webm' %}
 
 {% capture product_intro %}
-# The right treatment for<br>_high blood pressure._
+# Find the right treatment for<br>_high blood pressure._
 
-All it takes is a simple cheek swab. Geneticure's Hypertension Panel analyzes the parts of your DNA that predict how your body will respond to different high blood pressure medications. Then our proprietary algorithm helps your doctor prescribe the best treatment for you.
+Geneticure's Hypertension Panel analyzes the parts of your DNA that predict how your body will respond to different high blood pressure medications. Using cutting-edge medical research, our proprietary algorithm helps your doctor prescribe the best treatment based on your own unique genetic signature.
 
 <a class="button button--low" href="#">See the research</a>
 {% endcapture %}
 {% include hero.html type='half' content=product_intro img_align='right' img_alt='Geneticure' img_style='object-fit: contain' img_src='/assets/img/kit.jpg' %}
 
-{% capture product_sequence %}
-how_to_reg | Registered | The Geneticure test kit is linked to an online account.
-medical_services | Requisitioned | A physician confirms the Geneticure test is suitable for the patient.
-face | Collected | A specimen is taken using the cheek swab from the Geneticure test kit.
-mark_email_read | Accessioned | The cheek swab is mailed in and prepared for testing.
-biotech | Assayed | The DNA on the cheek swab is sequenced.
-assignment | Analyzed | Geneticure's proprietary algorithms produce unique recommendations based on the patient's DNA, and compile them into a report.
-assignment_turned_in | Reviewed | The report is double-checked by the Geneticure team.
-get_app | Released | The person who registered the Geneticure test kit receives an e-mail notification that the report is available for download.
-{% endcapture %}
-{% include icons-sequence.html content=product_sequence direction='y' %}
+{% capture product_description %}
+# _How does a Q-tip become_<br>a personalized health report?
 
 {% include laptop-frame.html src='/assets/img/doc.svg' alt='Ayy' %}
+
+Geneticure uses your DNA to recommend blood pressure medications, summed up in a printable report. To collect a sample of your DNA, each Geneticure "test kit" contains a sterile cotton swab. [Register your kit](#) on this website, swipe the inside of your cheek with the swab, pop it in the mail, and you'll be notified when your report is ready.
+{% endcapture %}
+{% capture product_sequence %}
+how_to_reg | Register | Register your kit on the Geneticure website. <a class="material-icons" href="#">launch</a>
+medical_services | Requisition | A physician confirms the Geneticure test is suitable for you.
+face | Collect | Take a specimen from your cheek using the swab in your kit.
+mark_email_read | Accession | When we receive your kit in the mail, we'll prepared it for testing.
+biotech | Assay | Our lab sequences the DNA on your cheek swab.
+assignment | Analyze | Our proprietary algorithms produce unique recommendations based on your DNA, and compile them into a report.
+assignment_turned_in | Review | Your report is double-checked by the Geneticure team.
+get_app | Release | You receive an e-mail notification that your report is available for download.
+{% endcapture %}
+{% include how-it-works.html sequence=product_sequence description=product_description %}
 
 {% capture for_patients %}
 ## For Patients & Caregivers

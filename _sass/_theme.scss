@@ -27,6 +27,18 @@ a.on-dark:hover {
   color: $font-color--highlight;
 }
 
+a.material-icons {
+  color: $font-color--highlight;
+  font-size: inherit;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a.material-icons:hover,
+a.material-icons:active {
+  color: $font-color--highlight--sink;
+}
+
 h1 {
   font-size: rem(32);
   letter-spacing: 0.1px;
@@ -115,6 +127,8 @@ hr {
 
 .disclaimer {
   @include font--caption();
+
+  display: block;
 }
 
 // Buttons
