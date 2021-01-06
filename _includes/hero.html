@@ -1,4 +1,4 @@
-<div class="hero hero--align__{{ include.align|default:'left' }} hero--fit__{{ include.fit|default:'cover' }} hero--overlay__{{ include.overlay|default:'float' }} hero--width__{{ include.width|default:'full' }}">
+<div class="hero hero--align__{{ include.align|default:'left' }} hero--fit__{{ include.fit|default:'cover' }} hero--overlay__{{ include.overlay|default:'float' }} hero--width__{{ include.width|default:'full' }} {% if include.margins %}hero--margins{% endif %}">
 	<div class="hero__display">
 		{% if include.video %}
 			<video class="hero__display__media" autoplay loop muted playsinline preload="none" {% if include.img_src %}poster="{{ include.img_src }}{% endif %}" title="{{ include.img_alt }}">

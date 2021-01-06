@@ -1,3 +1,11 @@
+.hero__content {
+  box-sizing: border-box;
+}
+
+.hero__display__media {
+  box-sizing: border-box;
+}
+
 @media #{$bp--sm}, #{$bp--md} {
   .hero {
     margin: ($margin--main * 2) 0;
@@ -31,7 +39,6 @@
 
   .hero__content {
     background-color: rgba(255, 255, 255, 0.9);
-    box-sizing: border-box;
     padding: ($margin--main * 3);
     position: relative;
     width: 50%;
@@ -107,6 +114,24 @@
       .hero__content {
         border-bottom-right-radius: 0;
         border-top-right-radius: 0;
+      }
+    }
+  }
+}
+
+@media #{$bp--lg}, #{$bp--xl} {
+  .hero--margins {
+    &.hero--width__half.hero--align__left,
+    &.hero--width__full {
+      .hero__display__media {
+        border-right: calc((100vw - #{$width--screen--xl}) / 2) solid transparent;
+      }
+    }
+  
+    &.hero--width__half.hero--align__right,
+    &.hero--width__full {
+      .hero__display__media {
+        border-left: calc((100vw - #{$width--screen--xl}) / 2) solid transparent;
       }
     }
   }

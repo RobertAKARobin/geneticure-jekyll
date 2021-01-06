@@ -8,7 +8,7 @@ title: Test
 
 At Geneticure, we use a unique approach that examines the genetics specific to each disease to help highlight the best prescription choice for each patient. The promise of personalized medicine has finally arrived.
 {% endcapture %}
-{% include hero.html content=header_content align='left' fit='cover' overlay='float' width='full' img_alt='Geneticure' img_src='/assets/img/bg/kids.jpg' %}
+{% include hero.html content=header_content align='left' fit='cover' overlay='float' width='full' img_alt='Geneticure' img_src='/assets/img/bg/lab-techs.jpg' %}
 
 {% capture product_intro %}
 # Find the right treatment for<br>_high blood pressure._
@@ -17,7 +17,7 @@ Geneticure's Hypertension Panel analyzes the parts of your DNA that predict how 
 
 <a class="button button--low" href="#">See the research</a>
 {% endcapture %}
-{% include hero.html content=product_intro align='left' fit='contain' overlay='block' width='half' img_alt='Geneticure kit' img_src='/assets/img/kit.jpg' %}
+{% include hero.html content=product_intro align='left' fit='contain' margins=true overlay='block' width='half' img_alt='Geneticure kit' img_src='/assets/img/kit-w-contents.jpg' %}
 
 {% capture product_description %}
 # _How does a Q-tip become_<br>a personalized health report?
