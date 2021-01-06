@@ -8,7 +8,7 @@ title: Test
 
 At Geneticure, we use a unique approach that examines the genetics specific to each disease to help highlight the best prescription choice for each patient. The promise of personalized medicine has finally arrived.
 {% endcapture %}
-{% include hero.html type='full' content=header_content img_align='right' img_alt='Geneticure' img_src='/assets/img/bg-video.jpg' video='/assets/img/bg-video.webm' %}
+{% include hero.html type='full' content=header_content img_align='center' img_alt='Geneticure' img_src='/assets/img/bg/lab-test.jpg' %}
 
 {% capture product_intro %}
 # Find the right treatment for<br>_high blood pressure._
