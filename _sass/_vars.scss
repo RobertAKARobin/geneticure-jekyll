@@ -216,6 +216,7 @@ $shadow--main: 0 1px 2px 0 rgba(0, 0, 0, 0.2); // stylelint-disable-line plugin/
   width: 100%;
   
   & > * {
+    box-sizing: border-box;
     flex-basis: 100%;
     flex-grow: 1;
     flex-shrink: 1;

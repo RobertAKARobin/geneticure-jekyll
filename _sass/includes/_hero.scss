@@ -124,14 +124,14 @@
     &.hero--width__half.hero--align__left,
     &.hero--width__full {
       .hero__display__media {
-        border-right: calc((100vw - #{$width--screen--xl}) / 2) solid transparent;
+        border-right: calc(#{$margin--main} + (100vw - #{$width--screen--xl}) / 2) solid transparent;
       }
     }
   
     &.hero--width__half.hero--align__right,
     &.hero--width__full {
       .hero__display__media {
-        border-left: calc((100vw - #{$width--screen--xl}) / 2) solid transparent;
+        border-left: calc(#{$margin--main} + (100vw - #{$width--screen--xl}) / 2) solid transparent;
       }
     }
   }
