@@ -57,6 +57,7 @@
 }
 
 .nav {
+  box-sizing: border-box;
   position: relative;
   z-index: $z--nav;
 }
