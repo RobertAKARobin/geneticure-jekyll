@@ -10,10 +10,10 @@
 
 @media #{$bp--sm}, #{$bp--md} {
   #how-it-works {
-    margin: ($margin--main * 8) 0;
+    margin: ($margin--main * 6) 0;
   }
 
-  #how-it-works__description h1 {
+  #how-it-works h1 {
     text-align: center;
   }
 }
@@ -25,16 +25,10 @@
     margin-bottom: ($margin--main * 8);
   }
 
-  #how-it-works__description .text {
-    align-items: center;
+  #how-it-works__description {
     display: flex;
     flex-direction: column;
-    margin: 0 auto;
-    max-width: 450px;
-  }
-
-  #how-it-works__description h1 {
-    text-align: center;
+    justify-content: center;
   }
   
   #how-it-works__description .lapfm {
