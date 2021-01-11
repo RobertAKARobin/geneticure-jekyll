@@ -35,7 +35,6 @@
   .hero {
     align-items: center;
     display: flex;
-    min-height: 100vh;
     overflow-x: hidden;
     position: relative;
     width: 100vw;
@@ -88,6 +87,16 @@
     .hero__display {
       justify-content: flex-start;
     }
+  }
+}
+
+@media #{$bp--lg}, #{$bp--xl} {
+  .hero--height__half {
+    min-height: 50vh;
+  }
+
+  .hero--height__full {
+    min-height: 100vh;
   }
 }
 
@@ -163,7 +172,7 @@
 
 .hero--width__full {
   @media #{$bp--lg}, #{$bp--xl} {
-    .nav--fixed + .main > & {
+    .nav--fixed + .main > &:first-child {
       margin-top: #{0 - $nav--height};
     }
     .hero__display__media {

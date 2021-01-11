@@ -45,8 +45,11 @@ h1 {
   line-height: 2.5rem;
 }
 
-h1 em {
+h1 em,
+h2 em,
+h3 em {
   color: $font-color--highlight;
+  text-decoration: none;
 }
 
 h2 {
@@ -70,6 +73,10 @@ sup {
 
 small {
   font-style: italic;
+}
+
+em {
+  text-decoration: underline;
 }
 
 strong {
