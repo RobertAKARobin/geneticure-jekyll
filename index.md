@@ -33,7 +33,7 @@ We compile the results into **a personalized report**.
 {% capture product_description %}
 # How does a Q-tip become _a personalized health report_?
 
-{% include laptop-frame.html src='/assets/img/doc.svg' alt='Geneticure report' %}
+{% include frame.html src='/assets/img/doc.svg' alt='Geneticure report' %}
 
 Geneticure uses your DNA to recommend blood pressure medications, summed up in a printable report. To collect a sample of your DNA, each Geneticure "test kit" contains a sterile cotton swab. [Register your kit](#) on this website, swab the inside of your cheek, and pop it in the mail. You'll be notified in 10-15 business days that your report is ready.
 {% endcapture %}
