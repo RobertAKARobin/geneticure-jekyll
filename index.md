@@ -19,6 +19,17 @@ Geneticure's Hypertension Panel analyzes the parts of your DNA that predict how 
 {% endcapture %}
 {% include hero.html content=product_intro align='left' fit='contain' margins=true overlay='block' width='half' img_alt='Geneticure kit' img_src='/assets/img/kit-w-contents.jpg' %}
 
+{% capture product_science %}
+# _Different_ from other genetic tests.
+
+While there are many genetic tests available, most are very similar. They test how much medication is absorbed into your bloodstream. They don't test how your body actually responds to the medication.
+
+At Geneticure, we test how your body responds to high blood pressure medications by examining 17 genes in your DNA.
+
+We compile the results into **a personalized report**.
+{% endcapture %}
+{% include hero.html content=product_science align='left' fit='contain' margins=true overlay='float' width='half' img_alt='Poo' img_src='/assets/img/report.png' %}
+
 {% capture product_description %}
 # How does a Q-tip become _a personalized health report_?
 
@@ -62,6 +73,8 @@ get_app | Release | You receive an e-mail notification that your report is avail
 {% include hero.html content=for_whom align='right' fit='cover' overlay='block' width='full' img_alt='Geneticure' img_style='object-position: left' img_src='/assets/img/bg/doctor-consult.jpg' %}
 
 {% capture research %}
+<div id="research"></div>
+
 ## The Research
 
 ### Presentations at National and International Meetings

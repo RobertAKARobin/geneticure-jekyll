@@ -22,7 +22,10 @@
   #how-it-works {
     @include columns($margin--main * 2);
 
-    margin-bottom: ($margin--main * 8);
+    align-items: center;
+    box-sizing: border-box;
+    min-height: 100vh;
+    padding: ($margin--main * 6) 0;
   }
 
   #how-it-works__description {
