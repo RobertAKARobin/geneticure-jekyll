@@ -1,28 +1,45 @@
-$doc__height: 80;
-$doc__width: 100;
-$frame__height: 46;
-$frame__top: 15;
-$frame__width: 74;
-
-& {
+.frame {
   position: relative;
   margin: 0 auto;
   max-width: 400px;
   width: 100%;
 }
 
-.lapfm__frame {
+.frame__frame {
   display: block;
   width: 100%;
 }
 
-.lapfm__content {
-  height: percentage($frame__height / $doc__height);
-  left: #{50% - ($frame__width / 2)};
+.frame__content {
   object-fit: cover;
   object-position: top;
   position: absolute;
-  top: percentage($frame__top / $doc__height);
-  width: percentage($frame__width / $doc__width);
   z-index: -1;
+}
+
+@mixin place($height__inner, $height__outer, $width__outer, $width__inner, $top__inner) {
+  height: percentage($height__inner / $height__outer);
+  left: #{50% - (percentage($width__inner / $width__outer) / 2)};
+  top: percentage($top__inner / $height__outer);
+  width: percentage($width__inner / $width__outer);
+}
+
+.frame--laptop .frame__content {
+  @include place(
+    $height__inner: 46,
+    $height__outer: 80,
+    $top__inner: 15,
+    $width__inner: 74,
+    $width__outer: 100,
+  );
+}
+
+.frame--phone .frame__content {
+  @include place(
+    $height__inner: 58.24,
+    $height__outer: 80,
+    $top__inner: 10.88,
+    $width__inner: 45,
+    $width__outer: 60,
+  );
 }

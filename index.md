@@ -20,20 +20,21 @@ Geneticure's Hypertension Panel analyzes the parts of your DNA that predict how 
 {% include hero.html content=product_intro align='left' fit='contain' margins=true overlay='block' width='half' img_alt='Geneticure kit' img_src='/assets/img/kit-w-contents.jpg' %}
 
 {% capture product_science %}
-# _Different_ from other genetic tests.
+<!-- # _Different_ from other genetic tests.
 
 While there are many genetic tests available, most are very similar. They test how much medication is absorbed into your bloodstream. They don't test how your body actually responds to the medication.
 
 At Geneticure, we test how your body responds to high blood pressure medications by examining 17 genes in your DNA.
 
-We compile the results into **a personalized report**.
+We compile the results into **a personalized report**. -->
+{% include frame.html type='phone' src='/assets/img/report.png' alt='Geneticure report' %}
 {% endcapture %}
-{% include hero.html content=product_science align='left' fit='contain' margins=true overlay='float' width='half' img_alt='Poo' img_src='/assets/img/report.png' %}
+{% include hero.html content=product_science align='right' fit='contain' margins=true overlay='float' width='half' img_alt='Report' img_src='/assets/img/report.png' %}
 
 {% capture product_description %}
 # How does a Q-tip become _a personalized health report_?
 
-{% include frame.html src='/assets/img/doc.svg' alt='Geneticure report' %}
+{% include frame.html type='laptop' src='/assets/img/report.png' alt='Geneticure report' %}
 
 Geneticure uses your DNA to recommend blood pressure medications, summed up in a printable report. To collect a sample of your DNA, each Geneticure "test kit" contains a sterile cotton swab. [Register your kit](#) on this website, swab the inside of your cheek, and pop it in the mail. You'll be notified in 10-15 business days that your report is ready.
 {% endcapture %}
