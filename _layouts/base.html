@@ -4,15 +4,16 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="description" content="{{ site.description }}">
-		<link rel="shortcut icon" href="/favicon.ico" >
-		<link rel="stylesheet" href="/assets/css/main.css">
 		<title>{{ page.title }}</title>
+		<link rel="shortcut icon" href="/favicon.ico" >
 		{% if jekyll.environment == 'development' %}
 			<link rel="stylesheet" href="/assets/css/mat-icons.css" />
+			<link rel="stylesheet" href="/assets/css/localfonts.css" />
 		{% else %}
-			<link href="https://fonts.googleapis.com/css?family=Oxygen:300,400" rel="stylesheet">
+			<link href="https://fonts.googleapis.com/css?family=Nunito:400,700" rel="stylesheet">
 			<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 		{% endif %}
+		<link rel="stylesheet" href="/assets/css/main.css">
 	</head>
 	<body class="body">
 		<nav class="nav nav--fixed">
