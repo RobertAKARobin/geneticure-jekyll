@@ -1,0 +1,72 @@
+.herotext {
+  background-color: #000;
+  height: 100vh;
+  width: 100vw;
+
+  .nav--fixed + .main > &:first-child {
+    margin-top: #{0 - $nav--height};
+  }
+}
+
+.herotext__media {
+  height: 100%;
+  left: 0;
+  object-fit: cover;
+  object-position: 75% bottom;
+  opacity: 0.2;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: $z--hero__bg;
+}
+
+.herotext__content {
+  box-sizing: border-box;
+  color: $font-color--on-dark;
+  display: flex;
+  flex-direction: column;
+  font-weight: $font-weight--strong;
+  height: 100%;
+  justify-content: center;
+  padding-left: $margin--main;
+  padding-right: $margin--main;
+  position: relative;
+  width: 100%;
+  z-index: $z--hero__overlay;
+}
+
+@media #{$bp--sm} {
+  .herotext__content {
+    font-size: 36px;
+    line-height: 1.4em;
+    text-align: center;
+  }
+
+  .herotext__content br {
+    display: none;
+  }
+}
+
+@media #{$bp--md} {
+  .herotext__content {
+    font-size: 42px;
+    line-height: 1.4em;
+  }
+}
+
+@media #{$bp--lg}, #{$bp--xl} {
+  .herotext__content {
+    border-left: calc((100vw - #{$width--screen--xl}) / 2) solid transparent;
+    border-right: calc((100vw - #{$width--screen--xl}) / 2) solid transparent;
+    font-size: 64px;
+    line-height: 1.4em;
+  }
+}
+
+.herotext__content em {
+  text-decoration: none;
+}
+
+.herotext__content strong {
+  color: $font-color--highlight;
+}

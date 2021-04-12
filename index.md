@@ -3,12 +3,16 @@ layout: base
 title: Test
 ---
 
-{% capture header_content %}
-# Prescriptions for your body.<br>_Decisions from your DNA._
+{% capture tagline %}
+Our _algorithms_<br>
+use cutting-edge _research_<br>
+to turn your _DNA_<br>
+into a _**treatment for hypertension.**_<br>
 
-At Geneticure, we use a unique approach that examines the genetics specific to each disease to help highlight the best prescription choice for each patient. The promise of personalized medicine has finally arrived.
+<a class="button button--transparent--on-dark" href="#">Get a sample kit</a>
+<a class="button button--transparent--on-dark" href="#">Use our API</a>
 {% endcapture %}
-{% include hero.html content=header_content align='left' fit='cover' overlay='float' width='full' img_alt='Geneticure' img_style='object-position: right' img_src='/assets/img/bg/lab-techs.jpg' %}
+{% include herotext.html content=tagline img_src='/assets/img/bg/lab-kit.jpg' %}
 
 {% capture product_intro %}
 # Find the right treatment _for high blood pressure._
@@ -22,7 +26,7 @@ Geneticure's Hypertension Panel analyzes the parts of your DNA that predict how 
 {% capture product_science %}
 <!-- # _Different_ from other genetic tests.
 
-While there are many genetic tests available, most are very similar. They test how much medication is absorbed into your bloodstream. They don't test how your body actually responds to the medication.
+While there are lots of genetic tests out there, most just test how much medication is absorbed into your bloodstream. They don't test _how your body actually responds_ to the medication.
 
 At Geneticure, we test how your body responds to high blood pressure medications by examining 17 genes in your DNA.
 
@@ -32,7 +36,7 @@ We compile the results into **a personalized report**. -->
 {% include hero.html content=product_science align='right' fit='contain' margins=true overlay='float' width='half' img_alt='Report' img_src='/assets/img/report.png' %}
 
 {% capture product_description %}
-# How does a Q-tip become _a personalized health report_?
+# Prescriptions for your body.<br>_Decisions from your DNA._
 
 {% include frame.html type='laptop' src='/assets/img/report.png' alt='Geneticure report' %}
 

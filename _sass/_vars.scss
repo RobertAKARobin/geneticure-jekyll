@@ -64,8 +64,9 @@ $bp--xl: '(min-width: #{$width--screen--xl})';
 $font-color--body: #231F20;
 $font-color--disabled: #888;
 $font-color--error: $color--error;
-$font-color--highlight: $color--brand; // TODO3: Rm all these duplicate colors
-$font-color--highlight--sink: $color--brand--sink;
+$font-color--highlight: $color--highlight; // TODO3: Rm all these duplicate colors
+$font-color--highlight--offset: $color--highlight--offset;
+$font-color--highlight--sink: $color--highlight--sink;
 $font-color--lowlight: $color--lowlight;
 $font-color--lowlight--sink: $color--lowlight--sink;
 $font-color--on-dark: #FFFFFF;
@@ -78,6 +79,8 @@ $font-weight--strong: 700;
 
 $margin--main: 1rem;
 
+$z--hero__bg: 10;
+$z--hero__overlay: 11;
 $z--nav: 99;
 $z--show-password: 9998;
 $z--overlay: 9999;
@@ -104,6 +107,12 @@ $shadow--main: 0 1px 2px 0 rgba(0, 0, 0, 0.2); // stylelint-disable-line plugin/
   text-decoration: none;
   text-transform: uppercase;
   white-space: nowrap;
+
+  &::selection {
+    background: unset;
+    color: unset;
+    text-shadow: unset;
+  }
 }
 
 @mixin font--link () {
@@ -210,6 +219,11 @@ $shadow--main: 0 1px 2px 0 rgba(0, 0, 0, 0.2); // stylelint-disable-line plugin/
     background: $background--highlight--sink;
     color: $font-color--body;
   }
+}
+
+@mixin button--transparent--on-dark () {
+  border-color: rgba(255, 255, 255, 0.5);
+  color: $font-color--on-dark;
 }
 
 @mixin columns ($gutter: $margin--main) {

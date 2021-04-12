@@ -153,6 +153,10 @@ hr {
   @include button--high();
 }
 
+.button--transparent--on-dark {
+  @include button--transparent--on-dark;
+}
+
 .buttonset {
   @include flex--center();
 

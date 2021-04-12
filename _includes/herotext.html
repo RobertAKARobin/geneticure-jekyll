@@ -1,0 +1,9 @@
+<div class="herotext">
+	<img class="herotext__media" src="{{ include.img_src }}" alt="{{ include.img_alt }}" style="{{ include.img_style }}" />
+
+	<div class="herotext__content">
+		<div class="text">
+			{{ include.content|markdownify|strip }}
+		</div>
+	</div>
+</div>
