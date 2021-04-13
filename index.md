@@ -12,7 +12,7 @@ into a _**treatment for hypertension.**_<br>
 <a class="button button--transparent--on-dark" href="#">Get a test kit</a>
 <a class="button button--transparent--on-dark" href="#">Use our API</a>
 {% endcapture %}
-{% include herotext.html content=tagline height='full' img_src='/assets/img/bg/lab-kit.jpg' %}
+{% include herotext.html content=tagline height='full' img_alt='Lab with Geneticure test kit' img_src='/assets/img/bg/lab-kit.jpg' %}
 
 {% capture product_intro %}
 # Prescriptions for your body.<br>_Decisions from your DNA._

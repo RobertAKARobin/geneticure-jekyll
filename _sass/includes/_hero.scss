@@ -7,7 +7,7 @@
   box-sizing: border-box;
 }
 
-.hero__display__media {
+.hero__display > * {
   box-sizing: border-box;
 }
 
@@ -20,7 +20,7 @@
     padding: ($margin--main * 2) $margin--main;
   }
 
-  .hero__display__media {
+  .hero__display > * {
     margin: 0 auto;
     max-height: 60vh;
     width: 100vw;
@@ -50,7 +50,7 @@
     width: 100%;
   }
 
-  .hero__display__media {
+  .hero__display > * {
     height: 100%;
   }
 }
@@ -119,14 +119,14 @@
   .hero--margins {
     &.hero--width__half.hero--align__left,
     &.hero--width__full {
-      .hero__display__media {
+      .hero__display > * {
         border-right: calc(#{$margin--main} + (100vw - #{$width--screen--xl}) / 2) solid transparent;
       }
     }
   
     &.hero--width__half.hero--align__right,
     &.hero--width__full {
-      .hero__display__media {
+      .hero__display > * {
         border-left: calc(#{$margin--main} + (100vw - #{$width--screen--xl}) / 2) solid transparent;
       }
     }
@@ -134,20 +134,20 @@
 }
 
 .hero--fit__contain {
-  .hero__display__media {
+  .hero__display > * {
     object-fit: contain;
   }
 }
 
 .hero--fit__cover {
-  .hero__display__media {
+  .hero__display > * {
     object-fit: cover;
   }
 }
 
 .hero--width__half {
   @media #{$bp--lg}, #{$bp--xl} {
-    .hero__display__media {
+    .hero__display > * {
       width: 50%;
     }
   }
@@ -155,7 +155,7 @@
 
 .hero--width__full {
   @media #{$bp--lg}, #{$bp--xl} {
-    .hero__display__media {
+    .hero__display > * {
       width: 100%;
     }
   }
