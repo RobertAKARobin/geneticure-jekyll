@@ -1,0 +1,42 @@
+.section {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 100px;
+  overflow-x: hidden;
+  position: relative;
+  width: 100vw;
+}
+
+@media #{$bp--sm}, #{$bp--md} {
+  .section {
+    margin: ($margin--main * 2) 0;
+  }
+
+  .main > .section:first-child {
+    margin-top: 0;
+  }
+}
+
+@media #{$bp--lg}, #{$bp--xl} {
+  .main > .section:first-child {
+    margin-top: #{0 - $nav--height};
+  }
+  
+  .section--height__half {
+    min-height: 50vh;
+
+    & + & {
+      margin-top: 0;
+    }
+  }
+
+  .section--height__full {
+    height: 100vh;
+
+    & + & {
+      margin-top: 0;
+    }
+  }
+}

@@ -1,11 +1,7 @@
 .herotext {
   background-color: #000;
-  height: 100vh;
+  height: 100%;
   width: 100vw;
-
-  .nav--fixed + .main > &:first-child {
-    margin-top: #{0 - $nav--height};
-  }
 }
 
 .herotext__media {

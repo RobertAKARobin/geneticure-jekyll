@@ -9,39 +9,22 @@ use cutting-edge _research_<br>
 to turn your _DNA_<br>
 into a _**treatment for hypertension.**_<br>
 
-<a class="button button--transparent--on-dark" href="#">Get a sample kit</a>
+<a class="button button--transparent--on-dark" href="#">Get a test kit</a>
 <a class="button button--transparent--on-dark" href="#">Use our API</a>
 {% endcapture %}
-{% include herotext.html content=tagline img_src='/assets/img/bg/lab-kit.jpg' %}
+{% include herotext.html content=tagline height='full' img_src='/assets/img/bg/lab-kit.jpg' %}
 
 {% capture product_intro %}
-# Find the right treatment _for high blood pressure._
+# Prescriptions for your body.<br>_Decisions from your DNA._
 
-Geneticure's Hypertension Panel analyzes the parts of your DNA that predict how your body will respond to different high blood pressure medications. Using cutting-edge medical research, our proprietary algorithm helps your doctor prescribe the best treatment based on your own unique genetic signature.
+Geneticure uses a sample of your DNA to recommend blood pressure medications just for you, summarized in a personalized, printable report.
 
-<a class="button button--low" href="#">See the research</a>
+Each Geneticure test kit contains two sterile cheek swabs, and a prepaid envelope to mail them to us. [Register your kit](#) on this website, swab your cheek, and drop your envelope in the mail. You'll be notified in 10-15 business days that your report is ready.
+
+<a class="button button--low" href="#">Get a test kit</a>
 {% endcapture %}
 {% include hero.html content=product_intro align='left' fit='contain' margins=true overlay='block' width='half' img_alt='Geneticure kit' img_src='/assets/img/kit-w-contents.jpg' %}
 
-{% capture product_science %}
-<!-- # _Different_ from other genetic tests.
-
-While there are lots of genetic tests out there, most just test how much medication is absorbed into your bloodstream. They don't test _how your body actually responds_ to the medication.
-
-At Geneticure, we test how your body responds to high blood pressure medications by examining 17 genes in your DNA.
-
-We compile the results into **a personalized report**. -->
-{% include frame.html type='phone' src='/assets/img/report.png' alt='Geneticure report' %}
-{% endcapture %}
-{% include hero.html content=product_science align='right' fit='contain' margins=true overlay='float' width='half' img_alt='Report' img_src='/assets/img/report.png' %}
-
-{% capture product_description %}
-# Prescriptions for your body.<br>_Decisions from your DNA._
-
-{% include frame.html type='laptop' src='/assets/img/report.png' alt='Geneticure report' %}
-
-Geneticure uses your DNA to recommend blood pressure medications, summed up in a printable report. To collect a sample of your DNA, each Geneticure "test kit" contains a sterile cotton swab. [Register your kit](#) on this website, swab the inside of your cheek, and pop it in the mail. You'll be notified in 10-15 business days that your report is ready.
-{% endcapture %}
 {% capture product_sequence %}
 how_to_reg | Register | Register your kit on the Geneticure website. <a class="material-icons" href="#">launch</a>
 medical_services | Requisition | A physician confirms the Geneticure test is suitable for you.
@@ -52,7 +35,10 @@ assignment | Analyze | Our proprietary algorithms produce unique recommendations
 assignment_turned_in | Review | Your report is double-checked by the Geneticure team.
 get_app | Release | You receive an e-mail notification that your report is available for download.
 {% endcapture %}
-{% include one-off/how-it-works.html sequence=product_sequence description=product_description %}
+{% capture product_sequence_section %}
+  {% include icons-sequence.html content=product_sequence direction='y' %}
+{% endcapture %}
+{% include section.html content=product_sequence_section %}
 
 {% capture for_whom %}
 # Who is it for?
@@ -75,7 +61,7 @@ get_app | Release | You receive an e-mail notification that your report is avail
 
 <a class="button button--high" href="#">Get in touch</a>
 {% endcapture %}
-{% include hero.html content=for_whom align='right' fit='cover' overlay='block' width='full' img_alt='Geneticure' img_style='object-position: left' img_src='/assets/img/bg/doctor-consult.jpg' %}
+{% include hero.html content=for_whom align='right' fit='cover' overlay='float' height='full' width='full' img_alt='Geneticure' img_style='object-position: left' img_src='/assets/img/bg/doctor-consult.jpg' %}
 
 {% capture research %}
 <div id="research"></div>
@@ -127,4 +113,4 @@ get_app | Release | You receive an e-mail notification that your report is avail
 <cite>Association Between a Genetic Algorithm to Predict Hypertension Therapy and Response to Treatment.</cite> Clinicaltrials.gov identifier: NCT03292900. Completed.
 
 {% endcapture %}
-{% include section.html content=research %}
+{% include text.html content=research %}

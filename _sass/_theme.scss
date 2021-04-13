@@ -99,6 +99,10 @@ strong {
     list-style-type: disc;
     margin: ($margin--main / 2) 0;
   }
+
+  img {
+    width: 100%;
+  }
 }
 
 .material-icons {

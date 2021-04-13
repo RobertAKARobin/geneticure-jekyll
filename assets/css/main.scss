@@ -7,34 +7,3 @@
   'theme',
   'body',
   'includes';
-
-@media #{$bp--sm}, #{$bp--md} {
-  #how-it-works {
-    margin: ($margin--main * 6) 0;
-  }
-
-  #how-it-works h1 {
-    text-align: center;
-  }
-}
-
-@media #{$bp--lg}, #{$bp--xl} {
-  #how-it-works {
-    @include columns($margin--main * 2);
-
-    align-items: center;
-    box-sizing: border-box;
-    min-height: 100vh;
-    padding: ($margin--main * 6) 0;
-  }
-
-  #how-it-works__description {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  
-  #how-it-works__description .lapfm {
-    width: 100%;
-  }  
-}

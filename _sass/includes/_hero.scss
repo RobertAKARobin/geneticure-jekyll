@@ -1,3 +1,8 @@
+.hero {
+  display: flex;
+  position: relative;
+}
+
 .hero__content {
   box-sizing: border-box;
 }
@@ -7,16 +12,8 @@
 }
 
 @media #{$bp--sm}, #{$bp--md} {
-  .hero {
-    margin: ($margin--main * 2) 0;
-  }
-
   .hero h1 {
     text-align: center;
-  }
-
-  .main > .hero:first-child {
-    margin-top: 0;
   }
 
   .hero__content {
@@ -33,11 +30,7 @@
 
 @media #{$bp--lg}, #{$bp--xl} {
   .hero {
-    align-items: center;
-    display: flex;
-    overflow-x: hidden;
-    position: relative;
-    width: 100vw;
+    height: 100%;
   }
 
   .hero__content {
@@ -87,16 +80,6 @@
     .hero__display {
       justify-content: flex-start;
     }
-  }
-}
-
-@media #{$bp--lg}, #{$bp--xl} {
-  .hero--height__half {
-    min-height: 50vh;
-  }
-
-  .hero--height__full {
-    min-height: 100vh;
   }
 }
 
@@ -172,9 +155,6 @@
 
 .hero--width__full {
   @media #{$bp--lg}, #{$bp--xl} {
-    .nav--fixed + .main > &:first-child {
-      margin-top: #{0 - $nav--height};
-    }
     .hero__display__media {
       width: 100%;
     }

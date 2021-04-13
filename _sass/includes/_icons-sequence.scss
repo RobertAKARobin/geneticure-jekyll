@@ -29,11 +29,7 @@ $line__margin: ($margin--main * 3);
 }
 
 .isq__item__content__title {
-  color: $font-color--highlight;
-  font-size: 14px;
-  font-weight: bold;
-  letter-spacing: 1px;
-  text-transform: uppercase;
+  @include cta;
 }
 
 &.isq--x {
@@ -107,5 +103,17 @@ $line__margin: ($margin--main * 3);
   .isq__item__content {
     padding: $margin--main 0;
     padding-left: $margin--main;
+  }
+}
+
+@media #{$bp--sm}, #{$bp--md} {
+  &.isq--y {
+    width: 100%;
+  }
+}
+
+@media #{$bp--lg}, #{$bp--xl} {
+  &.isq--y {
+    width: 50%;
   }
 }
