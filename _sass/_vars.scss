@@ -87,6 +87,14 @@ $z--overlay: 9999;
 
 $shadow--main: 0 1px 2px 0 rgba(0, 0, 0, 0.2); // stylelint-disable-line plugin/stylelint-no-indistinguishable-colors
 
+@mixin expand {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
 @mixin font--body () { // TODO3: Use __ instead of --
   font-family: $font-family--body;
   font-size: $font-size--base + px;
@@ -226,53 +234,10 @@ $shadow--main: 0 1px 2px 0 rgba(0, 0, 0, 0.2); // stylelint-disable-line plugin/
   color: $font-color--on-dark;
 }
 
-@mixin columns ($gutter: $margin--main) {
-  display: flex;
-  width: 100%;
-  
-  & > * {
-    box-sizing: border-box;
-    flex-basis: 100%;
-    flex-grow: 1;
-    flex-shrink: 1;
-  }
-  
-  & > :not(:first-child) {
-    padding-left: $gutter / 2;
-  }
-  
-  & > :not(:last-child) {
-    padding-right: $gutter / 2;
-  }
-}
-
-@mixin content {
+@mixin content--page {
   box-sizing: border-box;
   margin-left: auto;
   margin-right: auto;
-}
-
-@mixin content--sm {
-  @include content;
-}
-
-@mixin content--md {
-  @include content;
-
-  max-width: $width--screen--md;
-  width: 100%;
-}
-
-@mixin content--lg {
-  @include content;
-
-  max-width: $width--screen--lg;
-  width: 100%;
-}
-
-@mixin content--page {
-  @include content;
-
   max-width: $width--screen--xl;
   padding-left: $margin--main;
   padding-right: $margin--main;

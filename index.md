@@ -7,12 +7,12 @@ title: Test
 Our _algorithms_<br>
 use cutting-edge _research_<br>
 to turn your _DNA_<br>
-into a _**treatment for hypertension.**_<br>
+into a _**treatment for hypertension.**_
 
 <a class="button button--transparent--on-dark" href="#">Get a test kit</a>
 <a class="button button--transparent--on-dark" href="#">Use our API</a>
 {% endcapture %}
-{% include herotext.html content=tagline height='full' img_alt='Lab with Geneticure test kit' img_src='/assets/img/bg/lab-kit.jpg' %}
+{% include hero.html content=tagline height='full' img_alt='Lab with Geneticure test kit' img_src='/assets/img/bg/lab-kit.jpg' img_style='object-fit: cover; object-position: 75% bottom' overlay='text' width='full' %}
 
 {% capture product_intro %}
 # Prescriptions for your body.<br>_Decisions from your DNA._
@@ -23,7 +23,7 @@ Each Geneticure test kit contains two sterile cheek swabs, and a prepaid envelop
 
 <a class="button button--low" href="#">Get a test kit</a>
 {% endcapture %}
-{% include hero.html content=product_intro align='left' fit='contain' margins=true overlay='block' width='half' img_alt='Geneticure kit' img_src='/assets/img/kit-w-contents.jpg' %}
+{% include hero.html content=product_intro align='left' margins=true overlay='block' img_alt='Geneticure kit' img_src='/assets/img/kit-w-contents.jpg' img_style='object-fit: contain; width: 50%' %}
 
 {% capture product_sequence %}
 how_to_reg | Register | Register your kit on the Geneticure website. <a class="material-icons" href="#">launch</a>
@@ -61,7 +61,7 @@ get_app | Release | You receive an e-mail notification that your report is avail
 
 <a class="button button--high" href="#">Get in touch</a>
 {% endcapture %}
-{% include hero.html content=for_whom align='right' fit='cover' overlay='float' height='full' width='full' img_alt='Geneticure' img_style='object-position: left' img_src='/assets/img/bg/doctor-consult.jpg' %}
+{% include hero.html content=for_whom align='right' overlay='float' height='full' img_alt='Geneticure' img_style='object-position: left' img_src='/assets/img/bg/doctor-consult.jpg' img_style='width: 100%' %}
 
 {% capture research %}
 <div id="research"></div>
@@ -111,6 +111,5 @@ get_app | Release | You receive an e-mail notification that your report is avail
 <cite>Investigating the Use of Genetics to Guide Pharmacologic Therapy for Hypertension.</cite> Clinicaltrials.gov identifier: NCT02988245. Completed.
 
 <cite>Association Between a Genetic Algorithm to Predict Hypertension Therapy and Response to Treatment.</cite> Clinicaltrials.gov identifier: NCT03292900. Completed.
-
 {% endcapture %}
-{% include text.html content=research %}
+{% include section.html content=research type='text' %}

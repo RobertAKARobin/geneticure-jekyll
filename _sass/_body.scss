@@ -4,7 +4,6 @@
   flex-direction: column;
   max-width: 100%;
   min-height: 100vh;
-  overflow-x: hidden;
   width: 100vw;
 }
 
@@ -15,25 +14,7 @@
 .main {
   @include content--page;
 
-  align-items: center;
-  display: flex;
-  flex-direction: column;
   flex-grow: 1;
-  justify-content: center;
-  margin-top: $margin--main;
-  width: 100%;
-}
-
-.content--sm {
-  @include content--sm;
-}
-
-.content--md {
-  @include content--md;
-}
-
-.content--lg {
-  @include content--lg;
 }
 
 .footer {
@@ -43,19 +24,6 @@
   padding-top: $margin--main;
 }
 
-.devmode {
-  color: #f00;
-  opacity: 0.5;
-  padding: 0 $margin--main;
-  position: fixed;
-  top: 0;
-  right: 0;
-}
-
-.devmode:hover {
-  opacity: 0;
-}
-
 .nav {
   box-sizing: border-box;
   position: relative;
@@ -63,9 +31,9 @@
 }
 
 .nav--fixed {
-  background: #fff;
+  background: rgba(255, 255, 255, 0.92);
   left: 0;
-  position: sticky;
+  position: fixed;
   top: 0;
   transition: background 0.2s;
   width: 100%;
@@ -79,6 +47,13 @@
   margin-top: 0;
 }
 
+.nav__links > * {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 @media #{$bp--sm} {
   .nav {
     border-bottom: 2px solid $color--brand;
@@ -89,15 +64,12 @@
     flex-direction: column;
   }
 
-  .nav__home {
-    display: flex;
-    justify-content: center;
-    padding-top: $margin--main;
-  }
-
   .nav__logo {
+    box-sizing: border-box;
     display: block;
-    height: calc(#{$nav--height} - (#{$margin--main} * 2));
+    height: calc(#{$nav--height} - #{$margin--main});
+    margin: 0 auto;
+    padding-top: $margin--main;
   }
 
   .nav__links {
@@ -107,7 +79,8 @@
   }
 
   .nav__links > * {
-    padding: $margin--main $margin--main / 2;
+    padding-bottom: $margin--main;
+    padding-top: $margin--main;
   }
 }
 
@@ -131,7 +104,7 @@
   }
 
   .nav__links > * {
-    padding: $margin--main;
+    height: $nav--height;
   }
 
   .nav__home {
@@ -146,9 +119,16 @@
   }
 }
 
-@media #{$bp--md} {
+@media #{$bp--sm}, #{$bp--md} {
   .nav__links > * {
     padding-left: ($margin--main / 2);
     padding-right: ($margin--main / 2);
+  }
+}
+
+@media #{$bp--lg}, #{$bp--xl} {
+  .nav__links > * {
+    padding-left: $margin--main;
+    padding-right: $margin--main;
   }
 }

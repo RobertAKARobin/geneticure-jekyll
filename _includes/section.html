@@ -1,3 +1,7 @@
 <section class="section {% if include.height %}section--height__{{ include.height }}{% endif %}">
-	{{ include.content }}
+	{% if include.type == 'text' %}
+		{% include text.html %}
+	{% else %}
+		{{ include.content }}
+	{% endif %}
 </section>

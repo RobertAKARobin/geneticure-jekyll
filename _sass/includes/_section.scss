@@ -3,40 +3,29 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top: 100px;
-  overflow-x: hidden;
   position: relative;
-  width: 100vw;
 }
 
-@media #{$bp--sm}, #{$bp--md} {
+.nav--fixed + .main > .section:first-child {
+  margin-top: 0;
+}
+
+@media #{$bp--sm} {
   .section {
-    margin: ($margin--main * 2) 0;
-  }
-
-  .main > .section:first-child {
-    margin-top: 0;
+    margin-top: $margin--main * 2;
   }
 }
 
-@media #{$bp--lg}, #{$bp--xl} {
-  .main > .section:first-child {
-    margin-top: #{0 - $nav--height};
+@media #{$bp--md}, #{$bp--lg}, #{$bp--xl} {
+  .section {
+    margin-top: 80px;
   }
-  
-  .section--height__half {
-    min-height: 50vh;
+}
 
-    & + & {
-      margin-top: 0;
-    }
-  }
+.section--height__full {
+  min-height: 100vh;
 
-  .section--height__full {
-    height: 100vh;
-
-    & + & {
-      margin-top: 0;
-    }
+  & + & {
+    margin-top: 0;
   }
 }
