@@ -17,7 +17,7 @@
 .hero__content {
   box-sizing: border-box;
   position: relative;
-  z-index: $z--hero__overlay;
+  z-index: $z--content__overlay;
 }
 
 .hero__display > * {

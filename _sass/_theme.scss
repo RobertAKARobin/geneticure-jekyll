@@ -288,7 +288,7 @@ hr {
   padding: ($margin--main) / 2 0;
   position: absolute;
   right: 0;
-  z-index: $z--show-password;
+  z-index: $z--content__overlay;
 }
 
 [data-password-toggle=hidden]::after {
