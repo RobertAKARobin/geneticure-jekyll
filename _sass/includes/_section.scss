@@ -38,3 +38,23 @@
     min-height: calc(100vh - #{$nav--height});
   }
 }
+
+@media #{$bp--md}, #{$bp--lg}, #{$bp--xl} {
+  .section__columns {
+    align-items: center;
+    box-sizing: content-box;
+    display: flex;
+    width: calc(100% + #{$margin--main});
+  }
+  
+  .section__columns > * {
+    flex-basis: 100%;
+    flex-grow: 1;
+    margin: ($margin--main / 2);
+  }
+
+  .section__columns > img {
+    order: 999;
+    width: 0;
+  }
+}

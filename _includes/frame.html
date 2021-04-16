@@ -1,4 +1,6 @@
-<div class="frame frame--{{ include.type|default:'laptop' }}">
-	<img class="frame__frame" src="/assets/img/{{ include.type|default:'laptop' }}-frame.svg" alt="{{ include.type }} frame" />
-	<img class="frame__content" src="{{ include.src }}" alt="{{ include.alt }}" />
+<div>
+	<div class="frame frame--{{ include.type|default:'laptop' }}">
+		<img class="frame__frame" src="/assets/img/{{ include.type|default:'laptop' }}-frame.svg" alt="{{ include.type }} frame" />
+		{% include img.html %}
+	</div>
 </div>
