@@ -1,5 +1,6 @@
 .section {
   align-items: center;
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -7,6 +8,7 @@
 }
 
 .nav--fixed + .main > .section:first-child {
+  border-top: $nav--height solid transparent;
   margin-top: 0;
 }
 
