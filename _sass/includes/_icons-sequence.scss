@@ -4,6 +4,10 @@ $bubble__radius: 5px;
 $line__border: 3px;
 $line__margin: ($margin--main * 3);
 
+.isq__item {
+  list-style-type: none;
+}
+
 .isq__item__icon {
   border: 0 solid $isq__border-color;
   position: relative;
@@ -32,15 +36,13 @@ $line__margin: ($margin--main * 3);
   @include cta;
 }
 
-&.isq--x {
-  & {
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: horizontal;
-    overflow-x: scroll;
-    width: 100vw;
-  }
-  
+.isq--x {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: horizontal;
+  overflow-x: scroll;
+  width: 100vw;
+
   .isq__item {
     flex-shrink: 0;
     border: 0 solid transparent;
@@ -76,12 +78,13 @@ $line__margin: ($margin--main * 3);
   }
 }
 
-&.isq--y {
-  & {
-    display: table;
-  }
+.isq--y {
+  display: table;
+  width: 100%;
 
   .isq__item {
+    border: 0 solid transparent;
+    border-width: ($margin--main / 2) 0;
     display: table-row;
   }
 
@@ -104,16 +107,8 @@ $line__margin: ($margin--main * 3);
     padding: $margin--main 0;
     padding-left: $margin--main;
   }
-}
 
-@media #{$bp--sm}, #{$bp--md} {
-  &.isq--y {
-    width: 100%;
-  }
-}
-
-@media #{$bp--lg}, #{$bp--xl} {
-  &.isq--y {
-    width: 50%;
+  .isq__item__content__title {
+    margin-bottom: ($margin--main / 2);
   }
 }

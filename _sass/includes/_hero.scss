@@ -86,7 +86,7 @@
 .hero--overlay__float {
   @media #{$bp--sm}, #{$bp--md} {  
     .hero__content {
-      padding: $margin--main;
+      padding: $margin--main * 2 $margin--main;
     }
 
     .hero__content h1 {
@@ -112,16 +112,21 @@
       @include expand;
     }
 
+    &.hero--align__center {
+      justify-content: center;
+
+      .hero__content {
+        border-left-width: 0;
+        border-right-width: 0;
+      }
+    }
+
     &.hero--align__right {
       justify-content: flex-end;
 
       .hero__content {
         border-left-width: 0;
-        padding-right: 0;
-      }
-
-      .hero__display > * {
-        float: left;
+        padding-right: $margin--main;
       }
     }
 
@@ -130,11 +135,7 @@
 
       .hero__content {
         border-right-width: 0;
-        padding-left: 0;
-      }
-
-      .hero__display > * {
-        float: right;
+        padding-left: $margin--main;
       }
     }
   }
@@ -142,11 +143,13 @@
 
 .hero--overlay__block {
   @media #{$bp--lg}, #{$bp--xl} {
-    align-items: stretch;
     display: flex;
 
     .hero__content {
       align-self: stretch;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
     }
   }
 }

@@ -12,7 +12,7 @@ into a _**treatment for hypertension.**_
 <a class="button button--transparent--on-dark" href="#">Get a test kit</a>
 <a class="button button--transparent--on-dark" href="#">Use our API</a>
 {% endcapture %}
-{% include hero.html content=tagline height='full' img_alt='Lab with Geneticure test kit' img_src='/assets/img/bg/lab-kit.jpg' img_style='object-fit: cover; object-position: 75% bottom' overlay='text' width='full' %}
+{% include hero.html content=tagline height='full' overlay='text' img_alt='Lab with Geneticure test kit' img_src='/assets/img/bg/lab-kit.jpg' img_style='object-fit: cover; object-position: 75% bottom' %}
 
 {% capture product_intro %}
 # Prescriptions for your body.<br>_Decisions from your DNA._
@@ -27,8 +27,15 @@ Each Geneticure test kit contains two sterile cheek swabs, and a prepaid envelop
   {% include img.html img_alt='Geneticure kit' img_src='/assets/img/kit-w-contents.jpg' img_style='object-fit: contain' %}
   {% include text.html content=product_intro %}
 {% endcapture %}
-{% include section.html columns=true content=product_intro_section %}
+{% include section.html columns=true content=product_intro_section reverse=true %}
 
+{% capture how_it_works %}
+# How it works
+
+Each Geneticure test kit contains two sterile cheek swabs, and a prepaid envelope to mail them to us. [Register your kit](#) on this website, swab your cheek, and drop your envelope in the mail. You'll be notified in 10-15 business days that your report is ready.
+
+<a class="button button--low" href="#">Get a test kit</a>
+{% endcapture %}
 {% capture product_sequence %}
 how_to_reg | Register | Register your kit on the Geneticure website. <a class="material-icons" href="#">launch</a>
 medical_services | Requisition | A physician confirms the Geneticure test is suitable for you.
@@ -39,14 +46,10 @@ assignment | Analyze | Our proprietary algorithms produce unique recommendations
 assignment_turned_in | Review | Your report is double-checked by the Geneticure team.
 get_app | Release | You receive an e-mail notification that your report is available for download.
 {% endcapture %}
-{% capture product_sequence_section %}
-  {% include icons-sequence.html content=product_sequence direction='y' %}
-  <div>
-    {% include frame.html type='laptop' img_alt='Report' img_src='/assets/img/report.png' %}
-    {% include frame.html type='phone' img_alt='Report' img_src='/assets/img/report.png' %}
-  </div>
+{% capture product_sequence %}
+  {% include icons-sequence.html content=product_sequence direction='x' %}
 {% endcapture %}
-{% include section.html columns=true content=product_sequence_section %}
+{% include section.html content=product_sequence disable_markdown=true overlay='float' %}
 
 {% capture for_whom %}
 # Who is it for?
@@ -69,7 +72,10 @@ get_app | Release | You receive an e-mail notification that your report is avail
 
 <a class="button button--high" href="#">Get in touch</a>
 {% endcapture %}
-{% include hero.html content=for_whom align='right' overlay='float' height='full' img_alt='Geneticure' img_style='object-position: left' img_src='/assets/img/bg/doctor-consult.jpg' img_style='width: 100%' %}
+{% capture for_whom %}
+  {% include text.html content=for_whom %}
+{% endcapture %}
+{% include hero.html content=for_whom align='right' overlay='float' height='full' img_alt='Geneticure' img_style='object-position: left' img_src='/assets/img/bg/doctor-consult.jpg' %}
 
 {% capture research %}
 <div id="research"></div>

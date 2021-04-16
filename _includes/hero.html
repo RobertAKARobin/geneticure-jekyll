@@ -16,9 +16,11 @@
 	</div>
 
 	<div class="hero__content">
-		<div class="text">
-			{{ include.content|markdownify }}
-		</div>
+		{% if include.disable_markdown == true %}
+			{{ include.content }}
+		{% else %}
+			{% include text.html %}
+		{% endif %}
 	</div>
 </div>
 {% endcapture %}

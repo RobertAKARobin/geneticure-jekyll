@@ -1,4 +1,4 @@
-<section class="section {% if include.height %}section--height__{{ include.height }}{% endif %}">
+<section class="section {% if include.height %}section--height__{{ include.height }}{% endif %}{% if include.reverse %}section--reverse{% endif %}">
 	{% if include.columns %}<div class="section__columns">{% endif %}
 	{% if include.type == 'text' %}
 		{% include text.html %}

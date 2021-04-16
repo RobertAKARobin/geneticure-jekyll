@@ -39,12 +39,27 @@
   }
 }
 
+@media #{$bp--sm} {
+  .section__columns > * {
+    padding-bottom: ($margin--main * 2);
+    padding-top: ($margin--main * 2);
+  }
+
+  .section__columns > img {
+    width: 100%;
+  }
+}
+
 @media #{$bp--md}, #{$bp--lg}, #{$bp--xl} {
   .section__columns {
     align-items: center;
     box-sizing: content-box;
     display: flex;
     width: calc(100% + #{$margin--main});
+
+    .section--reverse & {
+      flex-direction: row-reverse;
+    }
   }
   
   .section__columns > * {
@@ -54,7 +69,6 @@
   }
 
   .section__columns > img {
-    order: 999;
     width: 0;
   }
 }
