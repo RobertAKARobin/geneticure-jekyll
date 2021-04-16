@@ -246,7 +246,6 @@ $shadow--main: 0 1px 2px 0 rgba(0, 0, 0, 0.2); // stylelint-disable-line plugin/
 
 @mixin cta () {
   @include font--cta;
-  cursor: pointer;
 
   @include get__disabled {
     color: $font-color--lowlight;
