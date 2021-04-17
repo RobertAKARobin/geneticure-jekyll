@@ -1,8 +1,11 @@
+$gutter: $margin--main;
+
 @media #{$bp--md}, #{$bp--lg}, #{$bp--xl} {
   .columns {
     box-sizing: content-box;
     display: flex;
-    width: calc(100% + #{$margin--main}); // Accounts for margins between columns
+    justify-content: center;
+    width: 100%;
   }
 
   .columns--reverse {
@@ -20,8 +23,12 @@
   .columns > * {
     flex-basis: 100%;
     flex-grow: 1;
-    margin: ($margin--main / 2);
     position: relative;
+  }
+
+  .columns:not(.columns--reverse) > :not(:last-child),
+  .columns.columns--reverse > :not(:first-child) {
+    margin-right: $gutter;
   }
 
   .columns > img {

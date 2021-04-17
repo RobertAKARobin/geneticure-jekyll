@@ -48,12 +48,18 @@ assignment_turned_in | Review | Your report is double-checked by the Geneticure 
 get_app | Release | You receive an e-mail notification that your report is available for download.
 {% endcapture %}
 
-{% capture report_preview %}
-  {% include frame.html type='laptop' img_alt='Geneticure report' img_src='/assets/img/report.png' %}
-  {% include frame.html type='tablet' img_alt='Geneticure report' img_src='/assets/img/report.png' %}
+{% capture report_explanation %}
+# Foo bar
+
+foo bar
 {% endcapture %}
 
-{% capture report_description %}
+{% capture report_preview %}
+  {% include frame.html type='tablet' img_alt='Geneticure report' img_src='/assets/img/report.png' %}
+  {% include text.html content=report_explanation %}
+{% endcapture %}
+
+{% capture report %}
 # A unique prescription plan _just for you._
 
 Until now doctors have had to treat high blood pressure with trial-and-error: if one medication doesn't work, try the next one. Lather, rinse, repeat.
@@ -62,15 +68,12 @@ Until now doctors have had to treat high blood pressure with trial-and-error: if
 
 **Geneticure's test** looks at 17 genotypes and 11 genes to determine how your body responds to each blood pressure medication. You'll receive a personalized report that helps your doctor prescribe the right medication from the start.
 
-{% include columns.html content=report_preview %}
-
-We check the responsiveness of 3 of your body's organ systems:
-
+{% include columns.html content=report_preview reverse=true %}
 {% endcapture %}
 
 {% capture product_sequence %}
   {% include icons-sequence.html content=sequence_individual direction='y' highlight_first=true %}
-  {% include text.html content=report_description %}
+  {% include text.html content=report %}
 {% endcapture %}
 {% include section.html valign='top' columns=true content=product_sequence disable_markdown=true overlay='float' %}
 
