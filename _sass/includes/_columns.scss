@@ -1,0 +1,30 @@
+@media #{$bp--md}, #{$bp--lg}, #{$bp--xl} {
+  .columns {
+    box-sizing: content-box;
+    display: flex;
+    width: calc(100% + #{$margin--main}); // Accounts for margins between columns
+  }
+
+  .columns--reverse {
+    flex-direction: row-reverse;
+  }
+
+  .columns--valign__center {
+    align-items: center;
+  }
+
+  .columns--valign__top {
+    align-items: flex-start;
+  }
+  
+  .columns > * {
+    flex-basis: 100%;
+    flex-grow: 1;
+    margin: ($margin--main / 2);
+    position: relative;
+  }
+
+  .columns > img {
+    width: 0;
+  }
+}

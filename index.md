@@ -7,7 +7,7 @@ title: Test
 Our _algorithms_<br>
 use cutting-edge _research_<br>
 to turn your _DNA_<br>
-into a _**treatment for hypertension.**_
+into a _**treatment for high blood pressure.**_
 
 <a class="button button--transparent--on-dark" href="#">Get a test kit</a>
 <a class="button button--transparent--on-dark" href="#">Use our API</a>
@@ -49,14 +49,28 @@ get_app | Release | You receive an e-mail notification that your report is avail
 {% endcapture %}
 
 {% capture report_preview %}
-# What's in your personalized report?
+  {% include frame.html type='laptop' img_alt='Geneticure report' img_src='/assets/img/report.png' %}
+  {% include frame.html type='phone' img_alt='Geneticure report' img_src='/assets/img/report.png' %}
+{% endcapture %}
 
-{% include frame.html type='laptop' img_alt='Geneticure report' img_src='/assets/img/report.png' %}
+{% capture report_description %}
+# A unique prescription plan _just for you._
+
+Until now doctors have had to treat high blood pressure with trial-and-error: if one medication doesn't work, try the next one. Lather, rinse, repeat.
+
+**Other genetic tests** can tell doctors how much medication will get into your bloodstream, but not how your body will react to it.
+
+**Geneticure's test** looks at 17 genotypes and 11 genes to determine how your body responds to each blood pressure medication. You'll receive a personalized report that helps your doctor prescribe the right medication from the start.
+
+{% include columns.html content=report_preview %}
+
+We check the responsiveness of 3 of your body's organ systems:
+
 {% endcapture %}
 
 {% capture product_sequence %}
   {% include icons-sequence.html content=sequence_individual direction='y' highlight_first=true %}
-  {% include text.html content=report_preview %}
+  {% include text.html content=report_description %}
 {% endcapture %}
 {% include section.html valign='top' columns=true content=product_sequence disable_markdown=true overlay='float' %}
 

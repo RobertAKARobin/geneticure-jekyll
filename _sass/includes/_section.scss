@@ -49,33 +49,3 @@
     width: 100%;
   }
 }
-
-@media #{$bp--md}, #{$bp--lg}, #{$bp--xl} {
-  .section__columns {
-    box-sizing: content-box;
-    display: flex;
-    width: calc(100% + #{$margin--main});
-
-    .section--reverse & {
-      flex-direction: row-reverse;
-    }
-
-    .section--valign__center & {
-      align-items: center;
-    }
-
-    .section--valign__top & {
-      align-items: flex-start;
-    }
-  }
-  
-  .section__columns > * {
-    flex-basis: 100%;
-    flex-grow: 1;
-    margin: ($margin--main / 2);
-  }
-
-  .section__columns > img {
-    width: 0;
-  }
-}

@@ -1,9 +1,11 @@
-<section class="section section--valign__{{ include.valign|default:'center' }} {% if include.height %}section--height__{{ include.height }}{% endif %}{% if include.reverse %}section--reverse{% endif %}">
-	{% if include.columns %}<div class="section__columns">{% endif %}
-	{% if include.type == 'text' %}
-		{% include text.html %}
+<section class="section{% if include.height %} section--height__{{ include.height }}{% endif %}">
+	{% if include.columns %}
+		{% include columns.html %}
 	{% else %}
-		{{ include.content }}
+		{% if include.type == 'text' %}
+			{% include text.html %}
+		{% else %}
+			{{ include.content }}
+		{% endif %}
 	{% endif %}
-	{% if include.columns %}</div>{% endif %}
 </section>
