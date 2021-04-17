@@ -9,10 +9,10 @@
 
 .main > .section:first-child {
   margin-top: 0;
-}
 
-.nav--fixed + .main > .section:first-child {
-  border-top: $nav--height solid transparent;
+  .nav--fixed + & {
+    border-top: $nav--height solid transparent;
+  }
 }
 
 @media #{$bp--sm} {
@@ -52,13 +52,20 @@
 
 @media #{$bp--md}, #{$bp--lg}, #{$bp--xl} {
   .section__columns {
-    align-items: center;
     box-sizing: content-box;
     display: flex;
     width: calc(100% + #{$margin--main});
 
     .section--reverse & {
       flex-direction: row-reverse;
+    }
+
+    .section--valign__center & {
+      align-items: center;
+    }
+
+    .section--valign__top & {
+      align-items: flex-start;
     }
   }
   

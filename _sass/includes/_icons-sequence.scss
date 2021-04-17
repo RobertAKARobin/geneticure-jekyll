@@ -11,11 +11,12 @@ $line__margin: ($margin--main * 3);
 
 .isq__item__icon {
   border: 0 solid $isq__border-color;
+  color: $color--lowlight;
   position: relative;
 }
 
 .isq__item__icon .material-icons {
-  color: $color--lowlight;
+  color: inherit;
   font-size: 48px;
 }
 
@@ -35,6 +36,24 @@ $line__margin: ($margin--main * 3);
 
 .isq__item__content__title {
   @include cta;
+}
+
+.isq__item__content__title strong {
+  color: $font-color--highlight;
+}
+
+.isq--highlight-first {
+  .isq__item:first-child .isq__item__icon {
+    color: $font-color--highlight;
+  }
+
+  .isq__item:first-child .isq__item__icon:after {
+    display: none;
+  }
+
+  .isq__item:first-child .isq__item__content__title {
+    color: $font-color--highlight;
+  }
 }
 
 .isq--x {
@@ -129,7 +148,7 @@ $line__margin: ($margin--main * 3);
     padding-left: $margin--main;
   }
 
-  .isq__item__content__title {
-    margin-bottom: ($margin--main / 2);
+  .isq__item__content p {
+    margin: ($margin--main / 2) 0;
   }
 }

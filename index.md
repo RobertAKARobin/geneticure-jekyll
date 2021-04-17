@@ -36,7 +36,8 @@ Each Geneticure test kit contains two sterile cheek swabs, and a prepaid envelop
 
 <a class="button button--low" href="#">Get a test kit</a>
 {% endcapture %}
-{% capture product_sequence %}
+{% capture sequence_individual %}
+keyboard_arrow_down | How does it work?
 how_to_reg | Register | Register your kit on the Geneticure website. <a class="material-icons" href="#">launch</a>
 medical_services | Requisition | A physician confirms the Geneticure test is suitable for you.
 face | Collect | Take a specimen from your cheek using the swab in your kit.
@@ -46,10 +47,18 @@ assignment | Analyze | Our proprietary algorithms produce unique recommendations
 assignment_turned_in | Review | Your report is double-checked by the Geneticure team.
 get_app | Release | You receive an e-mail notification that your report is available for download.
 {% endcapture %}
-{% capture product_sequence %}
-  {% include icons-sequence.html content=product_sequence direction='x' %}
+
+{% capture report_preview %}
+# What's in your personalized report?
+
+{% include frame.html type='laptop' img_alt='Geneticure report' img_src='/assets/img/report.png' %}
 {% endcapture %}
-{% include section.html content=product_sequence disable_markdown=true overlay='float' %}
+
+{% capture product_sequence %}
+  {% include icons-sequence.html content=sequence_individual direction='y' highlight_first=true %}
+  {% include text.html content=report_preview %}
+{% endcapture %}
+{% include section.html valign='top' columns=true content=product_sequence disable_markdown=true overlay='float' %}
 
 {% capture for_whom %}
 # Who is it for?
