@@ -50,7 +50,7 @@ get_app | Release | You receive an e-mail notification that your report is avail
 
 {% capture report_preview %}
   {% include frame.html type='laptop' img_alt='Geneticure report' img_src='/assets/img/report.png' %}
-  {% include frame.html type='phone' img_alt='Geneticure report' img_src='/assets/img/report.png' %}
+  {% include frame.html type='tablet' img_alt='Geneticure report' img_src='/assets/img/report.png' %}
 {% endcapture %}
 
 {% capture report_description %}

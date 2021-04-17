@@ -1,3 +1,5 @@
+$frame__img: "img:not(.frame__frame)";
+
 .frame {
   position: relative;
   margin: 0 auto;
@@ -10,7 +12,7 @@
   width: 100%;
 }
 
-.frame img:not(.frame__frame) {
+.frame #{$frame__img} {
   object-fit: cover;
   object-position: top;
   position: absolute;
@@ -24,7 +26,7 @@
   width: percentage($width__inner / $width__outer);
 }
 
-.frame--laptop img:not(.frame__frame) {
+.frame--laptop #{$frame__img} {
   @include place(
     $height__inner: 46,
     $height__outer: 80,
@@ -34,7 +36,7 @@
   );
 }
 
-.frame--phone img:not(.frame__frame) {
+.frame--tablet #{$frame__img} {
   @include place(
     $height__inner: 58.24,
     $height__outer: 80,
