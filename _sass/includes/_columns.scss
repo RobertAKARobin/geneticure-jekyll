@@ -1,5 +1,11 @@
 $gutter: $margin--main;
 
+@media #{$bp--sm} {
+  .columns > img {
+    width: 100%;
+  }
+}
+
 @media #{$bp--md}, #{$bp--lg}, #{$bp--xl} {
   .columns {
     box-sizing: content-box;
