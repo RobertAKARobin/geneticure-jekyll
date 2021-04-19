@@ -18,6 +18,30 @@
   box-sizing: border-box;
   position: relative;
   z-index: $z--content__overlay;
+
+  @media #{$bp--lg}, #{$bp--xl} {
+    .hero--width__fit & {
+      width: auto;
+    }
+
+    .hero--width__full & {
+      width: calc(#{$width--screen--xl} + ((100vw - #{$width--screen--xl}) / 2) - #{$margin--main});
+    }
+
+    .hero--width__half & {
+      width: 50%;
+    }
+  }
+}
+
+.hero__display {
+  @each $bp__name, $bp__size in $bps {
+    @media #{$bp__size} {
+      .hero--hide__#{$bp__name} & {
+        display: none;
+      }
+    }
+  }
 }
 
 .hero__display > * {
@@ -105,7 +129,6 @@
     .hero__content {
       background-color: rgba(255, 255, 255, 0.93);
       padding: ($margin--main * 3);
-      width: 50%;
     }
 
     .hero__display {

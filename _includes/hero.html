@@ -1,5 +1,5 @@
 {% capture content %}
-<div class="hero hero--align__{{ include.align|default:'left' }} hero--overlay__{{ include.overlay|default:'float' }} {% if include.margins %}hero--margins{% endif %}">
+<div class="hero hero--align__{{ include.align|default:'left' }} hero--overlay__{{ include.overlay|default:'float' }} hero--width__{{ include.width|default:'full'}}{% if include.margins %} hero--margins{% endif %}{% if include.hide %} hero--hide{% assign hide_sizes=include.hide|split:',' %}{% for hide_size in hide_sizes %} hero--hide__{{ hide_size }}{% endfor %}{% endif %}">
 	<div class="hero__display">
 		{% if include.display %}
 			{{ include.display }}

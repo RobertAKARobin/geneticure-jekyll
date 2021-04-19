@@ -29,14 +29,7 @@ Each Geneticure test kit contains two sterile cheek swabs, and a prepaid envelop
 {% endcapture %}
 {% include section.html columns=true content=product_intro_section reverse=true %}
 
-{% capture how_it_works %}
-# How it works
-
-Each Geneticure test kit contains two sterile cheek swabs, and a prepaid envelope to mail them to us. [Register your kit](#) on this website, swab your cheek, and drop your envelope in the mail. You'll be notified in 10-15 business days that your report is ready.
-
-<a class="button button--low" href="#">Get a test kit</a>
-{% endcapture %}
-{% capture sequence_individual %}
+{% capture product_sequence %}
 keyboard_arrow_down | How does it work?
 how_to_reg | Register | Register your kit on the Geneticure website. <a class="material-icons" href="#">launch</a>
 medical_services | Requisition | A physician confirms the Geneticure test is suitable for you.
@@ -47,35 +40,27 @@ assignment | Analyze | Our proprietary algorithms produce unique recommendations
 assignment_turned_in | Review | Your report is double-checked by the Geneticure team.
 get_app | Release | You receive an e-mail notification that your report is available for download.
 {% endcapture %}
-
-{% capture report_explanation %}
-# Foo bar
-
-foo bar
+{% capture product_sequence_section %}
+  {% include icons-sequence.html content=product_sequence direction='y' highlight_first=true %}
 {% endcapture %}
+{% include hero.html content=product_sequence_section hide='sm,md' overlay='block' width='fit' img_src='/assets/img/bg/lab-techs.jpg' img_alt='Lab techs' %}
 
-{% capture report_preview %}
-  {% include frame.html type='tablet' img_alt='Geneticure report' img_src='/assets/img/report.png' %}
-  {% include text.html content=report_explanation %}
-{% endcapture %}
-
-{% capture report %}
+{% capture report_intro %}
 # A unique prescription plan _just for you._
 
-Until now doctors have had to treat high blood pressure with trial-and-error: if one medication doesn't work, try the next one. Lather, rinse, repeat.
+**Other genetic tests** can tell doctors how much medication will get into your bloodstream, but not how your body will react to it. Doctors have to treat high blood pressure with trial-and-error: if one medication doesn't work, try the next one.
 
-**Other genetic tests** can tell doctors how much medication will get into your bloodstream, but not how your body will react to it.
+**Geneticure's test** looks at 17 genotypes and 11 genes to determine how your body responds to each medication. Your personalized report helps your doctor prescribe the right medication from the start.
 
-**Geneticure's test** looks at 17 genotypes and 11 genes to determine how your body responds to each blood pressure medication. You'll receive a personalized report that helps your doctor prescribe the right medication from the start.
-
-{% include columns.html content=report_preview reverse=true %}
+![Cardiac](/assets/img/cardiac.svg) |  Cardiac | Controls how hard your heart beats
+![Renal](/assets/img/renal.svg) | Renal | Controls the absorption of sodium and water in your kidneys
+![Vascular](/assets/img/vascular.svg) | Vascular | Controls the tightening of blood vessels
 {% endcapture %}
-
-{% capture product_sequence %}
-  {% include icons-sequence.html content=sequence_individual direction='y' highlight_first=true %}
-  {% include text.html content=report %}
+{% capture report %}
+  {% include text.html content=report_intro %}
+  {% include frame.html type='tablet' img_alt='Geneticure report' img_src='/assets/img/report.png' %}
 {% endcapture %}
-{% include section.html valign='top' columns=true content=product_sequence disable_markdown=true overlay='float' %}
+{% include section.html columns=true content=report %}
 
 {% capture for_whom %}
 # Who is it for?

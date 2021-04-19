@@ -144,7 +144,7 @@ $line__margin: ($margin--main * 3);
   }
 
   .isq__item__content {
-    padding: $margin--main 0;
+    padding: ($margin--main / 2) 0;
     padding-left: $margin--main;
   }
 
