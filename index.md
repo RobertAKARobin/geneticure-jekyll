@@ -82,6 +82,12 @@ Your report describes the responsiveness of 3 of your body's main organ systems:
 
 ---
 
+## _Genetic Test Providers._
+
+**Our RESTful API adds our patented algorithm to your product line.** Generate reports whitelabeled with your company's own branding, or consume our data using a simple JSON interface and add it to your own templates.
+
+---
+
 ## _Employers._
 
 **Increase your employees' quality of life while decreasing your healthcare costs.** Employees with cardiovascular disease (including high blood pressure) cost employers _an extra $1,100 per year in lost productivity alone_<sup>*</sup>, compared with healthier employees. With Geneticure, you may be able to significantly reduce your company’s chronic disease spending by an estimated 16x ROI or _$1409 per year per employee_.<sup>**</sup>
@@ -92,6 +98,26 @@ Your report describes the responsiveness of 3 of your body's main organ systems:
   {% include text.html content=for_whom %}
 {% endcapture %}
 {% include hero.html align='right' content=for_whom height='full' overlay='float' width='half' img_alt='Geneticure' img_style='object-position: left' img_src='/assets/img/bg/doctor-consult.jpg' %}
+
+{% capture about_us %}
+## Built with love in Minnesota.
+
+For 10 years we’ve put science and innovation to work, taking personalized medicine to the next level. Our unique focus on the physiology and combinatorial pharmacogenomics specific to each disease is unparalleled in a field of shotgun approaches to personalized medicine. Our first solution is helping to solve the trial-and-error approach in the leading preventable cause of death in the world: hypertension or high blood pressure. And we’re just getting started.
+
+<a class="button button--high" href="#">Get in touch</a>
+{% endcapture %}
+{% capture about_us %}
+  {% include text.html content=about_us %}
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d45904.882603545106!2d-92.49840832065428!3d44.02025457911051!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87f75f631adca1b1%3A0x9af7c3b31dbb04ce!2s4%203rd%20St%20SW%20%23305b%2C%20Rochester%2C%20MN%2055902!5e0!3m2!1sen!2sus!4v1618862134497!5m2!1sen!2sus" allowfullscreen="" loading="lazy"></iframe>
+{% endcapture %}
+{% include section.html columns=true content=about_us type='text' %}
+
+{% capture team %}
+## Our Team
+
+
+{% endcapture %}
+{% include section.html content=team type='text' %}
 
 {% capture research %}
 <div id="research"></div>

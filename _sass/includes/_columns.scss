@@ -4,6 +4,12 @@ $gutter: $margin--main;
   .columns > img {
     width: 100%;
   }
+
+  .columns > iframe {
+    height: 300px;
+    margin: $margin--main * 2 0;
+    width: 100%;
+  }
 }
 
 @media #{$bp--md}, #{$bp--lg}, #{$bp--xl} {
@@ -39,5 +45,10 @@ $gutter: $margin--main;
 
   .columns > img {
     width: 0;
+  }
+
+  .columns > iframe {
+    height: 400px;
+    margin: $margin--main * 3 0;
   }
 }
