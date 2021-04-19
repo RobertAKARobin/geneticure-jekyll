@@ -15,13 +15,8 @@ $line__margin: ($margin--main * 3);
   position: relative;
 }
 
-.isq__item__display img {
-  height: 48px;
-}
-
 .isq__item__display .material-icons {
   color: inherit;
-  font-size: 48px;
 }
 
 .isq__item__display:after {
@@ -40,6 +35,12 @@ $line__margin: ($margin--main * 3);
 
 .isq__item__content__title {
   @include cta;
+}
+
+.isq__item__content__title b {
+  color: $font-color--highlight;
+  display: block;
+  margin-top: .5rem;
 }
 
 .isq__item__content__title strong {
@@ -66,6 +67,12 @@ $line__margin: ($margin--main * 3);
   flex-direction: horizontal;
   overflow-x: scroll;
   width: 100vw;
+
+  &::-webkit-scrollbar {
+    -webkit-appearance: none;
+    height: 0;
+    width: 0;
+  }
 
   &:after {
     background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
@@ -104,6 +111,7 @@ $line__margin: ($margin--main * 3);
   
   .isq__item__display {
     border-bottom-width: $line__border;
+    height: 100px;
     padding-bottom: $margin--main;
     text-align: center;
   }
@@ -111,6 +119,16 @@ $line__margin: ($margin--main * 3);
   .isq__item__display:after {
     bottom: #{0px - $bubble__border - $bubble__radius - ($line__border / 2)};
     left: calc(50% - #{$bubble__border + $bubble__radius});
+  }
+
+  .isq__item__display .material-icons {
+    font-size: 48px;
+    line-height: 100px;
+  }
+
+  .isq__item__display img {
+    height: 100%;
+    margin: 0 auto;
   }
 
   .isq__item__content {
@@ -150,6 +168,14 @@ $line__margin: ($margin--main * 3);
   .isq__item__display:after {
     right: #{0px - $bubble__border - $bubble__radius - ($line__border / 2)};
     top: calc(50% - #{$bubble__border + $bubble__radius});
+  }
+
+  .isq__item__display img {
+    height: 48px;
+  }
+
+  .isq__item__display .material-icons {
+    font-size: 48px;
   }
 
   .isq__item__content {

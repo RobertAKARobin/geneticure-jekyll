@@ -104,7 +104,7 @@ Your report describes the responsiveness of 3 of your body's main organ systems:
 
 For 10 years we’ve put science and innovation to work, taking personalized medicine to the next level. Our unique focus on the physiology and combinatorial pharmacogenomics specific to each disease is unparalleled in a field of shotgun approaches to personalized medicine. Our first solution is helping to solve the trial-and-error approach in the leading preventable cause of death in the world: hypertension or high blood pressure. And we’re just getting started.
 
-<a class="button button--high" href="#">Get in touch</a>
+<a class="button button--high" href="#">Contact us</a>
 {% endcapture %}
 {% capture about_us %}
   {% include text.html content=about_us %}
@@ -113,16 +113,18 @@ For 10 years we’ve put science and innovation to work, taking personalized med
 {% include section.html columns=true content=about_us type='text' %}
 
 {% capture team %}
-## Our Team
-
-
+{% for person in site.data.team %}/assets/img/people/{{ person.img }} | {{ person.name }} <b>{{ person.title }}</b> | {{ person.text }}
+{% endfor %}
+{% endcapture %}
+{% capture team %}
+  {% include graphic-sequence.html content=team direction='x' highlight_first=true %}
 {% endcapture %}
 {% include section.html content=team type='text' %}
 
 {% capture research %}
 <div id="research"></div>
 
-## The Research
+## Our Research
 
 ### Presentations at National and International Meetings
 
