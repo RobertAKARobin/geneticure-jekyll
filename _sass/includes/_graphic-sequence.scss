@@ -9,18 +9,22 @@ $line__margin: ($margin--main * 3);
   list-style-type: none;
 }
 
-.isq__item__icon {
+.isq__item__display {
   border: 0 solid $isq__border-color;
   color: $color--lowlight;
   position: relative;
 }
 
-.isq__item__icon .material-icons {
+.isq__item__display img {
+  height: 48px;
+}
+
+.isq__item__display .material-icons {
   color: inherit;
   font-size: 48px;
 }
 
-.isq__item__icon:after {
+.isq__item__display:after {
   background: #fff;
   border: $bubble__border solid $isq__border-color;
   border-radius: 50%;
@@ -43,11 +47,11 @@ $line__margin: ($margin--main * 3);
 }
 
 .isq--highlight-first {
-  .isq__item:first-child .isq__item__icon {
+  .isq__item:first-child .isq__item__display {
     color: $font-color--highlight;
   }
 
-  .isq__item:first-child .isq__item__icon:after {
+  .isq__item:first-child .isq__item__display:after {
     display: none;
   }
 
@@ -98,13 +102,13 @@ $line__margin: ($margin--main * 3);
     border-right-width: calc((100vw - #{$isq__item__width}) / 2);
   }
   
-  .isq__item__icon {
+  .isq__item__display {
     border-bottom-width: $line__border;
     padding-bottom: $margin--main;
     text-align: center;
   }
 
-  .isq__item__icon:after {
+  .isq__item__display:after {
     bottom: #{0px - $bubble__border - $bubble__radius - ($line__border / 2)};
     left: calc(50% - #{$bubble__border + $bubble__radius});
   }
@@ -119,26 +123,31 @@ $line__margin: ($margin--main * 3);
 }
 
 .isq--y {
-  display: table;
   width: 100%;
 
   .isq__item {
-    border: 0 solid transparent;
-    border-width: ($margin--main / 2) 0;
-    display: table-row;
+    align-items: stretch;
+    display: flex;
+    margin: 0;
   }
 
   .isq__item > * {
-    display: table-cell;
     vertical-align: middle;
   }
 
-  .isq__item__icon {
+  .isq__item__display {
     border-right-width: $line__border;
+    box-sizing: border-box;
+    display: flex;
+    flex-basis: 80px;
+    flex-direction: column;
+    flex-grow: 0;
+    flex-shrink: 0;
+    justify-content: center;
     padding-right: $margin--main;
   }
 
-  .isq__item__icon:after {
+  .isq__item__display:after {
     right: #{0px - $bubble__border - $bubble__radius - ($line__border / 2)};
     top: calc(50% - #{$bubble__border + $bubble__radius});
   }
@@ -146,6 +155,7 @@ $line__margin: ($margin--main * 3);
   .isq__item__content {
     padding: ($margin--main / 2) 0;
     padding-left: $margin--main;
+    flex-grow: 1;
   }
 
   .isq__item__content p {

@@ -41,10 +41,15 @@ assignment_turned_in | Review | Your report is double-checked by the Geneticure 
 get_app | Release | You receive an e-mail notification that your report is available for download.
 {% endcapture %}
 {% capture product_sequence_section %}
-  {% include icons-sequence.html content=product_sequence direction='y' highlight_first=true %}
+  {% include graphic-sequence.html content=product_sequence direction='y' highlight_first=true %}
 {% endcapture %}
-{% include hero.html content=product_sequence_section hide='sm,md' overlay='block' width='fit' img_src='/assets/img/bg/lab-techs.jpg' img_alt='Lab techs' %}
+{% include hero.html content=product_sequence_section hide='sm,md' overlay='block' width='half' img_src='/assets/img/bg/lab-techs.jpg' img_alt='Lab techs' %}
 
+{% capture organ_sequence %}
+/assets/img/cardiac.svg |  Cardiac | Controls how hard your heart beats
+/assets/img/renal.svg | Renal | Controls the absorption of sodium and water in your kidneys
+/assets/img/vascular.svg | Vascular | Controls the tightening of blood vessels
+{% endcapture %}
 {% capture report_intro %}
 # A unique prescription plan _just for you._
 
@@ -52,15 +57,15 @@ get_app | Release | You receive an e-mail notification that your report is avail
 
 **Geneticure's test** looks at 17 genotypes and 11 genes to determine how your body responds to each medication. Your personalized report helps your doctor prescribe the right medication from the start.
 
-![Cardiac](/assets/img/cardiac.svg) |  Cardiac | Controls how hard your heart beats
-![Renal](/assets/img/renal.svg) | Renal | Controls the absorption of sodium and water in your kidneys
-![Vascular](/assets/img/vascular.svg) | Vascular | Controls the tightening of blood vessels
+Your report describes the responsiveness of 3 of your body's main organ systems:
+
+{% include graphic-sequence.html content=organ_sequence direction='y' %}
 {% endcapture %}
 {% capture report %}
-  {% include text.html content=report_intro %}
   {% include frame.html type='tablet' img_alt='Geneticure report' img_src='/assets/img/report.png' %}
+  {% include text.html content=report_intro %}
 {% endcapture %}
-{% include section.html columns=true content=report %}
+{% include section.html columns=true content=report reverse=true %}
 
 {% capture for_whom %}
 # Who is it for?
@@ -86,7 +91,7 @@ get_app | Release | You receive an e-mail notification that your report is avail
 {% capture for_whom %}
   {% include text.html content=for_whom %}
 {% endcapture %}
-{% include hero.html content=for_whom align='right' overlay='float' height='full' img_alt='Geneticure' img_style='object-position: left' img_src='/assets/img/bg/doctor-consult.jpg' %}
+{% include hero.html align='right' content=for_whom height='full' overlay='float' width='half' img_alt='Geneticure' img_style='object-position: left' img_src='/assets/img/bg/doctor-consult.jpg' %}
 
 {% capture research %}
 <div id="research"></div>

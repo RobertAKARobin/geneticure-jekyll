@@ -6,8 +6,12 @@
 		{% assign title = step[1]|strip %}
 		{% assign description = step[2]|strip %}
 		<li class="isq__item">
-			<div class="isq__item__icon">
-				<i class="material-icons ">{{ icon }}</i>
+			<div class="isq__item__display">
+				{% if icon contains '/' %}
+					<img src="{{ icon }}" alt="{{ title }}" />
+				{% else %}
+					<i class="material-icons ">{{ icon }}</i>
+				{% endif %}
 			</div>
 			<div class="isq__item__content">
 				<p class="isq__item__content__title">{{ title }}</p>
