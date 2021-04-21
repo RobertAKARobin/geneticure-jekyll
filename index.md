@@ -30,7 +30,7 @@ Each Geneticure test kit contains two sterile cheek swabs, and a prepaid envelop
 {% include section.html columns=true content=product_intro_section reverse=true %}
 
 {% capture product_sequence_section %}
-  {% include graphic-sequence.html steps=site.data.howitworks direction='y' highlight_first=true %}
+  {% include sequence.html steps=site.data.howitworks direction='y' highlight_first=true %}
 {% endcapture %}
 {% include hero.html content=product_sequence_section hide='sm,md' overlay='block' width='half' img_src='/assets/img/bg/lab-techs.jpg' img_alt='Lab techs' %}
 
@@ -43,7 +43,7 @@ Each Geneticure test kit contains two sterile cheek swabs, and a prepaid envelop
 
 Your report describes the responsiveness of 3 of your body's main organ systems:
 
-{% include graphic-sequence.html steps=site.data.organs direction='y' %}
+{% include sequence.html steps=site.data.organs direction='y' %}
 {% endcapture %}
 {% capture report %}
   {% include frame.html type='tablet' img_alt='Geneticure report' img_src='/assets/img/report.png' %}
@@ -97,7 +97,7 @@ For 10 years we’ve put science and innovation to work, taking personalized med
 {% include section.html columns=true content=about_us type='text' %}
 
 {% capture team %}
-  {% include graphic-sequence.html steps=site.data.team direction='x' highlight_first=true %}
+  {% include sequence.html steps=site.data.team direction='x' highlight_first=true %}
 {% endcapture %}
 {% include section.html content=team type='text' %}
 
