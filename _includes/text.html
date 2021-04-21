@@ -1,8 +1,14 @@
 <div class="text" markdown="1">
-	{% if include.content_file %}
-		{% assign content_file = 'section/'|append:include.content_file %}
-		{% include {{ content_file }} %}
-	{% else %}
-		{{ include.content|markdownify }}
-	{% endif %}
+{% if include.content_file %}
+
+{% assign content_id = include.content_file|split:'.' %}
+{% assign content_file = 'content_files/'|append:include.content_file %}
+<div id="{{ content_id[0] }}"></div>
+{% include {{ content_file }} %}
+
+{% else %}
+
+{{ include.content|markdownify }}
+
+{% endif %}
 </div>
