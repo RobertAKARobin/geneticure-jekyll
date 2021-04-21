@@ -1,4 +1,4 @@
-<ol class="seq seq--{{ include.direction|default: 'x' }}{% if include.highlight_first %} seq--highlight-first{% endif %}">
+<ol class="seq seq--direction__{{ include.direction|default: 'x' }} seq--type__{{ include.type|default: 'list' }}{% if include.highlight_first %} seq--highlight-first{% endif %}">
 	{% for step in include.steps %}
 		<li class="seq__item">
 			<div class="seq__item__display">
