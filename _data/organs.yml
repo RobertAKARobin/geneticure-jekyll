@@ -1,0 +1,9 @@
+- title: Cardiac
+  img: /assets/img/cardiac.svg 
+  body: Controls how hard your heart beats
+- title: Renal
+  img: /assets/img/renal.svg
+  body: Controls the absorption of sodium and water in your kidneys
+- title: Vascular
+  img: /assets/img/vascular.svg
+  body: Controls the tightening of blood vessels

@@ -1,21 +1,16 @@
 <ol class="isq isq--{{ include.direction|default: 'x' }}{% if include.highlight_first %} isq--highlight-first{% endif %}">
-	{% assign steps = include.content|strip|newline_to_br|split: '<br />' %}
-	{% for _step in steps %}
-		{% assign step = _step|split: '|' %}
-		{% assign icon = step[0]|strip %}
-		{% assign title = step[1]|strip %}
-		{% assign description = step[2]|strip %}
+	{% for step in include.steps %}
 		<li class="isq__item">
 			<div class="isq__item__display">
-				{% if icon contains '/' %}
-					<img src="{{ icon }}" alt="{{ title }}" />
-				{% else %}
-					<i class="material-icons ">{{ icon }}</i>
+				{% if step.img %}
+					<img src="{{ step.img }}" alt="{{ step.title }}" />
+				{% else if step.icon %}
+					<i class="material-icons ">{{ step.icon }}</i>
 				{% endif %}
 			</div>
 			<div class="isq__item__content">
-				<p class="isq__item__content__title">{{ title }}</p>
-				<p class="isq__item__content__body">{{ description }}</p>
+				<p class="isq__item__content__title">{{ step.title }}</p>
+				<p class="isq__item__content__body">{{ step.body }}</p>
 			</div>
 		</li>
 	{% endfor %}

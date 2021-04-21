@@ -29,27 +29,11 @@ Each Geneticure test kit contains two sterile cheek swabs, and a prepaid envelop
 {% endcapture %}
 {% include section.html columns=true content=product_intro_section reverse=true %}
 
-{% capture product_sequence %}
-keyboard_arrow_down | How does it work?
-how_to_reg | Register | Register your kit on the Geneticure website. <a class="material-icons" href="#">launch</a>
-medical_services | Requisition | A physician confirms the Geneticure test is suitable for you.
-face | Collect | Take a specimen from your cheek using the swab in your kit.
-mark_email_read | Accession | When we receive your kit in the mail, we'll prepare it for testing.
-biotech | Assay | Our lab sequences the DNA on your cheek swab.
-assignment | Analyze | Our proprietary algorithms produce unique recommendations based on your DNA, and compile them into a report.
-assignment_turned_in | Review | Your report is double-checked by the Geneticure team.
-get_app | Release | You receive an e-mail notification that your report is available for download.
-{% endcapture %}
 {% capture product_sequence_section %}
-  {% include graphic-sequence.html content=product_sequence direction='y' highlight_first=true %}
+  {% include graphic-sequence.html steps=site.data.howitworks direction='y' highlight_first=true %}
 {% endcapture %}
 {% include hero.html content=product_sequence_section hide='sm,md' overlay='block' width='half' img_src='/assets/img/bg/lab-techs.jpg' img_alt='Lab techs' %}
 
-{% capture organ_sequence %}
-/assets/img/cardiac.svg |  Cardiac | Controls how hard your heart beats
-/assets/img/renal.svg | Renal | Controls the absorption of sodium and water in your kidneys
-/assets/img/vascular.svg | Vascular | Controls the tightening of blood vessels
-{% endcapture %}
 {% capture report_intro %}
 # A unique prescription plan _just for you._
 
@@ -59,7 +43,7 @@ get_app | Release | You receive an e-mail notification that your report is avail
 
 Your report describes the responsiveness of 3 of your body's main organ systems:
 
-{% include graphic-sequence.html content=organ_sequence direction='y' %}
+{% include graphic-sequence.html steps=site.data.organs direction='y' %}
 {% endcapture %}
 {% capture report %}
   {% include frame.html type='tablet' img_alt='Geneticure report' img_src='/assets/img/report.png' %}
@@ -113,11 +97,7 @@ For 10 years we’ve put science and innovation to work, taking personalized med
 {% include section.html columns=true content=about_us type='text' %}
 
 {% capture team %}
-{% for person in site.data.team %}/assets/img/people/{{ person.img }} | {{ person.name }} <b>{{ person.title }}</b> | {{ person.text }}
-{% endfor %}
-{% endcapture %}
-{% capture team %}
-  {% include graphic-sequence.html content=team direction='x' highlight_first=true %}
+  {% include graphic-sequence.html steps=site.data.team direction='x' highlight_first=true %}
 {% endcapture %}
 {% include section.html content=team type='text' %}
 

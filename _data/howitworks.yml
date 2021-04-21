@@ -1,0 +1,26 @@
+- title: How does it work?
+  icon: keyboard_arrow_down
+- title: Register
+  icon: how_to_reg
+  body: Register your kit on the Geneticure website. <a class="material-icons" href="#">launch</a>
+- title: Requisition
+  icon: medical_services
+  body: A physician confirms the Geneticure test is suitable for you.
+- title: Collect
+  icon: face
+  body: Take a specimen from your cheek using the swab in your kit.
+- title: Accession
+  icon: mark_email_read
+  body: When we receive your kit in the mail, we'll prepare it for testing.
+- title: Assay
+  icon: biotech
+  body: Our lab sequences the DNA on your cheek swab.
+- title: Analyze
+  icon: assignment
+  body: Our proprietary algorithms produce unique recommendations based on your DNA, and compile them into a report.
+- title: Review
+  icon: assignment_turned_in
+  body: Your report is double-checked by the Geneticure team.
+- title: Release
+  icon: get_app
+  body: You receive an e-mail notification that your report is available for download.
