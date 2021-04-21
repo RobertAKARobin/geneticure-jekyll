@@ -84,7 +84,7 @@ Your report describes the responsiveness of 3 of your body's main organ systems:
 {% include hero.html align='right' content=for_whom height='full' overlay='float' width='half' img_alt='Geneticure' img_style='object-position: left' img_src='/assets/img/bg/doctor-consult.jpg' %}
 
 {% capture about_us %}
-## Built with love in Minnesota.
+# Built with love in Minnesota.
 
 For 10 years we’ve put science and innovation to work, taking personalized medicine to the next level. Our unique focus on the physiology and combinatorial pharmacogenomics specific to each disease is unparalleled in a field of shotgun approaches to personalized medicine. Our first solution is helping to solve the trial-and-error approach in the leading preventable cause of death in the world: hypertension or high blood pressure. And we’re just getting started.
 
@@ -97,8 +97,8 @@ For 10 years we’ve put science and innovation to work, taking personalized med
 {% include section.html columns=true content=about_us type='text' %}
 
 {% capture team %}
-  {% include sequence.html steps=site.data.team direction='x' highlight_first=true type='grid' %}
+  {% include sequence.html steps=site.data.team direction='x' type='grid' %}
 {% endcapture %}
-{% include section.html content=team type='text' %}
+{% include section.html content=team %}
 
 {% include section.html content_file='research.md' type='text' %}

@@ -1,6 +1,6 @@
-## Our Research
+# Our Research
 
-### Presentations at National and International Meetings
+## Presentations at National and International Meetings
 
 <cite>Multi-gene Pharmacogenetics and Blood Pressure Control in Patients with Hypertension.</cite> MW Johnson, R Sprissler, TP Olson, GW Beenken, and EM Snyder. Presented at the American Society for Health-System Pharmacies, 2016. The FASEB Journal, 30(1) 942.1.
 
@@ -26,7 +26,7 @@
 
 <cite>Relationship between a weighted multi-gene algorithm and blood pressure control in hypertension.</cite> Phelps, PK, Kelley, EF, Snyder, EM, Walla, DM, Ross, JK, Simmons, JJ, Bulok, EK, Ayres, A, Akre, MK, Sprissler, R, & Olson, TP (2019).  FASEB J., 33 1_supplement: 819.6
 
-### Peer-Reviewed Manuscripts
+## Peer-Reviewed Manuscripts
 
 <cite>[Association of a Multi-Gene Panel with Blood Pressure Medication Success in Patients with Hypertension.](https://www.gavinpublishers.com/articles/Research-Article/Hypertension-An-Open-Access/Association-of-a-Multi-Gene-Panel-with-Blood-Pressure-Medication-Success-in-Patients-with-Hypertension-A-Pilot-Study)</cite> Eric M. Snyder, Ryan Sprissler, Micah Johnson, Greg D. Beenken, Timothy Curry, Nicholas Cassuto, and Thomas P. Olson. Hypertension: Open Access. HTOA-103.  2019. DOI: 10.29011/ HTOA-103.100008
 
@@ -36,7 +36,7 @@
 
 <cite>[Relationship Between a Weighted Multi-Gene Algorithm and Blood Pressure Control in Hypertension.](https://www.mdpi.com/2077-0383/8/3/289)</cite> Pamela K. Phelps, Eric M. Snyder, Danielle M. Walla, Jennifer K. Ross, Jerad J. Simmons, Emma K. Bulock, Audrie Ayers, MonicaK. Akre, Ryan Sprissler, and Thomas P. Olson. Journal of Clinical Medicine. Feb 28;8(3). 2019. (PMID:30823438)
 
-### Completed and Ongoing Trials
+## Completed and Ongoing Trials
 
 <cite>Relationship Between Genes Important in Blood Pressure Regulation and Blood Pressure Therapy in Hypertension.</cite> Clinicaltrials.gov identifier: NCT02524873. Completed.
 
