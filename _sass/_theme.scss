@@ -2,7 +2,7 @@
 
 :root {
   @include font--body;
-  @include font--smooth;
+  @include text--smooth;
 
   color: $font-color--body;
 }
@@ -133,7 +133,7 @@ hr {
 }
 
 .disclaimer {
-  @include font--caption();
+  @include font--fineprint();
 
   display: block;
 }

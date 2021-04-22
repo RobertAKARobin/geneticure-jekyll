@@ -1,6 +1,6 @@
 <ol class="seq seq--direction__{{ include.direction|default: 'x' }} seq--type__{{ include.type|default: 'list' }}{% if include.highlight_first %} seq--highlight-first{% endif %}">
 	{% for step in include.steps %}
-		<li class="seq__item">
+		<li class="seq__item" tabindex="0">
 			<div class="seq__item__display">
 				{% if step.img %}
 					<img src="{{ step.img }}" alt="{{ step.title }}" />
@@ -10,6 +10,9 @@
 			</div>
 			<div class="seq__item__content">
 				<p class="seq__item__content__title">{{ step.title }}</p>
+				{% if step.subtitle %}
+					<p class="seq__item__content__subtitle">{{ step.subtitle }}</p>
+				{% endif %}
 				<p class="seq__item__content__body">{{ step.body }}</p>
 			</div>
 		</li>

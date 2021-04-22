@@ -15,7 +15,13 @@ $line__margin: ($margin--main * 3);
   }
   
   .seq__item__content__title {
-    @include cta;
+    @include font--cta;
+  }
+
+  .seq__item__content__subtitle {
+    @include font--cta;
+
+    color: $font-color--highlight--sink;
   }
   
   .seq__item__content__title b {
@@ -40,10 +46,93 @@ $line__margin: ($margin--main * 3);
 }
 
 .seq--type__grid {
-  display: grid;
+  $item__offset: $margin--main * 2;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: calc(100% + #{$item__offset * 2});
+
+  .seq__item {
+    border-radius: $border-radius--main;
+    box-sizing: border-box;
+    padding: ($margin--main * 2) $item__offset;
+
+    @media #{$bp--sm} {
+      width: calc(100% / 2);
+    }
+  
+    @media #{$bp--md} {
+      width: calc(100% / 4);
+    }
+  
+    @media #{$bp--lg} {
+      width: calc(100% / 5);
+    }
+  
+    @media #{$bp--xl} {
+      width: calc(100% / 6);
+    }
+  }
+
+  .seq__item--on {
+    background-color: $color--highlight--offset;
+
+    .seq__item__display,
+    .seq__item__content__title,
+    .seq__item__content__subtitle {
+      opacity: 1;
+    }
+
+    .seq__item__content__body {
+      display: block;
+    }
+  }
+
+  .seq__item--off {
+    .seq__item__display,
+    .seq__item__content__title,
+    .seq__item__content__subtitle {
+      opacity: 0.8;
+    }
+  }
+
+  .seq__item__display img {
+    border-radius: 50%;
+    width: 100%;
+  }
+
+  .seq__item__content__title,
+  .seq__item__content__subtitle {
+    margin: ($margin--main / 2) 0;
+    text-align: center;
+    white-space: normal;
+  }
+
+  .seq__item__content__body {
+    background-color: $color--highlight--offset;
+    border-radius: $border-radius--main;
+    box-sizing: border-box;
+    display: none;
+    left: (0 - $item__offset);
+    padding: ($margin--main * 2) $item__offset;
+    position: absolute;
+    width: calc(100% + #{$item__offset * 2});
+    z-index: $z--content__overlay;
+  }
+
+  .seq__item__display,
+  .seq__item__content__title,
+  .seq__item__content__subtitle {
+    transition: opacity 0.2s;
+  }
 }
 
 .seq--type__list {  
+  .seq__item__content p {
+    margin: ($margin--main / 2) 0;
+  }
+
   .seq__item__display {
     border: 0 solid $seq__border-color;
     color: $color--lowlight;
@@ -189,10 +278,6 @@ $line__margin: ($margin--main * 3);
       padding: ($margin--main / 2) 0;
       padding-left: $margin--main;
       flex-grow: 1;
-    }
-  
-    .seq__item__content p {
-      margin: ($margin--main / 2) 0;
     }
   }  
 }

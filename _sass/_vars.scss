@@ -101,11 +101,6 @@ $shadow--main: 0 1px 2px 0 rgba(0, 0, 0, 0.2); // stylelint-disable-line plugin/
   line-height: rem(24);
 }
 
-@mixin font--caption () {
-  font-size: rem(11);
-  line-height: rem(16);
-}
-
 @mixin font--cta () {
   color: $font-color--body;
   font-size: rem(15);
@@ -115,12 +110,11 @@ $shadow--main: 0 1px 2px 0 rgba(0, 0, 0, 0.2); // stylelint-disable-line plugin/
   text-decoration: none;
   text-transform: uppercase;
   white-space: nowrap;
+}
 
-  &::selection {
-    background: unset;
-    color: unset;
-    text-shadow: unset;
-  }
+@mixin font--fineprint () {
+  font-size: rem(11);
+  line-height: rem(16);
 }
 
 @mixin font--link () {
@@ -139,7 +133,12 @@ $shadow--main: 0 1px 2px 0 rgba(0, 0, 0, 0.2); // stylelint-disable-line plugin/
   }
 }
 
-@mixin font--smooth () { // TODO3: Remove these parens
+@mixin font--small {
+  font-size: rem(14);
+  line-height: 1.4em;
+}
+
+@mixin text--smooth () { // TODO3: Remove these parens
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
@@ -246,6 +245,12 @@ $shadow--main: 0 1px 2px 0 rgba(0, 0, 0, 0.2); // stylelint-disable-line plugin/
 
 @mixin cta () {
   @include font--cta;
+
+  &::selection {
+    background: unset;
+    color: unset;
+    text-shadow: unset;
+  }
 
   @include get__disabled {
     color: $font-color--lowlight;
