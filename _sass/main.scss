@@ -1,5 +1,5 @@
-@import 'reset',
-  'vars',
-  'theme',
-  'body',
-  'includes';
+@import 'body';
+@import 'includes';
+@import 'reset';
+@import 'theme';
+@import 'vars';
