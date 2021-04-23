@@ -15,7 +15,7 @@ function focusboxSetup() {
 			$item.setAttribute('tabindex', 0);
 			$item.setAttribute('focusbox-item', id);
 			$item.onmouseover = handleHover;
-			$item.onblur = removeClassesFromUnfocusedElements;
+			$item.onblur = handleBlur;
 			$item.onfocus = handleFocus;
 
 			const $triggers = $item.querySelectorAll('[focusbox-item-trigger]');
@@ -28,7 +28,7 @@ function focusboxSetup() {
 
 		function isFocusInFocusbox() {
 			const focusElement = document.activeElement;
-			return Boolean($items.includes(focusElement));
+			return Boolean($focusbox.contains(focusElement));
 		}
 
 		function findTargetByTrigger($trigger) {
@@ -46,10 +46,21 @@ function focusboxSetup() {
 			turnOn($target);
 		}
 
+		function handleBlur(event) {
+			const $target = event.currentTarget;
+			const $focus = event.relatedTarget;
+			if ($target.contains($focus)) {
+				turnOn($target);
+			} else {
+				removeClassesFromUnfocusedElements();
+			}
+		}
+
 		function handleClick(event) {
 			const $trigger = event.currentTarget;
 			const $target = findTargetByTrigger($trigger);
-			if ($target === document.activeElement) { // If already focused, do nothing
+			const $focus = document.activeElement;
+			if ($target === $focus || $target.contains($focus)) { // If already focused, do nothing
 				event.preventDefault();
 				return;
 			}

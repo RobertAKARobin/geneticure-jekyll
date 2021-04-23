@@ -82,6 +82,10 @@ $item__offset: $margin--main * 2;
 }
 
 .grid__item.focus--on {
+  &:focus {
+    outline: none;
+  }
+
   .grid__item__display {
     opacity: 1;
   }

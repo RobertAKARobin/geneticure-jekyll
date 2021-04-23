@@ -13,7 +13,15 @@
 			</div>
 
 			<div class="grid__item__body text">
-				{{ step.body }}
+				{{ step.body|markdownify }}
+
+				{% if step.links %}
+					<ul class="links">
+						{% for link in step.links %}
+							<li><a href="{{ link }}"></a></li>
+						{% endfor %}
+					</ul>
+				{% endif %}
 			</div>
 		</li>
 	{% endfor %}
