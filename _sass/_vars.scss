@@ -56,6 +56,8 @@ $border-color--solid: $color--lowlight;
 
 $border-radius--main: 4px;
 
+$border-width--main: 2px;
+
 $bp--sm: '(max-width: #{$width--screen--md - 1})';
 $bp--md: '(min-width: #{$width--screen--md}) and (max-width: #{$width--screen--lg - 1})';
 $bp--lg: '(min-width: #{$width--screen--lg}) and (max-width: #{$width--screen--xl - 1})';
@@ -109,7 +111,6 @@ $shadow--main: 0 1px 2px 0 rgba(0, 0, 0, 0.2); // stylelint-disable-line plugin/
   line-height: rem(15);
   text-decoration: none;
   text-transform: uppercase;
-  white-space: nowrap;
 }
 
 @mixin font--fineprint () {
@@ -245,6 +246,8 @@ $shadow--main: 0 1px 2px 0 rgba(0, 0, 0, 0.2); // stylelint-disable-line plugin/
 
 @mixin cta () {
   @include font--cta;
+
+  white-space: nowrap;
 
   &::selection {
     background: unset;

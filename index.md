@@ -97,7 +97,7 @@ For 10 years we’ve put science and innovation to work, taking personalized med
 {% include section.html columns=true content=about_us type='text' %}
 
 {% capture team %}
-  {% include sequence.html steps=site.data.team direction='x' type='grid' %}
+  {% include grid.html steps=site.data.team %}
 {% endcapture %}
 {% include section.html content=team %}
 

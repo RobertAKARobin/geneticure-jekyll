@@ -53,7 +53,7 @@
 
 @media #{$bp--sm} {
   .nav {
-    border-bottom: 2px solid $color--brand;
+    border-bottom: $border-width--main solid $color--brand;
   }
 
   .nav__content {
@@ -83,7 +83,7 @@
 
 @media #{$bp--md}, #{$bp--lg}, #{$bp--xl} {
   .nav {
-    border-bottom: 2px solid $color--brand;
+    border-bottom: $border-width--main solid $color--brand;
     height: $nav--height;
   }
 

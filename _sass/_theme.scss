@@ -115,7 +115,7 @@ details {
 }
 
 details[open] {
-  border-left-width: 2px;
+  border-left-width: $border-width--main;
   padding-left: $margin--main;
 }
 
