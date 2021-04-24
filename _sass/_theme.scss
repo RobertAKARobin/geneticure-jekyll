@@ -151,8 +151,7 @@ img {
 }
 
 hr {
-  @include margin--main--x();
-  @include margin--main--y($mult: 2);
+  margin: ($margin--main * 2) $margin--main;
 }
 
 .disclaimer {

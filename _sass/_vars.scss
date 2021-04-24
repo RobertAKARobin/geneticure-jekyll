@@ -322,16 +322,6 @@ $shadow--main: 0 1px 2px 0 rgba(0, 0, 0, 0.2); // stylelint-disable-line plugin/
   }
 }
 
-@mixin margin--main--x ($mult: 1) {
-  margin-left: ($margin--main * $mult);
-  margin-right: ($margin--main * $mult);
-}
-
-@mixin margin--main--y ($mult: 1) {
-  margin-bottom: ($margin--main * $mult);
-  margin-top: ($margin--main * $mult);
-}
-
 @mixin overlay ($width: 300px) {
   align-items: center;
   background: $background--base;

@@ -1,4 +1,4 @@
-# Our Research
+# Our research
 
 ## Presentations at National and International Meetings
 

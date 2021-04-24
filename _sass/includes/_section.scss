@@ -38,3 +38,7 @@
     min-height: calc(100vh - #{$nav--height});
   }
 }
+
+.section > .text {
+  width: 100%;
+}

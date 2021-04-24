@@ -1,0 +1,69 @@
+.collapse__content {
+  overflow: hidden;
+  padding-left: calc(#{$margin--main} + #{$border-width--main});
+  position: relative;
+}
+
+.collapse__content:before {
+  border-left: $border-width--main solid $color--highlight;
+  content: '';
+  left: 0;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  width: 0;
+}
+
+.collapse__content:after {
+  background-image: linear-gradient(to bottom, transparent, $background--base), linear-gradient(to right, transparent, $background--base),;
+  bottom: 0;
+  content: '';
+  height: 50%;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  z-index: $z--content__overlay;
+}
+
+.collapse__trigger {
+  margin-top: $margin--main;
+  width: 180px;
+}
+
+.collapse__trigger:before {
+  border-radius: 50%;
+  color: $font-color--on-dark;
+  content: '\e5cc';
+  font-family: 'Material Icons';
+  font-size: 1em;
+  line-height: 1em;
+  margin-right: $margin--main;
+  position: relative;
+  text-align: center;
+  transition: transform 0.2s;
+  width: 1em;
+}
+
+.collapse:not(.toggle--on) {
+  .collapse__content {
+    height: 150px;
+  }
+
+  .collapse__trigger:after {
+    content: 'Show more';
+  }
+}
+
+.collapse.toggle--on {
+  .collapse__content:after {
+    display: none;
+  }
+
+  .collapse__trigger:after {
+    content: 'Show less';
+  }
+
+  .collapse__trigger:before {
+    transform: rotateZ(-90deg);
+  }
+}

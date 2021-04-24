@@ -1,26 +1,77 @@
 (function main(){
 	focusboxSetup();
+	toggleSetup();
 })();
 
+function toggleSetup() {
+	const CLASS_ON = 'toggle--on';
+
+	const $toggles = Array.from(document.querySelectorAll('[data-toggle-target]'));
+	const $triggers = Array.from(document.querySelectorAll('[data-toggle-trigger]'));
+
+	for (const $trigger of $triggers) {
+		$trigger.onclick = handleClick;
+	}
+
+	function handleClick(event) {
+		const $targetTrigger = event.currentTarget;
+		const targetId = $targetTrigger.getAttribute('data-toggle-trigger');
+		let isTurnOn = null;
+
+		for (const $trigger of $triggers) {
+			const triggerId = $trigger.getAttribute('data-toggle-trigger');
+			if (triggerId === targetId) {
+				if (isTurnOn === null) {
+					isTurnOn = $trigger.classList.contains(CLASS_ON);
+				}
+				if (isTurnOn) {
+					turnOff($trigger);
+				} else {
+					turnOn($trigger);
+				}
+			}
+		}
+	
+		for (const $toggle of $toggles) {
+			const toggleId = $toggle.getAttribute('data-toggle-target');
+			if (toggleId === targetId) {
+				if (isTurnOn) {
+					turnOff($toggle);
+				} else {
+					turnOn($toggle);
+				}
+			}
+		}
+	}
+
+	function turnOff($target) {
+		$target.classList.remove(CLASS_ON);
+	}
+
+	function turnOn($target) {
+		$target.classList.add(CLASS_ON);
+	}
+}
+
 function focusboxSetup() {
-	const $focusboxes = Array.from(document.querySelectorAll('[focusbox]'));
+	const $focusboxes = Array.from(document.querySelectorAll('[data-focusbox]'));
 	for (const $focusbox of $focusboxes) {
 		setListeners($focusbox);
 	}
 
 	function setListeners($focusbox) {
-		const $items = Array.from($focusbox.querySelectorAll('[focusbox-item]'));
+		const $items = Array.from($focusbox.querySelectorAll('[data-focusbox-item]'));
 		for (const $item of $items) {
 			const id = (Math.random() + 1).toString(36).substring(2, 5);
 			$item.setAttribute('tabindex', 0);
-			$item.setAttribute('focusbox-item', id);
+			$item.setAttribute('data-focusbox-item', id);
 			$item.onmouseover = handleHover;
 			$item.onblur = handleBlur;
 			$item.onfocus = handleFocus;
 
-			const $triggers = $item.querySelectorAll('[focusbox-item-trigger]');
+			const $triggers = $item.querySelectorAll('[data-focusbox-item-trigger]');
 			for (const $trigger of $triggers) {
-				$trigger.setAttribute('focusbox-item-trigger', id);
+				$trigger.setAttribute('data-focusbox-item-trigger', id);
 				$trigger.onmousedown = handleClick;
 			}
 		}
@@ -32,8 +83,8 @@ function focusboxSetup() {
 		}
 
 		function findTargetByTrigger($trigger) {
-			const id = $trigger.getAttribute('focusbox-item-trigger');
-			return $items.find($item => $item.getAttribute('focusbox-item') === id);
+			const id = $trigger.getAttribute('data-focusbox-item-trigger');
+			return $items.find($item => $item.getAttribute('data-focusbox-item') === id);
 		}
 
 		function focusOn($target) {
