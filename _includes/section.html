@@ -1,8 +1,12 @@
-<section class="section{% if include.height %} section--height__{{ include.height }}{% endif %}">
-	{% if include.columns %}
+<section class="section{% if include.height %} section--height__{{ include.height }}{% endif %}{% if include.layout %} section--layout__{{ include.layout }}{% endif %}" {% if include.id %}id="{{ include.id }}"{% endif %}>
+	{% if include.layout == 'columns' %}
 		{% include columns.html %}
+	{% elsif include.layout == 'grid' %}
+		{% include grid.html %}
+	{% elsif include.layout == 'collapse' %}
+		{% include collapse.html %}
 	{% else %}
-		{% if include.type == 'text' %}
+		{% if include.text %}
 			{% include text.html %}
 		{% else %}
 			{{ include.content }}

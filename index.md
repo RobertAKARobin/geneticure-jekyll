@@ -27,7 +27,7 @@ Each Geneticure test kit contains two sterile cheek swabs, and a prepaid envelop
   {% include img.html img_alt='Geneticure kit' img_src='/assets/img/kit-w-contents.jpg' img_style='object-fit: contain' %}
   {% include text.html content=product_intro %}
 {% endcapture %}
-{% include section.html columns=true content=product_intro_section reverse=true %}
+{% include section.html content=product_intro_section layout='columns' reverse=true %}
 
 {% capture product_sequence_section %}
   {% include sequence.html steps=site.data.howitworks direction='y' highlight_first=true %}
@@ -49,7 +49,7 @@ Your report describes the responsiveness of 3 of your body's main organ systems:
   {% include frame.html type='tablet' img_alt='Geneticure report' img_src='/assets/img/report.png' %}
   {% include text.html content=report_intro %}
 {% endcapture %}
-{% include section.html columns=true content=report reverse=true %}
+{% include section.html content=report layout='columns' reverse=true %}
 
 {% capture for_whom %}
 # Who is it for?
@@ -81,7 +81,7 @@ Your report describes the responsiveness of 3 of your body's main organ systems:
 {% capture for_whom %}
   {% include text.html content=for_whom %}
 {% endcapture %}
-{% include hero.html align='right' content=for_whom height='full' overlay='float' width='half' img_alt='Geneticure' img_style='object-position: left' img_src='/assets/img/bg/doctor-consult.jpg' %}
+{% include hero.html align='right' content=for_whom height='full' hide='sm,md' overlay='block' width='half' img_alt='Geneticure' img_style='object-position: left' img_src='/assets/img/bg/doctor-consult.jpg' %}
 
 {% capture about_us %}
 # Built with love in Minnesota.
@@ -91,17 +91,11 @@ For 10 years we’ve put science and innovation to work, taking personalized med
 <a class="button button--high" href="#">Contact us</a>
 {% endcapture %}
 {% capture about_us %}
-  {% include text.html content=about_us %}
   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d45904.882603545106!2d-92.49840832065428!3d44.02025457911051!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87f75f631adca1b1%3A0x9af7c3b31dbb04ce!2s4%203rd%20St%20SW%20%23305b%2C%20Rochester%2C%20MN%2055902!5e0!3m2!1sen!2sus!4v1618862134497!5m2!1sen!2sus" allowfullscreen="" loading="lazy"></iframe>
+  {% include text.html content=about_us %}
 {% endcapture %}
-{% include section.html columns=true content=about_us type='text' %}
+{% include section.html content=about_us layout='columns' reverse=true text=true %}
 
-{% capture team %}
-  {% include grid.html steps=site.data.team %}
-{% endcapture %}
-{% include section.html content=team %}
+{% include section.html steps=site.data.team layout='grid' %}
 
-{% capture research %}
-  {% include collapse.html content_file='research.md' id='research' %}
-{% endcapture %}
-{% include section.html content=research type='text' %}
+{% include section.html content_file='research.md' id='research' layout='collapse' text=true %}

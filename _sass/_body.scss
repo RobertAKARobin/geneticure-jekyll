@@ -5,30 +5,27 @@
   max-width: 100%;
   min-height: 100vh;
   overflow-x: hidden;
-  width: 100vw;
-}
-
-.nav__content {
-  @include content--page;
+  width: 100%;
 }
 
 .main {
-  @include content--page;
-
   flex-grow: 1;
 }
 
 .footer {
   @include content--page;
 
-  padding-bottom: $margin--main;
-  padding-top: $margin--main;
+  padding: $margin--main;
 }
 
 .nav {
   box-sizing: border-box;
   position: relative;
   z-index: $z--nav;
+}
+
+.nav__content {
+  @include content--page;
 }
 
 .nav--fixed {

@@ -2,30 +2,21 @@
   box-sizing: border-box;
   height: 100%; 
   position: relative;
-  width: 100vw;
+  width: 100%;
   flex-grow: 1;
-  
-  @media #{$bp--lg}, #{$bp--xl} {
-    &.hero--margins,
-    &:not(.hero--margins) .hero__content {
-      border: 0 solid transparent;
-      border-width: 0 calc((100vw - #{$width--screen--xl}) / 2);
-    }
-  }
 }
 
 .hero__content {
   box-sizing: border-box;
-  position: relative;
   z-index: $z--content__overlay;
+
+  .hero--width__full & {
+    @include content--page;
+  }
 
   @media #{$bp--lg}, #{$bp--xl} {
     .hero--width__fit & {
       width: auto;
-    }
-
-    .hero--width__full & {
-      width: calc(#{$width--screen--xl} + ((100vw - #{$width--screen--xl}) / 2) - #{$margin--main});
     }
 
     .hero--width__half & {
@@ -59,8 +50,6 @@
 
   .hero__content {
     color: $font-color--on-dark;
-    padding-left: 1rem;
-    padding-right: 1rem;
   }
 
   .hero__content em {
@@ -127,8 +116,10 @@
 
   @media #{$bp--lg}, #{$bp--xl} {
     .hero__content {
-      background-color: rgba(255, 255, 255, 0.93);
-      padding: ($margin--main * 3);
+      background: rgba(255, 255, 255, 0.9);
+      border: 0 solid transparent;
+      border-width: 0 calc((100vw - #{$width--screen--xl}) / 2);
+      padding: ($margin--main * 2);
     }
 
     .hero__display {
@@ -137,18 +128,13 @@
 
     &.hero--align__center {
       justify-content: center;
-
-      .hero__content {
-        border-left-width: 0;
-        border-right-width: 0;
-      }
     }
 
     &.hero--align__right {
       justify-content: flex-end;
 
       .hero__content {
-        border-left-width: 0;
+        border-left: 0;
         padding-right: $margin--main;
       }
     }
@@ -157,7 +143,7 @@
       justify-content: flex-start;
 
       .hero__content {
-        border-right-width: 0;
+        border-right: 0;
         padding-left: $margin--main;
       }
     }
