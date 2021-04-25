@@ -22,7 +22,7 @@
   left: 0;
   position: absolute;
   width: 100%;
-  z-index: $z--content__overlay;
+  z-index: $z--content__overlay - 1;
 }
 
 .collapse__trigger {

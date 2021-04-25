@@ -19,6 +19,7 @@
 }
 
 .nav {
+  box-shadow: $shadow--main;
   box-sizing: border-box;
   position: relative;
   z-index: $z--nav;
