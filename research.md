@@ -6,7 +6,7 @@ title: Geneticure | Research
 {% capture title %}
 Our research
 {% endcapture %}
-{% include hero.html content=title img_src='/assets/img/bg/scientists.jpg' overlay='text' %}
+{% include hero.html content=title img_alt='Scientists' img_src='/assets/img/bg/scientists.jpg' overlay='text' %}
 
 {% capture research %}
 ## Presentations at National and International Meetings
