@@ -14,7 +14,7 @@
     @include content--page;
   }
 
-  @media #{$bp--lg}, #{$bp--xl} {
+  @media #{$bp--lg} {
     .hero--width__fit & {
       width: auto;
     }
@@ -89,7 +89,7 @@
     }
   }
   
-  @media #{$bp--lg}, #{$bp--xl} {
+  @media #{$bp--lg} {
     .hero__content {
       font-size: 64px;
       line-height: 1.4em;
@@ -99,7 +99,7 @@
 
 .hero--overlay__block,
 .hero--overlay__float {
-  @media #{$bp--sm}, #{$bp--md} {  
+  @media #{$bp--sm, $bp--md} {  
     .hero__content {
       padding: $margin--main * 2 $margin--main;
     }
@@ -116,7 +116,7 @@
     }
   }
 
-  @media #{$bp--lg}, #{$bp--xl} {
+  @media #{$bp--lg} {
     .hero__content {
       background: rgba(255, 255, 255, 0.95);
       border: 0 solid transparent;
@@ -153,7 +153,7 @@
 }
 
 .hero--overlay__block {
-  @media #{$bp--lg}, #{$bp--xl} {
+  @media #{$bp--lg} {
     display: flex;
 
     .hero__content {
@@ -166,7 +166,7 @@
 }
 
 .hero--overlay__float {
-  @media #{$bp--lg}, #{$bp--xl} {
+  @media #{$bp--lg} {
     align-items: center;
     display: flex;
 

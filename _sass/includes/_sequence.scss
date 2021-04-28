@@ -93,14 +93,9 @@ $line__margin: ($margin--main * 3);
     top: 0;
     z-index: ($z--nav - 1);
 
-    @media #{$bp--sm}, #{$bp--md}, #{$bp--lg} {
+    @media #{$bp--sm, $bp--md, $bp--lg} {
       right: 0 - $margin--main;
       width: calc(min(100px, (100vw - #{$seq__item__width}) / 2));
-    }
-
-    @media #{$bp--xl} {
-      left: 100%;
-      width: calc(#{$margin--main} + (100vw - #{$width--screen--xl}) / 2);
     }
   }
 

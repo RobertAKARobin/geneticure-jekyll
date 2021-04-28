@@ -12,7 +12,7 @@ $gutter: $margin--main;
   }
 }
 
-@media #{$bp--md}, #{$bp--lg}, #{$bp--xl} {
+@media #{$bp--md, $bp--lg} {
   .columns {
     box-sizing: content-box;
     display: flex;
