@@ -44,6 +44,8 @@ Each Geneticure test kit contains two sterile cheek swabs, and a prepaid envelop
 Your report describes the responsiveness of 3 of your body's main organ systems:
 
 {% include sequence.html steps=site.data.organs direction='y' %}
+
+<a class="button button--low" href="/research">See our research</a>
 {% endcapture %}
 {% capture report %}
   {% include frame.html type='tablet' img_alt='Geneticure report' img_src='/assets/img/report.png' %}
@@ -56,27 +58,26 @@ Your report describes the responsiveness of 3 of your body's main organ systems:
 
 ## _Patients & Caregivers._
 
-**Your DNA is unique. Your high blood pressure prescription should be, too.** No matter where you are in your treatment plan — whether you’ve been newly diagnosed or have been managing your blood pressure for years — with the help of your doctor, Geneticure’s test can help get you on the right path.
+**Your DNA is unique. Your high blood pressure prescription should be, too.** No matter where you are in your treatment plan — whether you’ve been newly diagnosed or have been managing your blood pressure for years — with the help of your doctor, Geneticure’s test can help get you on the right path. [Frequently asked questions.](/faq)
 
 ---
 
 ## _Healthcare Providers._
 
-**Proven DNA results to improve your patients' blood pressure therapy.** The test assesses hypertension treatment in a comprehensive integrative nature, from drug metabolizing enzymes to receptors that are important to heart, blood vessel and kidney function, with a focus on and appreciation of the complexity of the disease.
+**Proven DNA results to improve your patients' blood pressure therapy.** The test assesses hypertension treatment in a comprehensive integrative nature, from drug metabolizing enzymes to receptors that are important to heart, blood vessel and kidney function, with a focus on and appreciation of the complexity of the disease. [See our research.](/research)
 
 ---
 
 ## _Genetic Test Providers._
 
-**Our RESTful API adds our patented algorithm to your product line.** Generate reports whitelabeled with your company's own branding, or consume our data using a simple JSON interface and add it to your own templates.
+**Our RESTful API adds our patented algorithm to your product line.** Generate reports whitelabeled with your company's own branding, or consume our data using a simple JSON interface and add it to your own templates. [See our API.](/api)
 
 ---
 
 ## _Employers._
 
-**Increase your employees' quality of life while decreasing your healthcare costs.** Employees with cardiovascular disease (including high blood pressure) cost employers _an extra $1,100 per year in lost productivity alone_<sup>*</sup>, compared with healthier employees. With Geneticure, you may be able to significantly reduce your company’s chronic disease spending by an estimated 16x ROI or _$1409 per year per employee_.<sup>**</sup>
+**Increase your employees' quality of life while decreasing your healthcare costs.** Employees with cardiovascular disease (including high blood pressure) cost employers _an extra $1,100 per year in lost productivity alone_<sup>*</sup>, compared with healthier employees. With Geneticure, you may be able to significantly reduce your company’s chronic disease spending by an estimated 16x ROI or _$1409 per year per employee_.<sup>**</sup> [Get in touch.](/contact)
 
-<a class="button button--high" href="#">Get in touch</a>
 {% endcapture %}
 {% capture for_whom %}
   {% include text.html content=for_whom %}
@@ -88,14 +89,10 @@ Your report describes the responsiveness of 3 of your body's main organ systems:
 
 For 10 years we’ve put science and innovation to work, taking personalized medicine to the next level. Our unique focus on the physiology and combinatorial pharmacogenomics specific to each disease is unparalleled in a field of shotgun approaches to personalized medicine. Our first solution is helping to solve the trial-and-error approach in the leading preventable cause of death in the world: hypertension or high blood pressure. And we’re just getting started.
 
-<a class="button button--high" href="#">Contact us</a>
+<a class="button button--low" href="/team">Meet our team</a>
 {% endcapture %}
 {% capture about_us %}
   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d45904.882603545106!2d-92.49840832065428!3d44.02025457911051!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87f75f631adca1b1%3A0x9af7c3b31dbb04ce!2s4%203rd%20St%20SW%20%23305b%2C%20Rochester%2C%20MN%2055902!5e0!3m2!1sen!2sus!4v1618862134497!5m2!1sen!2sus" allowfullscreen="" loading="lazy"></iframe>
   {% include text.html content=about_us %}
 {% endcapture %}
 {% include section.html content=about_us layout='columns' reverse=true text=true %}
-
-{% include section.html steps=site.data.team layout='grid' %}
-
-{% include section.html content_file='research.md' id='research' layout='collapse' text=true %}

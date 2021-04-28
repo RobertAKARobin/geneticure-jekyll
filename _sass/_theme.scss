@@ -170,15 +170,19 @@ hr {
 
 .button {
   @include button;
-  @include button--default();
+  @include button--default;
 }
 
 .button--low {
-  @include button--low();
+  @include button--low;
 }
 
 .button--high {
-  @include button--high();
+  @include button--high;
+}
+
+.button--transparent {
+  @include button--transparent;
 }
 
 .button--transparent--on-dark {

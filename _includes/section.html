@@ -1,4 +1,4 @@
-<section class="section{% if include.height %} section--height__{{ include.height }}{% endif %}{% if include.layout %} section--layout__{{ include.layout }}{% endif %}" {% if include.id %}id="{{ include.id }}"{% endif %}>
+<section class="section{% if include.height %} section--height__{{ include.height }}{% endif %}{% if include.layout %} section--layout__{{ include.layout }}{% endif %}{% if include.margins != false %} section--margins{% endif %}" {% if include.id %}id="{{ include.id }}"{% endif %}>
 	{% if include.layout == 'columns' %}
 		{% include columns.html %}
 	{% elsif include.layout == 'grid' %}
