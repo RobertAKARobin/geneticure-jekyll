@@ -1,14 +1,10 @@
 ---
-layout: base
-title: Geneticure | Research
+layout: text
+title: Our research
+img_alt: Scientists
+img_src: /assets/img/bg/scientists.jpg
 ---
 
-{% capture title %}
-Our research
-{% endcapture %}
-{% include hero.html content=title img_alt='Scientists' img_src='/assets/img/bg/scientists.jpg' overlay='text' %}
-
-{% capture research %}
 ## Presentations at National and International Meetings
 
 <cite>Multi-gene Pharmacogenetics and Blood Pressure Control in Patients with Hypertension.</cite> MW Johnson, R Sprissler, TP Olson, GW Beenken, and EM Snyder. Presented at the American Society for Health-System Pharmacies, 2016. The FASEB Journal, 30(1) 942.1.
@@ -52,5 +48,3 @@ Our research
 <cite>Investigating the Use of Genetics to Guide Pharmacologic Therapy for Hypertension.</cite> Clinicaltrials.gov identifier: NCT02988245. Completed.
 
 <cite>Association Between a Genetic Algorithm to Predict Hypertension Therapy and Response to Treatment.</cite> Clinicaltrials.gov identifier: NCT03292900. Completed.
-{% endcapture %}
-{% include section.html content=research text=true %}

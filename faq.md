@@ -1,14 +1,10 @@
 ---
-layout: base
-title: Geneticure | FAQ
+layout: text
+title: Frequently asked questions
+img_alt: Kids playing
+img_src: /assets/img/bg/kids.jpg
 ---
 
-{% capture title %}
-Frequently asked questions
-{% endcapture %}
-{% include hero.html content=title img_alt="Kids playing" img_src='/assets/img/bg/kids.jpg' overlay='text' %}
-
-{% capture faq %}
 ## For providers
 
 ### How do I request Geneticure kits for my office?
@@ -161,5 +157,3 @@ The recommendations are provided at the top of the report followed by a narrativ
 
 ### How do I talk to my doctor about the test?
 As with all medical decisions, the information is used in a conversation between you and your doctor about treatment options and what is best for you.
-{% endcapture %}
-{% include section.html content=faq text=true %}

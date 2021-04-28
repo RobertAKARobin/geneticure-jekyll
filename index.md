@@ -1,5 +1,5 @@
 ---
-layout: base
+layout: default
 title: Geneticure | Medicine Personalized by Your DNA
 ---
 
