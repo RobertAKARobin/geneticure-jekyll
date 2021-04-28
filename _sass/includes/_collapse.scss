@@ -16,8 +16,8 @@
 
 .collapse__content:after {
   background-image:
-    linear-gradient(to bottom, transparent 25%, $background--base),
-    linear-gradient(to bottom right, transparent, $background--base);
+    linear-gradient(to bottom, transparent 75%, $background--base),
+    linear-gradient(to bottom right, transparent 50%, $background--base);
   bottom: 0;
   content: '';
   height: 100%;
@@ -48,7 +48,7 @@
 
 .collapse:not(.toggle--on) {
   .collapse__content {
-    height: 250px;
+    height: 300px;
   }
 
   .collapse__trigger:after {
