@@ -24,9 +24,9 @@
 				</a>
 
 				<div class="nav__links">
-					<a class="tab" href="/">About</a>
-					<a class="tab" href="https://portal.geneticure.com/">Sign in</a>
-					<a class="tab" href="https://portal.geneticure.com/contact">Contact</a>
+					{% for link in site.data.links[0] %}
+						<a class="tab" href="{{ link.to }}">{{ link.text }}</a>
+					{% endfor %}
 				</div>
 			</div>
 		</nav>
@@ -48,13 +48,16 @@
 				</div>
 				<div>
 					<ul>
-						<li><a href="/">About</a></li>
-						<li><a href="https://portal.geneticure.com/">Sign in</a></li>
-						<li><a href="https://portal.geneticure.com/contact">Contact</a></li>
-						<li><a href="/faq">FAQ</a></li>
-						<li><a href="/press">Press</a></li>
-						<li><a href="/research">Research</a></li>
-						<li><a href="/team">Team</a></li>
+						{% for link in site.data.links[0] %}
+							<li><a href="{{ link.to }}">{{ link.text }}</a></li>
+						{% endfor %}
+					</ul>
+				</div>
+				<div>
+					<ul>
+						{% for link in site.data.links[1] %}
+							<li><a href="{{ link.to }}">{{ link.text }}</a></li>
+						{% endfor %}
 					</ul>
 				</div>
 				<div class="footer__social">
