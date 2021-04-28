@@ -134,12 +134,8 @@ $logo__width: 210px;
   padding: $margin--main;
 }
 
-.footer__links--icons {
-  display: flex;
-}
-
-.footer__links--icons > :not(:last-child) {
-  margin-right: 1ex;
+.footer__social {
+  font-size: 36px;
 }
 
 .footer__logo {

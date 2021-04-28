@@ -3,8 +3,9 @@ layout: base
 title: Geneticure | Team
 ---
 
-<section>
-# Our team
-</section>
+{% capture title %}
+Our team
+{% endcapture %}
+{% include hero.html content=title img_src='/assets/img/bg/chairs.jpg' overlay='text' %}
 
-{% include section.html steps=site.data.team layout='grid' %}
+{% include section.html direction='y' display_size='100px' layout='sequence' steps=site.data.team %}

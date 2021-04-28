@@ -132,7 +132,6 @@ $line__margin: ($margin--main * 3);
   }
 
   .seq__item__display .material-icons {
-    font-size: 48px;
     line-height: 100px;
   }
 
@@ -181,11 +180,8 @@ $line__margin: ($margin--main * 3);
   }
 
   .seq__item__display img {
-    height: 48px;
-  }
-
-  .seq__item__display .material-icons {
-    font-size: 48px;
+    object-fit: contain;
+    object-position: center;
   }
 
   .seq__item__content {

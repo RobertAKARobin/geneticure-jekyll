@@ -50,6 +50,8 @@
 
   .hero__content {
     color: $font-color--on-dark;
+    margin-top: ($margin--main * 3);
+    margin-bottom: ($margin--main  * 3);
   }
 
   .hero__content em {

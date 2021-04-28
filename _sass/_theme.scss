@@ -39,6 +39,40 @@ a.material-icons:active {
   color: $font-color--highlight--sink;
 }
 
+.link--icon {
+  color: transparent;
+  display: inline-block;
+  height: 1em;
+  line-height: 0;
+  overflow: hidden;
+  width: 1em;
+  vertical-align: bottom;
+
+  &:after {
+    background-size: contain;
+    background-repeat: no-repeat;
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+  }
+}
+
+$link-domains: (
+  'linkedin.com': 'linkedin.png',
+  'twitter.com': 'twitter.png',
+);
+
+@each $domain, $icon in $link-domains {
+  a[href*="#{$domain}"] {
+    @extend .link--icon;
+  }
+
+  a[href*="#{$domain}"]:after {
+    background-image: url(/assets/img/icon/#{$icon});
+  }
+}
+
 h1 {
   font-size: rem(32);
   letter-spacing: 0.1px;
@@ -98,35 +132,6 @@ strong {
     list-style-position: inside;
     list-style-type: disc;
     margin: ($margin--main / 2) 0;
-  }
-}
-
-.links {
-  & > * {
-    list-style-type: none !important;
-  }
-
-  a[href*="linkedin"],
-  a[href*="twitter"]{
-    &:after {
-      background-size: contain;
-      background-repeat: no-repeat;
-      content: '';
-      display: block;
-      height: 2em;
-      width: 2em;
-      vertical-align: middle;
-    }
-
-    &:not(:empty):after {
-      margin-left: 1ex;
-    }
-  }
-
-  @each $domain in ('linkedin', 'twitter') {
-    a[href*="#{$domain}"]:after {
-      background-image: url(/assets/img/icon/#{$domain}.png);
-    }
   }
 }
 
