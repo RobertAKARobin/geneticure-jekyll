@@ -19,7 +19,7 @@ img_src: /assets/img/bg/scientists.jpg
 
 <cite>Influence of genes involved in the renin-angiotensin-aldosterone system and the blood pressure response to angiotensin receptor blockade in hypertension.</cite> D Walla, J Ross, EM Snyder, R Sprissler, TP Olson, and P Phelps. Presented at the American Society for Health-System Pharmacists Annual Meeting. 2017.
 
-<cite>Pharmacoeconomic Benefit of a Multi-Gene Panel and Blood Pressure Response to Hypertension Therapy.</cite> Monica Akre, Eli F. Kelley, Scott C. Snyder, Ryan Sprissler, Thomas P. Olson, and Eric M. Snyder. Presented at the Mayo Clinic Center for Individualized Medicine Annual Meeting. 2018.
+<cite id="pharmaco-cim">*Pharmacoeconomic Benefit of a Multi-Gene Panel and Blood Pressure Response to Hypertension Therapy.</cite> Monica Akre, Eli F. Kelley, Scott C. Snyder, Ryan Sprissler, Thomas P. Olson, and Eric M. Snyder. Presented at the Mayo Clinic Center for Individualized Medicine Annual Meeting. 2018.
 
 <cite>Influence of beta-1 and beta-2 adrenergic receptor genotypes on echocardiographic response to selective and non-selective beta-blockade.</cite> Jerad J. Simmons, Eric M. Snyder, Audrie Ayres, Emma K. Bulock, Danielle M. Walla, Jennifer K. Ross, Monica Akre, Ryan Sprissler, Thomas P. Olson, Pamela K. Phelps. Presented at the American Society for Health-System Pharmacists Annual Meeting. 2018.
 
@@ -35,7 +35,7 @@ img_src: /assets/img/bg/scientists.jpg
 
 <cite>[Association of a Multi-Gene Panel with Blood Pressure Medication Success in Patients with Hypertension.](https://www.gavinpublishers.com/articles/Research-Article/Hypertension-An-Open-Access/Association-of-a-Multi-Gene-Panel-with-Blood-Pressure-Medication-Success-in-Patients-with-Hypertension-A-Pilot-Study)</cite> Eric M. Snyder, Ryan Sprissler, Micah Johnson, Greg D. Beenken, Timothy Curry, Nicholas Cassuto, and Thomas P. Olson. Hypertension: Open Access. HTOA-103.  2019. DOI: 10.29011/ HTOA-103.100008
 
-<cite>[Pharmacoeconomic Benefit of a Multi-Gene Panel and Blood Pressure Response to Hypertension Therapy.](https://www.tandfonline.com/doi/abs/10.1080/13696998.2018.1531011)</cite> Eli F. Kelley, Eric M. Snyder,Nimer Alkhatib, Scott C. Snyder, Ryan Sprissler, Thomas P. Olson, Monica Akre, and Ivo Abraham. Journal of Medical Economics.2018. Oct 22:1-8. DOI: 10.1080/13696998.2018.1531011. (PMID: 30280614)
+<cite id="pharmaco-jme">**[Pharmacoeconomic Benefit of a Multi-Gene Panel and Blood Pressure Response to Hypertension Therapy.](https://www.tandfonline.com/doi/abs/10.1080/13696998.2018.1531011)</cite> Eli F. Kelley, Eric M. Snyder,Nimer Alkhatib, Scott C. Snyder, Ryan Sprissler, Thomas P. Olson, Monica Akre, and Ivo Abraham. Journal of Medical Economics.2018. Oct 22:1-8. DOI: 10.1080/13696998.2018.1531011. (PMID: 30280614)
 
 <cite>The Effect of Genetically Guided Mathematical Prediction and the Blood Pressure Response to Pharmacotherapy in Hypertension Patients.</cite> Eli F. Kelley, Thomas P. Olson, Timothy Curry, Ryan Sprissler, and Eric M. Snyder. Clinical Medicine Insights: Cardiology. In press. DOI: 10.1177/1179546819845883. 2019.
 
