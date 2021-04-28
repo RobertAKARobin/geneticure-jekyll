@@ -1,9 +1,9 @@
 - - text: About
     to: /
   - text: Sign in
-    to: https://portal.geneticure.com
+    to: https://gcedev.herokuapp.com
   - text: Contact
-    to: https://portal.geneticure.com/contact
+    to: https://gcedev.herokuapp.com/contact
 - - text: FAQ
     to: /faq
   - text: Press
