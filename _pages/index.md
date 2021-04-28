@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Geneticure | Medicine Personalized by Your DNA
+title: Medicine Personalized by Your DNA
 ---
 
 {% capture tagline %}

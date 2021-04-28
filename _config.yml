@@ -6,6 +6,13 @@ url: https://geneticure.com
 twitter_username: geneticure
 github_username: geneticure
 
+excerpt_separator: <!--excerpt-->
+
+collections:
+  pages:
+    output: true
+    permalink: /:path
+
 sass:
   sass_dir: _sass
   style: expanded
