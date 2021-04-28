@@ -106,9 +106,9 @@ strong {
     list-style-type: none !important;
   }
 
-  a[href*="linkedin"]{
+  a[href*="linkedin"],
+  a[href*="twitter"]{
     &:after {
-      background-image: url(/assets/img/li.png);
       background-size: contain;
       background-repeat: no-repeat;
       content: '';
@@ -120,6 +120,12 @@ strong {
 
     &:not(:empty):after {
       margin-left: 1ex;
+    }
+  }
+
+  @each $domain in ('linkedin', 'twitter') {
+    a[href*="#{$domain}"]:after {
+      background-image: url(/assets/img/icon/#{$domain}.png);
     }
   }
 }

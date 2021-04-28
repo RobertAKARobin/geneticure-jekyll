@@ -1,6 +1,6 @@
 ---
 layout: base
-title: Test
+title: Geneticure | Medicine Personalized by Your DNA
 ---
 
 {% capture tagline %}
