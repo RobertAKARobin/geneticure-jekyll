@@ -4,7 +4,7 @@
   position: relative;
 }
 
-.collapse__content:before {
+.collapse__content:before { // Using :before instead of border so that it fades under the :after overlay
   border-left: $border-width--main solid $color--highlight;
   content: '';
   left: 0;
@@ -15,10 +15,12 @@
 }
 
 .collapse__content:after {
-  background-image: linear-gradient(to bottom, transparent, $background--base), linear-gradient(to right, transparent, $background--base),;
+  background-image:
+    linear-gradient(to bottom, transparent 25%, $background--base),
+    linear-gradient(to bottom right, transparent, $background--base);
   bottom: 0;
   content: '';
-  height: 50%;
+  height: 100%;
   left: 0;
   position: absolute;
   width: 100%;
