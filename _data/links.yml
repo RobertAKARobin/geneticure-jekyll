@@ -12,3 +12,5 @@
     to: /research
   - text: Team
     to: /team
+  - text: API
+    to: /api

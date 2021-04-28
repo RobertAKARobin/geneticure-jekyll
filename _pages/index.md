@@ -9,8 +9,8 @@ use cutting-edge _research_<br>
 to turn your _DNA_<br>
 into a _**treatment for high blood pressure.**_
 
-<a class="button button--transparent--on-dark" href="#">Get a test kit</a>
-<a class="button button--transparent--on-dark" href="#">Use our API</a>
+<a class="button button--transparent--on-dark" href="https://gcedev.herokuapp.com/contact">Get a test kit</a>
+<a class="button button--transparent--on-dark" href="/api">Use our API</a>
 {% endcapture %}
 {% include hero.html content=tagline height='full' overlay='text' img_alt='Lab with Geneticure test kit' img_src='/assets/img/bg/lab-kit.jpg' img_style='object-fit: cover; object-position: 75% bottom' %}
 
@@ -19,9 +19,9 @@ into a _**treatment for high blood pressure.**_
 
 Geneticure uses a sample of your DNA to recommend blood pressure medications just for you, summarized in a personalized, printable report.
 
-Each Geneticure test kit contains two sterile cheek swabs, and a prepaid envelope to mail them to us. [Register your kit](#) on this website, swab your cheek, and drop your envelope in the mail. You'll be notified in 10-15 business days that your report is ready.
+Each Geneticure test kit contains two sterile cheek swabs, and a prepaid envelope to mail them to us. [Register your kit](https://gcedev.herokuapp.com) on this website, swab your cheek, and drop your envelope in the mail. You'll be notified in 10-15 business days that your report is ready.
 
-<a class="button button--low" href="#">Get a test kit</a>
+<a class="button button--low" href="https://gcedev.herokuapp.com/contact">Get a test kit</a>
 {% endcapture %}
 {% capture product_intro_section %}
   {% include img.html img_alt='Geneticure kit' img_src='/assets/img/kit-w-contents.jpg' img_style='object-fit: contain' %}
