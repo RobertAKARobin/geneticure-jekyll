@@ -118,7 +118,7 @@
 
   @media #{$bp--lg}, #{$bp--xl} {
     .hero__content {
-      background: rgba(255, 255, 255, 0.9);
+      background: rgba(255, 255, 255, 0.95);
       border: 0 solid transparent;
       border-width: 0 calc((100vw - #{$width--screen--xl}) / 2);
       padding: ($margin--main * 2);
@@ -173,6 +173,13 @@
     .hero__content {
       border-radius: $margin--main;
       margin: ($margin--main * 3) 0;
+    }
+
+    &.hero--align__center {
+      .hero__content {
+        margin-left: $margin--main;
+        margin-right: $margin--main;
+      }
     }
 
     &.hero--align__left {

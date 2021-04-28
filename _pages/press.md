@@ -1,8 +1,8 @@
 ---
 layout: default
 title: Press
-img_alt: Scientists
-img_src: /assets/img/bg/scientists.jpg
+img_alt: Lab
+img_src: /assets/img/bg/lab-kit.jpg
 ---
 
 {% include hero.html content=page.title img_alt=page.img_alt img_src=page.img_src overlay='text' %}

@@ -96,3 +96,13 @@ For 10 years we’ve put science and innovation to work, taking personalized med
   {% include text.html content=about_us %}
 {% endcapture %}
 {% include section.html content=about_us layout='columns' reverse=true text=true %}
+
+{% capture press_latest %}
+## In the press
+
+{% assign press_latest = site.data.press|slice:0,3 %}
+{% include sequence-timeline.html steps=press_latest %}
+
+<a class="button button--low" href="/press">See more</a>
+{% endcapture %}
+{% include hero.html align='center' content=press_latest hide='sm,md' img_alt='People meeting' img_src='/assets/img/bg/meeting.jpg' img_style='object-position: top center' overlay='float' %}
