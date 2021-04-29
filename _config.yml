@@ -1,12 +1,17 @@
-title: Geneticure
+baseurl: ""
 company: Geneticure
 company_long: Geneticure, Inc.
 email: info@geneticure.com
 description: Geneticure reveals the right medication for you, prescribed by your DNA.
-slogan: Medicine should be personalized.
+github_username: geneticure
 logo: /assets/img/logo.svg
+slogan: Medicine should be personalized.
+title: Geneticure
 preview_img: /assets/img/site-preview.jpg
 preview_img_alt: Geneticure logo
+twitter_username: geneticure
+url: https://geneticure.com
+
 contact:
   address:
     line_1: 4 3rd Street SW, Suite 305b
@@ -16,6 +21,7 @@ contact:
   phone:
     - 1.800.DNA.8109
     - 1.800.362.8109
+
 disclaimer: These statements have not been evaluated by the Food and Drug Administration. This product is not intended to diagnose, treat, cure, or prevent any disease. This test, like all medical tests, should be used by your healthcare provider as an aid in decision making about your health, which includes much more information than genetics. Do not start or stop taking any medications without first consulting your healthcare provider.
 
 menu:
@@ -46,21 +52,13 @@ menu-social:
   - text: Twitter
     to: https://twitter.com/geneticure
 
-baseurl: ""
-url: https://geneticure.com
-twitter_username: geneticure
-github_username: geneticure
-
-excerpt_separator: <!--excerpt-->
-
 collections:
   pages:
     output: true
     permalink: /:path
-
+excerpt_separator: <!--excerpt-->
+kramdown:
+  auto_ids: false
 sass:
   sass_dir: _sass
   style: expanded
-
-kramdown:
-  auto_ids: false
