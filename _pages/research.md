@@ -1,5 +1,5 @@
 ---
-layout: text
+layout: page-text
 title: Our research
 img_alt: Scientists
 img_src: /assets/img/bg/scientists.jpg

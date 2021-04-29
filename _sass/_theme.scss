@@ -73,29 +73,6 @@ $link-domains: (
   }
 }
 
-h1 {
-  font-size: rem(32);
-  letter-spacing: 0.1px;
-  line-height: 2.5rem;
-}
-
-h1 em,
-h2 em,
-h3 em {
-  color: $font-color--highlight;
-  text-decoration: none;
-}
-
-h2 {
-  font-size: rem(25);
-  letter-spacing: 0.1px;
-  line-height: rem(30);
-}
-
-h3 {
-  font-weight: $font-weight--strong;
-}
-
 cite {
   font-weight: bold;
 }
@@ -110,7 +87,9 @@ sup a {
 }
 
 small {
-  font-style: italic;
+  @include font--fineprint;
+
+  display: block;
 }
 
 em {
@@ -126,6 +105,29 @@ strong {
     margin: $margin--main 0;
   }
 
+  h1 {
+    font-size: rem(32);
+    letter-spacing: 0.1px;
+    line-height: 2.5rem;
+  }
+  
+  h1 em,
+  h2 em,
+  h3 em {
+    color: $font-color--highlight;
+    text-decoration: none;
+  }
+  
+  h2 {
+    font-size: rem(25);
+    letter-spacing: 0.1px;
+    line-height: rem(30);
+  }
+  
+  h3 {
+    font-weight: $font-weight--strong;
+  }
+
   ol li {
     list-style-position: inside;
     list-style-type: decimal;
@@ -136,6 +138,10 @@ strong {
     list-style-position: inside;
     list-style-type: disc;
     margin: ($margin--main / 2) 0;
+  }
+
+  hr {
+    margin: ($margin--main * 2) $margin--main;
   }
 }
 
@@ -162,16 +168,6 @@ details summary {
 }
 
 img {
-  display: block;
-}
-
-hr {
-  margin: ($margin--main * 2) $margin--main;
-}
-
-.disclaimer {
-  @include font--fineprint();
-
   display: block;
 }
 

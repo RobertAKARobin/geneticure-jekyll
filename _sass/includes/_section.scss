@@ -12,12 +12,19 @@
   @include content--page;
 }
 
-.main > .section:first-child {
+.section:first-child {
   margin-top: 0;
+}
 
+.main > .section:first-child,
+.main > header:first-child {
   .nav--fixed + & {
     border-top: $nav--height solid transparent;
   }
+}
+
+.main > header:first-child + .section {
+  margin-top: 30px;
 }
 
 @media #{$bp--sm} {

@@ -4,14 +4,14 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="description" content="{{ site.description }}">
-		<title>Geneticure | {{ page.title }}</title>
+		<title>{{ site.title }} | {{ page.title }}</title>
 		<link rel="shortcut icon" href="/favicon.ico" >
 		{% if jekyll.environment == 'development' %}
 			<link rel="stylesheet" href="/assets/css/mat-icons.css" />
 			<link rel="stylesheet" href="/assets/css/localfonts.css" />
 		{% else %}
-			<link href="https://fonts.googleapis.com/css?family=Nunito:400,700" rel="stylesheet">
-			<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+			<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons&display=swap" rel="stylesheet">
+			<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap" rel="stylesheet">
 		{% endif %}
 		<link rel="stylesheet" href="/assets/css/main.css">
 		<script defer src="/assets/js/index.js"></script>
@@ -20,11 +20,11 @@
 		<nav class="nav nav--fixed">
 			<div class="nav__content">
 				<a class="nav__home" href="/">
-					<img class="nav__logo" src="/assets/img/logo.svg" alt="Geneticure logo" />
+					<img class="nav__logo" src="{{ site.logo }}" alt="{{ site.company }} logo" />
 				</a>
 
 				<div class="nav__links">
-					{% for link in site.data.links[0] %}
+					{% for link in site.menu[0] %}
 						<a class="tab" href="{{ link.to }}">{{ link.text }}</a>
 					{% endfor %}
 				</div>
@@ -38,46 +38,47 @@
 		<footer class="section footer">
 			<div class="footer__panels">
 				<div>
-					<img class="footer__logo" src="/assets/img/logo.svg" alt="Geneticure logo" />
-					<p>Medicine should be personalized.</p>
-					<p>&copy; 2021 Geneticure, Inc. All rights reserved.</p>
+					<img class="footer__logo" src="{{ site.logo }}" alt="{{ site.company }} logo" />
+					<p>{{ site.slogan }}.</p>
+					<p>&copy; {{ site.time | date: '%Y' }} {{ site.company_long }}. All rights reserved.</p>
 					<p>
-						<a href="#">Terms and Conditions</a> |
-						<a href="#">Privacy Policy</a>
+						{% for link in site.menu-legal %}
+							<a href="{{ link.to }}">{{ link.text }}</a>
+							{% if forloop.last == false %} | {% endif %}
+						{% endfor %}
 					</p>
 				</div>
-				<div>
-					<ul>
-						{% for link in site.data.links[0] %}
-							<li><a href="{{ link.to }}">{{ link.text }}</a></li>
-						{% endfor %}
-					</ul>
-				</div>
-				<div>
-					<ul>
-						{% for link in site.data.links[1] %}
-							<li><a href="{{ link.to }}">{{ link.text }}</a></li>
-						{% endfor %}
-					</ul>
-				</div>
+				{% for linkgroup in site.menu %}
+					<div>
+						<ul>
+							{% for link in linkgroup %}
+								<li><a href="{{ link.to }}">{{ link.text }}</a></li>
+							{% endfor %}
+						</ul>
+					</div>
+				{% endfor %}
 				<div class="footer__social">
-					<a href="https://linkedin.com/company/geneticure">LinkedIn</a>
-					<a href="https://twitter.com/geneticure">Twitter</a>
+					{% for link in site.menu-social %}
+						<a href="{{ link.to }}">{{ link.text }}</a>
+					{% endfor %}
 				</div>
 				<div>
+					{% assign contact = site.contact %}
 					<p>
 						<address>
-							4 3rd Street SW, Suite 305b<br>
-							Rochester, MN 55902
+							{% assign address = contact.address %}
+							{{ address.line_1 }}<br>
+							{{ address.city }}, {{ address.state }} {{ address.zip }}
 						</address>
 					<p>
-						<a href="#">info@geneticure.com</a><br>
-						1.800.DNA.8109<br>
-						1.800.362.8109<br>
+						<a href="mailto:{{ site.email }}">{{ site.email }}</a><br>
+						{% for phone in contact.phone %}
+							<a href="tel:{{ phone }}">{{ phone }}</a><br>
+						{% endfor %}
 					</p>
 				</div>
 			</div>
-			<p class="footer__fineprint disclaimer">These statements have not been evaluated by the Food and Drug Administration. This product is not intended to diagnose, treat, cure, or prevent any disease. This test, like all medical tests, should be used by your healthcare provider as an aid in decision making about your health, which includes much more information than genetics. Do not start or stop taking any medications without first consulting your healthcare provider.</p>
+			<p class="footer__fineprint"><small>{{ site.disclaimer }}</small></p>
 		</footer>
 	</body>
 </html>

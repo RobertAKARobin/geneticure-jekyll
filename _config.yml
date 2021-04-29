@@ -1,6 +1,49 @@
 title: Geneticure
-email: admin@geneticure.com
+company: Geneticure
+company_long: Geneticure, Inc.
+email: info@geneticure.com
 description: Geneticure reveals the right medication for you, prescribed by your DNA.
+slogan: Medicine should be personalized.
+logo: /assets/img/logo.svg
+contact:
+  address:
+    line_1: 4 3rd Street SW, Suite 305b
+    city: Rochester
+    state: MN
+    zip: 55902
+  phone:
+    - 1.800.DNA.8109
+    - 1.800.362.8109
+disclaimer: These statements have not been evaluated by the Food and Drug Administration. This product is not intended to diagnose, treat, cure, or prevent any disease. This test, like all medical tests, should be used by your healthcare provider as an aid in decision making about your health, which includes much more information than genetics. Do not start or stop taking any medications without first consulting your healthcare provider.
+
+menu:
+  - - text: About
+      to: /
+    - text: Sign in
+      to: https://gcedev.herokuapp.com
+    - text: Contact
+      to: https://gcedev.herokuapp.com/contact
+  - - text: FAQ
+      to: /faq
+    - text: Press
+      to: /press
+    - text: Research
+      to: /research
+    - text: Team
+      to: /team
+    - text: API
+      to: /api
+menu-legal:
+  - text: Terms and conditions
+    to: /terms
+  - text: Privacy policy
+    to: /privacy
+menu-social:
+  - text: LinkedIn
+    to: https://linkedin.com/company/geneticure
+  - text: Twitter
+    to: https://twitter.com/geneticure
+
 baseurl: ""
 url: https://geneticure.com
 twitter_username: geneticure

@@ -4,10 +4,7 @@ title: Medicine Personalized by Your DNA
 ---
 
 {% capture tagline %}
-Our _algorithms_<br>
-use cutting-edge _research_<br>
-to turn your _DNA_<br>
-into a _**treatment for high blood pressure.**_
+# Our algorithms<br>use cutting-edge research<br>to turn your DNA<br>into a **treatment for high blood pressure.**
 
 <a class="button button--transparent--on-dark" href="https://gcedev.herokuapp.com/contact">Get a test kit</a>
 <a class="button button--transparent--on-dark" href="/api">Use our API</a>
@@ -30,7 +27,9 @@ Each Geneticure test kit contains two sterile cheek swabs, and a prepaid envelop
 {% include section.html content=product_intro_section layout='columns' reverse=true %}
 
 {% capture product_sequence_section %}
-  {% include sequence.html steps=site.data.howitworks direction='y' highlight_first=true %}
+# How does it work?
+
+  {% include sequence.html steps=site.data.howitworks direction='y' %}
 {% endcapture %}
 {% include hero.html content=product_sequence_section hide='sm,md' overlay='block' width='half' img_src='/assets/img/bg/lab-techs.jpg' img_alt='Lab techs' %}
 
@@ -85,20 +84,20 @@ Your report describes the responsiveness of 3 of your body's main organ systems:
 {% include hero.html align='right' content=for_whom height='full' hide='sm,md' overlay='block' width='half' img_alt='Geneticure' img_style='object-position: left' img_src='/assets/img/bg/doctor-consult.jpg' %}
 
 {% capture about_us %}
-# Built with love in Minnesota.
+# Built with love in _Minnesota_.
 
 For 10 years we’ve put science and innovation to work, taking personalized medicine to the next level. Our unique focus on the physiology and combinatorial pharmacogenomics specific to each disease is unparalleled in a field of shotgun approaches to personalized medicine. Our first solution is helping to solve the trial-and-error approach in the leading preventable cause of death in the world: hypertension or high blood pressure. And we’re just getting started.
 
 <a class="button button--low" href="/team">Meet our team</a>
 {% endcapture %}
 {% capture about_us %}
-  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d45904.882603545106!2d-92.49840832065428!3d44.02025457911051!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87f75f631adca1b1%3A0x9af7c3b31dbb04ce!2s4%203rd%20St%20SW%20%23305b%2C%20Rochester%2C%20MN%2055902!5e0!3m2!1sen!2sus!4v1618862134497!5m2!1sen!2sus" allowfullscreen="" loading="lazy"></iframe>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d45904.882603545106!2d-92.49840832065428!3d44.02025457911051!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87f75f631adca1b1%3A0x9af7c3b31dbb04ce!2s4%203rd%20St%20SW%20%23305b%2C%20Rochester%2C%20MN%2055902!5e0!3m2!1sen!2sus!4v1618862134497!5m2!1sen!2sus" allowfullscreen="" loading="lazy" title="Geneticure map"></iframe>
   {% include text.html content=about_us %}
 {% endcapture %}
 {% include section.html content=about_us layout='columns' reverse=true text=true %}
 
 {% capture press_latest %}
-## In the press
+# In the press
 
 {% assign press_latest = site.data.press|slice:0,3 %}
 {% include sequence-timeline.html steps=press_latest %}

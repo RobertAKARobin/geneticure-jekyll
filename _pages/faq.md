@@ -1,5 +1,5 @@
 ---
-layout: text
+layout: page-text
 title: Frequently asked questions
 img_alt: Kids playing
 img_src: /assets/img/bg/kids.jpg

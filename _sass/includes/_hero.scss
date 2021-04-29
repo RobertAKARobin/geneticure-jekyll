@@ -53,10 +53,6 @@
     margin-top: ($margin--main * 3);
     margin-bottom: ($margin--main  * 3);
   }
-
-  .hero__content em {
-    text-decoration: none;
-  }
   
   .hero__content strong {
     color: $font-color--highlight;
@@ -71,7 +67,7 @@
   }
 
   @media #{$bp--sm} {
-    .hero__content {
+    .hero__content h1 {
       font-size: 24px;
       line-height: 1.4em;
       text-align: center;
@@ -83,14 +79,14 @@
   }
   
   @media #{$bp--md} {
-    .hero__content {
+    .hero__content h1 {
       font-size: 42px;
       line-height: 1.4em;
     }
   }
   
   @media #{$bp--lg} {
-    .hero__content {
+    .hero__content h1 {
       font-size: 64px;
       line-height: 1.4em;
     }

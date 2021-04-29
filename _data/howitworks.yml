@@ -1,8 +1,6 @@
-- title: How does it work?
-  icon: keyboard_arrow_down
 - title: Register
   icon: how_to_reg
-  body: Register your kit on the Geneticure website. <a class="material-icons" href="#">launch</a>
+  body: Register your kit on the Geneticure website. <a class="material-icons" href="https://portal.geneticure.com">launch</a>
 - title: Requisition
   icon: medical_services
   body: A physician confirms the Geneticure test is suitable for you.
