@@ -58,7 +58,7 @@ collections:
     permalink: /:path
 excerpt_separator: <!--excerpt-->
 kramdown:
-  auto_ids: false
+  auto_ids: true
 sass:
   sass_dir: _sass
   style: expanded
