@@ -5,6 +5,8 @@ email: info@geneticure.com
 description: Geneticure reveals the right medication for you, prescribed by your DNA.
 slogan: Medicine should be personalized.
 logo: /assets/img/logo.svg
+preview_img: /assets/img/site-preview.jpg
+preview_img_alt: Geneticure logo
 contact:
   address:
     line_1: 4 3rd Street SW, Suite 305b

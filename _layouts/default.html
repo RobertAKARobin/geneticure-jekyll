@@ -3,24 +3,37 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta name="description" content="{{ site.description }}">
 		<title>{{ site.title }} | {{ page.title }}</title>
-		<link rel="shortcut icon" href="/favicon.ico" >
+
 		{% if jekyll.environment == 'development' %}
-			<link rel="stylesheet" href="/assets/css/mat-icons.css" />
-			<link rel="stylesheet" href="/assets/css/localfonts.css" />
+			<link rel="stylesheet" href="/assets/css/mat-icons.css">
+			<link rel="stylesheet" href="/assets/css/localfonts.css">
 		{% else %}
 			<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons&display=swap" rel="stylesheet">
 			<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap" rel="stylesheet">
 		{% endif %}
 		<link rel="stylesheet" href="/assets/css/main.css">
 		<script defer src="/assets/js/index.js"></script>
+
+		<meta name="description" content="{{ site.description }}">
+		<meta property="og:title" content="{{ site.title }} | {{ page.title }}">
+		<meta property="og:description" content="{{ site.description }}">
+		<meta property="og:image" content="{{ site.preview_img }}">
+		<meta property="og:image:alt" content="{{ site.preview_img_alt }}">
+		<meta property="og:locale" content="en_US">
+		<meta property="og:type" content="website">
+		<meta property="og:url" content="{{ site.url }}{{ page.url }}">
+		<meta name="twitter:card" content="summary_large_image">
+		<link rel="icon" href="/assets/img/favicon.ico">
+		<link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
+		<link rel="apple-touch-icon" href="/assets/img/favicon.png">
+		<link rel="canonical" href="{{ site.url }}{{ page.url }}">
 	</head>
 	<body class="body">
 		<nav class="nav nav--fixed">
 			<div class="nav__content">
 				<a class="nav__home" href="/">
-					<img class="nav__logo" src="{{ site.logo }}" alt="{{ site.company }} logo" />
+					<img class="nav__logo" src="{{ site.logo }}" alt="{{ site.company }} logo">
 				</a>
 
 				<div class="nav__links">
@@ -38,7 +51,7 @@
 		<footer class="section footer">
 			<div class="footer__panels">
 				<div>
-					<img class="footer__logo" src="{{ site.logo }}" alt="{{ site.company }} logo" />
+					<img class="footer__logo" src="{{ site.logo }}" alt="{{ site.company }} logo">
 					<p>{{ site.slogan }}.</p>
 					<p>&copy; {{ site.time | date: '%Y' }} {{ site.company_long }}. All rights reserved.</p>
 					<p>
