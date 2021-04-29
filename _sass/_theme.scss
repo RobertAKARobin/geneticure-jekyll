@@ -128,6 +128,10 @@ strong {
     font-weight: $font-weight--strong;
   }
 
+  h4 {
+    text-decoration: underline;
+  }
+
   ol li {
     list-style-position: inside;
     list-style-type: decimal;
@@ -140,8 +144,18 @@ strong {
     margin: ($margin--main / 2) 0;
   }
 
+  ul ul,
+  ul ol,
+  ol ul,
+  ol ol {
+    border-left: 1px solid $border-color--soft;
+    padding-left: $margin--main;
+    margin-top: 0;
+  }
+
   hr {
-    margin: ($margin--main * 2) $margin--main;
+    border-top: 1px solid $border-color--soft;
+    margin: ($margin--main * 2) auto;
   }
 }
 
