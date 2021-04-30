@@ -1,0 +1,1 @@
+{% if include.hide %}{% assign hide_sizes=include.hide|split:',' %}{% for hide_size in hide_sizes %} hide--{{ hide_size }}{% endfor %}{% endif %}

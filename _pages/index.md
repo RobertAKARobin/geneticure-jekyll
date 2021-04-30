@@ -4,7 +4,7 @@ title: Medicine Personalized by Your DNA
 ---
 
 {% capture tagline %}
-# Our algorithms<br>use cutting-edge research<br>to turn your DNA<br>into a **treatment for high blood pressure.**
+# Our algorithms<br> use cutting-edge research<br> to turn your DNA<br> into a **treatment for high blood pressure.**
 
 <a class="button button--transparent--on-dark" href="https://gcedev.herokuapp.com/contact">Get a test kit</a>
 <a class="button button--transparent--on-dark" href="/api">Use our API</a>
@@ -20,7 +20,7 @@ Each Geneticure test kit contains two sterile cheek swabs, and a prepaid envelop
 
 <a class="button button--low" href="https://gcedev.herokuapp.com/contact">Get a test kit</a>
 {% endcapture %}
-{% include section.html align='left' content=product_intro img_alt='Geneticure kit' img_src='/assets/img/kit-w-contents.jpg' img_style='object-fit: contain' layout='text-display' reverse=true %}
+{% include section.html align='right' content=product_intro img_alt='Geneticure kit' img_src='/assets/img/kit-w-contents.jpg' img_style='object-fit: contain' layout='text-display' reverse=true %}
 
 {% capture product_sequence_section %}
 # How does it work?
@@ -45,7 +45,7 @@ Your report describes the responsiveness of 3 of your body's main organ systems:
 {% capture report_display %}
   {% include frame.html type='tablet' img_alt='Geneticure report' img_src='/assets/img/report.png' %}
 {% endcapture %}
-{% include section.html align='left' content=report_intro display=report_display layout='text-display' reverse=true %}
+{% include section.html align='right' content=report_intro display=report_display layout='text-display' reverse=true %}
 
 {% capture for_whom %}
 # Who is it for?
@@ -73,7 +73,7 @@ Your report describes the responsiveness of 3 of your body's main organ systems:
 **Increase your employees' quality of life while decreasing your healthcare costs.** Employees with cardiovascular disease (including high blood pressure) cost employers _an extra $1,100 per year in lost productivity alone_<sup><a href="/research#pharmaco-cim">*</a></sup>, compared with healthier employees. With Geneticure, you may be able to significantly reduce your company’s chronic disease spending by an estimated 16x ROI or _$1409 per year per employee_.<sup><a href="/research#pharmaco-jme">**</a></sup> [Get in touch.](https://gcedev.herokuapp.com/contact)
 
 {% endcapture %}
-{% include section.html align='right' content=for_whom height='full' hide='sm,md' layout='hero' overlay='block' width='half' img_alt='Geneticure' img_style='object-position: left' img_src='/assets/img/bg/doctor-consult.jpg' margins=false %}
+{% include section.html align='right' content=for_whom hide='sm,md' img_alt='Geneticure' img_style='object-position: left' img_src='/assets/img/bg/doctor-consult.jpg' layout='hero' overlay='block' margins=false width='half' %}
 
 {% capture about_us %}
 # Built with love in _Minnesota_.
@@ -85,7 +85,7 @@ For 10 years we’ve put science and innovation to work, taking personalized med
 {% capture map %}
   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d45904.882603545106!2d-92.49840832065428!3d44.02025457911051!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87f75f631adca1b1%3A0x9af7c3b31dbb04ce!2s4%203rd%20St%20SW%20%23305b%2C%20Rochester%2C%20MN%2055902!5e0!3m2!1sen!2sus!4v1618862134497!5m2!1sen!2sus" allowfullscreen="" loading="lazy" title="Geneticure map"></iframe>
 {% endcapture %}
-{% include section.html align='left' content=about_us display=map layout='text-display' reverse=true text=true %}
+{% include section.html align='right' content=about_us display=map layout='text-display' reverse=true text=true %}
 
 {% capture press_latest %}
 # In the press

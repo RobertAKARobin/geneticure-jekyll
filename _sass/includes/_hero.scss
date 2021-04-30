@@ -25,16 +25,6 @@
   }
 }
 
-.hero__display {
-  @each $bp__name, $bp__size in $bps {
-    @media #{$bp__size} {
-      .hero--hide__#{$bp__name} & {
-        display: none;
-      }
-    }
-  }
-}
-
 .hero__display > * {
   box-sizing: border-box;
   height: 100%;

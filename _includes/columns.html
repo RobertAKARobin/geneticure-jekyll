@@ -1,7 +1,7 @@
 <div class="columns columns--valign__{{ include.valign|default:'center' }} {% if include.reverse %}columns--reverse{% endif %}">
 	{% if include.layout == 'text-display' %}
 		{% assign align = include.align|default:'left' %}
-		{% if align == 'right' %}
+		{% if align == 'left' %}
 			{% include text.html %}
 			{% if include.display %}
 				{{ include.display }}

@@ -13,6 +13,14 @@
   @include hidden;
 }
 
+@each $bp__name, $bp__size in $bps {
+  @media #{$bp__size} {
+    .hide--#{$bp__name} {
+      display: none;
+    }
+  }
+}
+
 // Text
 
 a {
@@ -182,6 +190,11 @@ details summary {
 
 img {
   display: block;
+}
+
+img.shape--circle {
+  border-radius: 50%;
+  overflow: hidden;
 }
 
 // Buttons
