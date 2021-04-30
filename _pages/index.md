@@ -14,7 +14,7 @@ title: Medicine Personalized by Your DNA
 {% capture product_intro %}
 ## Prescriptions for your body.<br>_Decisions from your DNA._
 
-Geneticure uses a sample of your DNA to recommend blood pressure medications just for you, summarized in a personalized, printable report.
+Geneticure uses a sample of your DNA to recommend blood pressure medications just for you, summarized in a personalized, printable report.
 
 Each Geneticure test kit contains two sterile cheek swabs, and a prepaid envelope to mail them to us. [Register your kit](https://gcedev.herokuapp.com) on this website, swab your cheek, and drop your envelope in the mail. You'll be notified in 10-15 business days that your report is ready.
 
@@ -52,7 +52,7 @@ Your report describes the responsiveness of 3 of your body's main organ systems:
 
 ### _Patients & Caregivers._
 
-**Your DNA is unique. Your high blood pressure prescription should be, too.** No matter where you are in your treatment plan — whether you’ve been newly diagnosed or have been managing your blood pressure for years — with the help of your doctor, Geneticure’s test can help get you on the right path. [Frequently asked questions.](/faq)
+**Your DNA is unique. Your high blood pressure prescription should be, too.** No matter where you are in your treatment plan — whether you've been newly diagnosed or have been managing your blood pressure for years — with the help of your doctor, Geneticure's test can help get you on the right path. [Frequently asked questions.](/faq)
 
 ---
 
@@ -70,7 +70,7 @@ Your report describes the responsiveness of 3 of your body's main organ systems:
 
 ### _Employers._
 
-**Increase your employees' quality of life while decreasing your healthcare costs.** Employees with cardiovascular disease (including high blood pressure) cost employers _an extra $1,100 per year in lost productivity alone_<sup><a href="/research#pharmaco-cim">*</a></sup>, compared with healthier employees. With Geneticure, you may be able to significantly reduce your company’s chronic disease spending by an estimated 16x ROI or _$1409 per year per employee_.<sup><a href="/research#pharmaco-jme">**</a></sup> [Get in touch.](https://gcedev.herokuapp.com/contact)
+**Increase your employees' quality of life while decreasing your healthcare costs.** Employees with cardiovascular disease (including high blood pressure) cost employers _an extra $1,100 per year in lost productivity alone_<sup><a href="/research#pharmaco-cim">*</a></sup>, compared with healthier employees. With Geneticure, you may be able to significantly reduce your company's chronic disease spending by an estimated 16x ROI or _$1409 per year per employee_.<sup><a href="/research#pharmaco-jme">**</a></sup> [Get in touch.](https://gcedev.herokuapp.com/contact)
 
 {% endcapture %}
 {% include section.html align='right' content=for_whom hide='sm,md' img_alt='Geneticure' img_style='object-position: left' img_src='/assets/img/bg/doctor-consult.jpg' layout='hero' overlay='block' margins=false width='half' %}
@@ -78,7 +78,7 @@ Your report describes the responsiveness of 3 of your body's main organ systems:
 {% capture about_us %}
 ## Built with love in _Minnesota_.
 
-For 10 years we’ve put science and innovation to work, taking personalized medicine to the next level. Our unique focus on the physiology and combinatorial pharmacogenomics specific to each disease is unparalleled in a field of shotgun approaches to personalized medicine. Our first solution is helping to solve the trial-and-error approach in the leading preventable cause of death in the world: hypertension or high blood pressure. And we’re just getting started.
+For 10 years we've put science and innovation to work, taking personalized medicine to the next level. Our unique focus on the physiology and combinatorial pharmacogenomics specific to each disease is unparalleled in a field of shotgun approaches to personalized medicine. Our first solution is helping to solve the trial-and-error approach in the leading preventable cause of death in the world: hypertension or high blood pressure. And we're just getting started.
 
 <a class="button button--low" href="/team">Meet our team</a>
 {% endcapture %}

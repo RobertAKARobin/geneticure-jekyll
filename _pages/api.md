@@ -34,7 +34,7 @@ Any provider of healthcare services!
 
 Just make sure you're compliant with your own state and federal regulations. For example, when a Geneticure test kit is purchased by a member of the general public, we use [our own web portal](https://gcedev.herokuapp.com) to collect their consent, and Geneticure's own network of physicians to approve the test and review the recommendations. It's only when those steps have been completed that we make the recommendations available to the consumer.
 
-If you plan on using the healthcare recommendations you get through our API to make decisions about the treatment of patients, then you'll need to follow similar steps. Our API will provide you with instant recommendations; you'll need to make sure those recommendations are reviewed and approved by a licensed physician before they are shared with your patients.
+If you plan on using the healthcare recommendations you get through our API to make decisions about the treatment of patients, then you'll need to follow similar steps. Our API will provide you with instant recommendations; you'll need to make sure those recommendations are reviewed and approved by a licensed physician before they are shared with your patients.
 
 ### How much does it cost?
 
