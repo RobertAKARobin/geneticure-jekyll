@@ -9,7 +9,7 @@ title: Medicine Personalized by Your DNA
 <a class="button button--transparent--on-dark" href="https://gcedev.herokuapp.com/contact">Get a test kit</a>
 <a class="button button--transparent--on-dark" href="/api">Use our API</a>
 {% endcapture %}
-{% include hero.html content=tagline height='full' overlay='text' img_alt='Lab with Geneticure test kit' img_src='/assets/img/bg/lab-kit.jpg' img_style='object-fit: cover; object-position: 75% bottom' %}
+{% include section.html content=tagline height='full' layout='hero' overlay='text' img_alt='Lab with Geneticure test kit' img_src='/assets/img/bg/lab-kit.jpg' img_style='object-fit: cover; object-position: 75% bottom' margins=false %}
 
 {% capture product_intro %}
 # Prescriptions for your body.<br>_Decisions from your DNA._
@@ -31,7 +31,7 @@ Each Geneticure test kit contains two sterile cheek swabs, and a prepaid envelop
 
   {% include sequence.html steps=site.data.howitworks direction='y' %}
 {% endcapture %}
-{% include hero.html content=product_sequence_section hide='sm,md' overlay='block' width='half' img_src='/assets/img/bg/lab-techs.jpg' img_alt='Lab techs' %}
+{% include section.html content=product_sequence_section hide='sm,md' layout='hero' overlay='block' width='half' img_src='/assets/img/bg/lab-techs.jpg' img_alt='Lab techs' margins=false %}
 
 {% capture report_intro %}
 # A unique prescription plan _just for you._
@@ -78,7 +78,7 @@ Your report describes the responsiveness of 3 of your body's main organ systems:
 **Increase your employees' quality of life while decreasing your healthcare costs.** Employees with cardiovascular disease (including high blood pressure) cost employers _an extra $1,100 per year in lost productivity alone_<sup><a href="/research#pharmaco-cim">*</a></sup>, compared with healthier employees. With Geneticure, you may be able to significantly reduce your company’s chronic disease spending by an estimated 16x ROI or _$1409 per year per employee_.<sup><a href="/research#pharmaco-jme">**</a></sup> [Get in touch.](https://gcedev.herokuapp.com/contact)
 
 {% endcapture %}
-{% include hero.html align='right' content=for_whom height='full' hide='sm,md' overlay='block' width='half' img_alt='Geneticure' img_style='object-position: left' img_src='/assets/img/bg/doctor-consult.jpg' %}
+{% include section.html align='right' content=for_whom height='full' hide='sm,md' layout='hero' overlay='block' width='half' img_alt='Geneticure' img_style='object-position: left' img_src='/assets/img/bg/doctor-consult.jpg' margins=false %}
 
 {% capture about_us %}
 # Built with love in _Minnesota_.
@@ -101,4 +101,4 @@ For 10 years we’ve put science and innovation to work, taking personalized med
 
 <a class="button button--low" href="/press">See more news</a>
 {% endcapture %}
-{% include hero.html align='center' content=press_latest hide='sm,md' img_alt='People meeting' img_src='/assets/img/bg/meeting.jpg' img_style='object-position: top center' overlay='float' %}
+{% include section.html align='center' content=press_latest hide='sm,md' img_alt='People meeting' img_src='/assets/img/bg/meeting.jpg' img_style='object-position: top center' layout='hero' margins=false overlay='float' %}

@@ -1,14 +1,10 @@
 <section class="section{% if include.height %} section--height__{{ include.height }}{% endif %}{% if include.layout %} section--layout__{{ include.layout }}{% endif %}{% if include.margins != false %} section--margins{% endif %}" {% if include.id %}id="{{ include.id }}"{% endif %}>
-	{% if include.layout == 'columns' %}
-		{% include columns.html %}
-	{% elsif include.layout == 'grid' %}
-		{% include grid.html %}
-	{% elsif include.layout == 'sequence' %}
-		{% include sequence.html %}
-	{% elsif include.layout == 'sequence-timeline' %}
-		{% include sequence-timeline.html %}
-	{% elsif include.layout == 'collapse' %}
-		{% include collapse.html %}
+	{% if include.layout == 'collapse' %}{% include collapse.html %}
+	{% elsif include.layout == 'columns' %}{% include columns.html %}
+	{% elsif include.layout == 'grid' %}{% include grid.html %}
+	{% elsif include.layout == 'hero' %}{% include hero.html %}
+	{% elsif include.layout == 'sequence' %}{% include sequence.html %}
+	{% elsif include.layout == 'sequence-timeline' %}{% include sequence-timeline.html %}
 	{% else %}
 		{% if include.text %}
 			{% include text.html %}
