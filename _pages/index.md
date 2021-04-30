@@ -62,7 +62,7 @@ Your report describes the responsiveness of 3 of your body's main organ systems:
 
 ---
 
-## _Genetic Test Providers._
+## _Genetic Testing Labs._
 
 **Our RESTful API adds our patented algorithm to your product line.** Generate reports whitelabeled with your company's own branding, or consume our data using a simple JSON interface and add it to your own templates. [See our API.](/api)
 
