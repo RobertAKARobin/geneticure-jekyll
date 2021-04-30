@@ -13,6 +13,7 @@
 			<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap" rel="stylesheet">
 		{% endif %}
 		<link rel="stylesheet" href="/assets/css/main.css">
+		<link rel="stylesheet" href="/assets/css/print.css" media="print">
 		<script defer src="/assets/js/index.js"></script>
 
 		<meta name="description" content="{{ site.description }}">
@@ -62,7 +63,7 @@
 					</p>
 				</div>
 				{% for linkgroup in site.menu %}
-					<div>
+					<div class="footer__menu">
 						<ul>
 							{% for link in linkgroup %}
 								<li><a href="{{ link.to }}">{{ link.text }}</a></li>
@@ -75,7 +76,7 @@
 						<a href="{{ link.to }}">{{ link.text }}</a>
 					{% endfor %}
 				</div>
-				<div>
+				<div class="footer__contact">
 					{% assign contact = site.contact %}
 					<p>
 						<address>

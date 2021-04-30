@@ -5,6 +5,10 @@
   @include text--smooth;
 
   color: $font-color--body;
+
+  @media print {
+    @include font--print;
+  }
 }
 
 // Misc
@@ -187,6 +191,23 @@ strong {
       text-align: center;
     }
   }
+
+  @media print {
+    position: relative;
+
+    h1, h2, h3, h4, h5, h6, p, ul, ol, li {
+      page-break-inside: avoid;
+      position: relative;
+    }
+
+    h1, h2, h3 {
+      text-align: left;
+    }
+
+    hr {
+      margin: $margin--main auto;
+    }
+  }
 }
 
 .material-icons {
@@ -228,6 +249,10 @@ img.shape--circle {
 
   margin-bottom: 1em;
   margin-right: 1ex;
+
+  @media print {
+    display: none !important;
+  }
 }
 
 .button--low {

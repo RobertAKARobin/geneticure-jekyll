@@ -190,3 +190,9 @@ $line__margin: ($margin--main * 3);
     flex-grow: 1;
   }
 }
+
+@media print {
+  .seq__item {
+    page-break-inside: avoid;
+  }
+}

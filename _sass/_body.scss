@@ -14,6 +14,17 @@ $logo__width: 210px;
   flex-grow: 1;
 }
 
+@media print {
+  .body {
+    background: transparent;
+    display: block;
+    max-width: none;
+    min-height: none;
+    overflow: auto;
+    width: auto;
+  }
+}
+
 .nav {
   box-shadow: $shadow--main;
   box-sizing: border-box;
@@ -129,6 +140,21 @@ $logo__width: 210px;
   }
 }
 
+@media print {
+  .nav__content {
+    flex-direction: row;
+    padding: 0 !important;
+  }
+
+  .nav__home {
+    padding-bottom: $margin--main / 2;
+  }
+
+  .nav__links {
+    display: none;
+  }
+}
+
 .footer.section {
   @include content--page;
 
@@ -168,5 +194,29 @@ $logo__width: 210px;
     justify-content: space-between;
     margin-bottom: $margin--main;
     width: 100%;
+  }
+}
+
+@media print {
+  .footer {
+    page-break-inside: avoid;
+    position: relative;
+  }
+
+  .footer__panels {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footer__menu {
+    display: none;
+  }
+
+  .footer__social {
+    display: none;
+  }
+
+  .footer__contact {
+    text-align: right;
   }
 }

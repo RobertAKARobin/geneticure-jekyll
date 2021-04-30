@@ -1,6 +1,7 @@
 $frame__img: "img:not(.frame__frame)";
 
 .frame {
+  page-break-inside: avoid;
   position: relative;
   margin: 0 auto;
   max-width: 400px;
@@ -44,4 +45,10 @@ $frame__img: "img:not(.frame__frame)";
     $width__inner: 45,
     $width__outer: 60,
   );
+}
+
+@media print {
+  .frame {
+    width: 200px;
+  }
 }

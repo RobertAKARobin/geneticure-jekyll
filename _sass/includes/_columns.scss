@@ -52,3 +52,9 @@ $gutter: $margin--main;
     margin: $margin--main * 3 0;
   }
 }
+
+@media print {
+  .columns > iframe {
+    display: none;
+  }
+}
