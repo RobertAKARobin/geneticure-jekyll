@@ -16,7 +16,7 @@ We offer several tiers of API access:
 1. **Reports on demand.** Get our recommendations as a print-, desktop-, and mobile-friendly report in HTML or PDF format.
 1. **Custom-branded reports.** Add your logo, name, and styling to the report template for the most cohesive user experience.
 
-<a class="button button--high" href="https://gcedev.herokuapp.com/contact">Contact us for API access</a>
+###### <a class="button button--high" href="https://gcedev.herokuapp.com/contact">Get API access</a>
 
 {% endcapture %}
 {% capture intro %}
