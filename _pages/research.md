@@ -31,6 +31,8 @@ img_src: /assets/img/bg/scientists.jpg
 
 <cite>Relationship between a weighted multi-gene algorithm and blood pressure control in hypertension.</cite> Phelps, PK, Kelley, EF, Snyder, EM, Walla, DM, Ross, JK, Simmons, JJ, Bulok, EK, Ayres, A, Akre, MK, Sprissler, R, & Olson, TP (2019).  FASEB J., 33 1_supplement: 819.6
 
+---
+
 ## Peer-Reviewed Manuscripts
 
 <cite>[Association of a Multi-Gene Panel with Blood Pressure Medication Success in Patients with Hypertension.](https://www.gavinpublishers.com/articles/Research-Article/Hypertension-An-Open-Access/Association-of-a-Multi-Gene-Panel-with-Blood-Pressure-Medication-Success-in-Patients-with-Hypertension-A-Pilot-Study)</cite> Eric M. Snyder, Ryan Sprissler, Micah Johnson, Greg D. Beenken, Timothy Curry, Nicholas Cassuto, and Thomas P. Olson. Hypertension: Open Access. HTOA-103.  2019. DOI: 10.29011/ HTOA-103.100008
@@ -40,6 +42,8 @@ img_src: /assets/img/bg/scientists.jpg
 <cite>The Effect of Genetically Guided Mathematical Prediction and the Blood Pressure Response to Pharmacotherapy in Hypertension Patients.</cite> Eli F. Kelley, Thomas P. Olson, Timothy Curry, Ryan Sprissler, and Eric M. Snyder. Clinical Medicine Insights: Cardiology. In press. DOI: 10.1177/1179546819845883. 2019.
 
 <cite>[Relationship Between a Weighted Multi-Gene Algorithm and Blood Pressure Control in Hypertension.](https://www.mdpi.com/2077-0383/8/3/289)</cite> Pamela K. Phelps, Eric M. Snyder, Danielle M. Walla, Jennifer K. Ross, Jerad J. Simmons, Emma K. Bulock, Audrie Ayers, MonicaK. Akre, Ryan Sprissler, and Thomas P. Olson. Journal of Clinical Medicine. Feb 28;8(3). 2019. (PMID:30823438)
+
+---
 
 ## Completed and Ongoing Trials
 

@@ -19,6 +19,8 @@ Activation of kits can be done by providers. No action by the patient will be ne
 ### How do I integrate Geneticure into my practice?
 Please [register for an account](https://portal.geneticure.com) as a provider. We will be in touch regarding next steps once we verify your information.
 
+---
+
 ## Paying for the test
 
 ### What is your refund policy?
@@ -35,6 +37,8 @@ Genetic Testing is generally considered eligible medical expense for FSA and HSA
 
 ### How much does it cost?
 $249 per testing kit.
+
+---
 
 ## Product questions
 
@@ -124,7 +128,9 @@ Genes that impact your cardiac, vascular, and renal function are analyzed so tha
 Yes.  This is commonly done when a loved one or relative has hypertension. They must read the disclosers and complete the the online kit activation process themselves to ensure consent.
 
 ### Is Geneticure available in all US states?
-At this time our test is not available to residents of New York and Maryland. Please check back periodically as we hope to be able to offer the test in these states soon. 
+At this time our test is not available to residents of New York and Maryland. Please check back periodically as we hope to be able to offer the test in these states soon.
+
+---
 
 ## Security and privacy
 
@@ -146,6 +152,8 @@ The primary protection provided to customers who have had genetic testing perfor
 ### Where can I find a copy of your licenses and certifications?
 Our CLIA registration for our accessioning facility is 24D2145318
 Our CLIA accreditation for sample processing and assay performance is 03D2055105
+
+---
 
 ## Working with your doctor
 

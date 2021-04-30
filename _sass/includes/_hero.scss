@@ -57,28 +57,12 @@
   }
 
   @media #{$bp--sm} {
-    .hero__content h1 {
-      font-size: 24px;
-      line-height: 1.4em;
+    .hero__content {
       text-align: center;
     }
-  
+
     .hero__content br {
       display: none;
-    }
-  }
-  
-  @media #{$bp--md} {
-    .hero__content h1 {
-      font-size: 42px;
-      line-height: 1.4em;
-    }
-  }
-  
-  @media #{$bp--lg} {
-    .hero__content h1 {
-      font-size: 64px;
-      line-height: 1.4em;
     }
   }
 }
@@ -88,10 +72,6 @@
   @media #{$bp--sm, $bp--md} {  
     .hero__content {
       padding: $margin--main * 2 $margin--main;
-    }
-
-    .hero__content h1 {
-      text-align: center;
     }
   
     .hero__display > * {

@@ -112,12 +112,6 @@ strong {
   h1, h2, p, ul, ol, details {
     margin: $margin--main 0;
   }
-
-  h1 {
-    font-size: rem(32);
-    letter-spacing: 0.1px;
-    line-height: 2.5rem;
-  }
   
   h1 em,
   h2 em,
@@ -125,18 +119,27 @@ strong {
     color: $font-color--highlight;
     text-decoration: none;
   }
-  
+
+  h1 {
+    font-size: rem(64);
+    line-height: rem(80);
+  }
+
   h2 {
-    font-size: rem(25);
-    letter-spacing: 0.1px;
-    line-height: rem(30);
+    font-size: rem(32);
+    line-height: rem(40);
   }
   
   h3 {
+    font-size: rem(22);
+    line-height: rem(26);
+  }
+  
+  h4 {
     font-weight: $font-weight--strong;
   }
 
-  h4 {
+  h5 {
     text-decoration: underline;
   }
 
@@ -163,6 +166,22 @@ strong {
 
   hr {
     margin: ($margin--main * 2) auto;
+  }
+
+  @media #{$bp--sm} {
+    h1, h2, h3 {
+      text-align: center;
+    }
+
+    h1 {
+      font-size: rem(32);
+      line-height: rem(40);
+    }
+
+    h2 {
+      font-size: rem(26);
+      line-height: rem(32);
+    }
   }
 }
 
