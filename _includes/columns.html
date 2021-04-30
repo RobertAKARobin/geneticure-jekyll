@@ -1,3 +1,22 @@
 <div class="columns columns--valign__{{ include.valign|default:'center' }} {% if include.reverse %}columns--reverse{% endif %}">
-	{{ include.content }}
+	{% if include.layout == 'text-display' %}
+		{% assign align = include.align|default:'left' %}
+		{% if align == 'right' %}
+			{% include text.html %}
+			{% if include.display %}
+				{{ include.display }}
+			{% else %}
+				{% include img.html %}
+			{% endif %}
+		{% else %}
+			{% if include.display %}
+				{{ include.display }}
+			{% else %}
+				{% include img.html %}
+			{% endif %}
+			{% include text.html %}
+		{% endif %}
+	{% else %}
+		{{ include.content }}
+	{% endif %}
 </div>

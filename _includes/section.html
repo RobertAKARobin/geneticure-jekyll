@@ -5,6 +5,7 @@
 	{% elsif include.layout == 'hero' %}{% include hero.html %}
 	{% elsif include.layout == 'sequence' %}{% include sequence.html %}
 	{% elsif include.layout == 'sequence-timeline' %}{% include sequence-timeline.html %}
+	{% elsif include.layout == 'text-display' %}{% include columns.html %}
 	{% else %}
 		{% if include.text %}
 			{% include text.html %}

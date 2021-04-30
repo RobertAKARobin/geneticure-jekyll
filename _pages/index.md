@@ -20,11 +20,7 @@ Each Geneticure test kit contains two sterile cheek swabs, and a prepaid envelop
 
 <a class="button button--low" href="https://gcedev.herokuapp.com/contact">Get a test kit</a>
 {% endcapture %}
-{% capture product_intro_section %}
-  {% include img.html img_alt='Geneticure kit' img_src='/assets/img/kit-w-contents.jpg' img_style='object-fit: contain' %}
-  {% include text.html content=product_intro %}
-{% endcapture %}
-{% include section.html content=product_intro_section layout='columns' reverse=true %}
+{% include section.html align='left' content=product_intro img_alt='Geneticure kit' img_src='/assets/img/kit-w-contents.jpg' img_style='object-fit: contain' layout='text-display' reverse=true %}
 
 {% capture product_sequence_section %}
 # How does it work?
@@ -46,11 +42,10 @@ Your report describes the responsiveness of 3 of your body's main organ systems:
 
 <a class="button button--low" href="/research">See our research</a>
 {% endcapture %}
-{% capture report %}
+{% capture report_display %}
   {% include frame.html type='tablet' img_alt='Geneticure report' img_src='/assets/img/report.png' %}
-  {% include text.html content=report_intro %}
 {% endcapture %}
-{% include section.html content=report layout='columns' reverse=true %}
+{% include section.html align='left' content=report_intro display=report_display layout='text-display' reverse=true %}
 
 {% capture for_whom %}
 # Who is it for?
@@ -87,11 +82,10 @@ For 10 years we’ve put science and innovation to work, taking personalized med
 
 <a class="button button--low" href="/team">Meet our team</a>
 {% endcapture %}
-{% capture about_us %}
+{% capture map %}
   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d45904.882603545106!2d-92.49840832065428!3d44.02025457911051!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87f75f631adca1b1%3A0x9af7c3b31dbb04ce!2s4%203rd%20St%20SW%20%23305b%2C%20Rochester%2C%20MN%2055902!5e0!3m2!1sen!2sus!4v1618862134497!5m2!1sen!2sus" allowfullscreen="" loading="lazy" title="Geneticure map"></iframe>
-  {% include text.html content=about_us %}
 {% endcapture %}
-{% include section.html content=about_us layout='columns' reverse=true text=true %}
+{% include section.html align='left' content=about_us display=map layout='text-display' reverse=true text=true %}
 
 {% capture press_latest %}
 # In the press
