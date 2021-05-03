@@ -1,0 +1,14 @@
+[data-shape] {
+  object-fit: cover;
+  opacity: 0;
+  overflow: hidden;
+  transition: opacity .5s;
+}
+
+[data-shape="circle"] {
+  border-radius: 50%;
+}
+
+[data-shape-set] {
+  opacity: 1;
+}

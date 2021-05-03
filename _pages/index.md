@@ -26,7 +26,7 @@ Each Geneticure test kit contains two sterile cheek swabs, and a prepaid envelop
 
   {% include sequence.html steps=site.data.howitworks direction='y' %}
 {% endcapture %}
-{% include section.html content=product_sequence_section hide='sm,md' layout='hero' overlay='block' width='half' img_src='/assets/img/bg/lab-techs.jpg' img_alt='Lab techs' margins=false %}
+{% include section.html content=product_sequence_section hide='sm,md' layout='hero' img_src='/assets/img/bg/lab-techs.jpg' img_alt='Lab techs' img_style='object-position: right' overlay='block' width='half' margins=false %}
 
 {% capture report_intro %}
 ## A unique prescription plan _just for you._
@@ -72,7 +72,7 @@ Your report describes the responsiveness of 3 of your body's main organ systems:
 **Increase your employees' quality of life while decreasing your healthcare costs.** Employees with cardiovascular disease (including high blood pressure) cost employers _an extra $1,100 per year in lost productivity alone_<sup><a href="/research#pharmaco-cim">*</a></sup>, compared with healthier employees. With Geneticure, you may be able to significantly reduce your company's chronic disease spending by an estimated 16x ROI or _$1409 per year per employee_.<sup><a href="/research#pharmaco-jme">**</a></sup> [Get in touch.](https://gcedev.herokuapp.com/contact)
 
 {% endcapture %}
-{% include section.html align='right' content=for_whom hide='sm,md' img_alt='Geneticure' img_style='object-position: left' img_src='/assets/img/bg/doctor-consult.jpg' layout='hero' overlay='block' margins=false width='half' %}
+{% include section.html align='right' content=for_whom hide='sm,md' img_alt='Geneticure' img_shape='circle' img_style='object-position: left' img_src='/assets/img/bg/doctor-consult.jpg' layout='text-display' overlay='block' margins=true %}
 
 {% capture about_us %}
 ## Built with love in _Minnesota_.

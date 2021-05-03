@@ -1,1 +1,6 @@
-<img class="{% include hide.html %}" src="{{ include.img_src }}" {% if include.img_alt %}alt="{{ include.img_alt }}"{% endif %} {% if include.img_style %}style="{{ include.img_style }}"{% endif %} />
+<img
+	{% if include.img_alt %}alt="{{ include.img_alt }}"{% endif %}
+	src="{{ include.img_src }}"
+	{% if include.img_style %}style="{{ include.img_style }}"{% endif %}
+	{% if include.img_shape %}data-shape="{{ include.img_shape }}"{% endif %}
+/>

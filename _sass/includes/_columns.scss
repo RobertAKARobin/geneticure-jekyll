@@ -1,7 +1,16 @@
 $gutter: $margin--main;
 
+.columns__img {
+  padding: ($margin--main * 2);
+}
+
+.columns__img img {
+  margin: 0 auto;
+  width: 100%;
+}
+
 @media #{$bp--sm} {
-  .columns > img {
+  .columns__img {
     width: 100%;
   }
 
@@ -41,9 +50,20 @@ $gutter: $margin--main;
   .columns:not(.columns--reverse) > :not(:last-child),
   .columns.columns--reverse > :not(:first-child) {
     margin-right: $gutter;
+
+    &.columns__img {
+      padding-left: 0;
+    }
   }
 
-  .columns > img {
+  .columns:not(.columns--reverse) > :not(:first-child),
+  .columns.columns--reverse > :not(:last-child) {
+    &.columns__img {
+      padding-right: 0;
+    }
+  }
+
+  .columns__img {
     width: 0;
   }
 

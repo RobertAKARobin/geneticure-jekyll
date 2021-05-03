@@ -6,13 +6,13 @@
 			{% if include.display %}
 				{{ include.display }}
 			{% else %}
-				{% include img.html %}
+				<div class="columns__img {% include hide.html %}">{% include img.html %}</div>
 			{% endif %}
 		{% else %}
 			{% if include.display %}
 				{{ include.display }}
 			{% else %}
-				{% include img.html %}
+				<div class="columns__img {% include hide.html %}">{% include img.html %}</div>
 			{% endif %}
 			{% include text.html %}
 		{% endif %}

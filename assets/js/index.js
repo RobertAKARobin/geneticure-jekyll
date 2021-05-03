@@ -1,7 +1,38 @@
-(function main(){
+window.onload = () => {
 	focusboxSetup();
+	imageShapeSetup();
 	toggleSetup();
-})();
+}
+
+function imageShapeSetup() {
+	const $images = Array.from(document.querySelectorAll('img[data-shape]'));
+	window.addEventListener('resize', setImageDimensions);
+	setImageDimensions();
+
+	function setImageDimensions() {
+		for (const $image of $images) {
+			setImageDimensionsOnce($image);
+		}
+	}
+
+	function setImageDimensionsOnce($image) {
+		$image.style.removeProperty('height');
+		$image.style.removeProperty('width');
+
+		const { naturalWidth, naturalHeight } = $image;
+		const naturalConstraint = Math.min(naturalWidth, naturalHeight);
+
+		const { width, height } = $image.getBoundingClientRect();
+		let constraint = Math.min(width, height);
+		if (constraint < naturalConstraint) {
+			constraint = Math.max(width, height);
+		}
+		constraint += 'px'; 
+		$image.style.height = constraint;
+		$image.style.width = constraint;
+		$image.setAttribute('data-shape-set', 1);
+	}
+}
 
 function toggleSetup() {
 	const CLASS_ON = 'toggle--on';
