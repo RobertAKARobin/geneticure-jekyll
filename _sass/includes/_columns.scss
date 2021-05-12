@@ -1,6 +1,7 @@
 $gutter: $margin--main;
 
 .columns__img {
+  box-sizing: border-box;
   padding: ($margin--main * 2);
 }
 
