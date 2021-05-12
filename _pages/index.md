@@ -26,7 +26,7 @@ Each Geneticure test kit contains two sterile cheek swabs, and a prepaid envelop
 
   {% include sequence.html steps=site.data.howitworks direction='y' %}
 {% endcapture %}
-{% include section.html content=product_sequence_section hide='sm,md' layout='hero' img_src='/assets/img/bg/lab-techs.jpg' img_alt='Lab techs' img_style='object-position: right' overlay='block' width='half' margins=false %}
+{% include section.html content=product_sequence_section hide='sm,md' layout='hero' img_src='/assets/img/bg/lab-techs.jpg' img_alt='Lab techs' img_style='object-position: right' overlay='float' width='half' margins=false %}
 
 {% capture report_intro %}
 ## A unique prescription plan _just for you._
