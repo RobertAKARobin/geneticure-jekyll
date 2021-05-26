@@ -87,6 +87,7 @@
       background: rgba(255, 255, 255, 0.95);
       border: 0 solid transparent;
       border-width: 0 calc((100vw - #{$width--screen--xl}) / 2);
+      max-width: calc(#{$width--screen--xl} - (#{$margin--main} * 2));
       padding: ($margin--main * 2);
     }
 
