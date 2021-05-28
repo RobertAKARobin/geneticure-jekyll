@@ -169,7 +169,7 @@ strong {
   }
 
   hr {
-    margin: ($margin--main * 2) auto;
+    margin: ($margin--main * 1.5) auto;
   }
 
   @media #{$bp--sm} {
@@ -284,6 +284,17 @@ img {
 
 .cta--highlight {
   @include cta--highlight;
+}
+
+.cta-link {
+  text-decoration: none;
+}
+
+.cta-link:before {
+  content: 'open_in_new';
+  font-family: 'Material Icons';
+  margin-right: 1ex;
+  vertical-align: bottom;
 }
 
 .tab {
