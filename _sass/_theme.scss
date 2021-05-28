@@ -236,6 +236,12 @@ img {
   display: block;
 }
 
+h2 img {
+  display: inline-block;
+  height: 2em;
+  vertical-align: bottom;
+}
+
 // Buttons
 
 .button {
