@@ -10,7 +10,7 @@ $color--lowlight: #414042;
 $color--lowlight--sink: #000000;
 $color--offset: #E9E9E9;
 
-$font-size--base: 16;
+$font-size--base: 18;
 
 $nav--height: 60px;
 
@@ -99,7 +99,7 @@ $shadow--main: 0 1px 2px 0 rgba(0, 0, 0, 0.2); // stylelint-disable-line plugin/
 @mixin font--body () { // TODO3: Use __ instead of --
   font-family: $font-family--body;
   font-size: $font-size--base + px;
-  line-height: rem(24);
+  line-height: rem(26);
 }
 
 @mixin font--print () {
