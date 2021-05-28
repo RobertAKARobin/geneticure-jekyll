@@ -16,7 +16,7 @@ We offer several tiers of API access:
 1. **Reports on demand.** Get our recommendations as a print-, desktop-, and mobile-friendly report in HTML or PDF format.
 1. **Custom-branded reports.** Add your logo, name, and styling to the report template for the most cohesive user experience.
 
-###### <a class="button button--high" href="https://gcedev.herokuapp.com/contact">Get API access</a>
+<a class="button button--high" href="{{ site.contact.url }}">Get API access</a>
 
 {% endcapture %}
 {% capture intro %}
@@ -32,13 +32,13 @@ We offer several tiers of API access:
 
 Any provider of healthcare services!
 
-Just make sure you're compliant with your own state and federal regulations. For example, when a Geneticure test kit is purchased by a member of the general public, we use [our own web portal](https://gcedev.herokuapp.com) to collect their consent, and Geneticure's own network of physicians to approve the test and review the recommendations. It's only when those steps have been completed that we make the recommendations available to the consumer.
+Just make sure you're compliant with your own state and federal regulations. For example, when a Geneticure test kit is purchased by a member of the general public, we use [our own web portal]({{ site.portal.url }}) to collect their consent, and Geneticure's own network of physicians to approve the test and review the recommendations. It's only when those steps have been completed that we make the recommendations available to the consumer.
 
 If you plan on using the healthcare recommendations you get through our API to make decisions about the treatment of patients, then you'll need to follow similar steps. Our API will provide you with instant recommendations; you'll need to make sure those recommendations are reviewed and approved by a licensed physician before they are shared with your patients.
 
 ### How much does it cost?
 
-We offer per-request and volume pricing. We'll work with you to figure out a plan that works for everyone. <A href="https://gcedev.herokuapp.com/contact">Get in touch!</a>
+We offer per-request and volume pricing. We'll work with you to figure out a plan that works for everyone. <A href="{{ site.contact.url }}">Get in touch!</a>
 
 ### What about PII and HIPAA?
 
@@ -68,7 +68,7 @@ No, nor do most APIs that require a high standard of security. You can of course
 
 ### Other questions?
 
-[Let us know!](https://gcedev.herokuapp.com/contact)
+[Let us know!]({{ site.contact.url }})
 
 {% endcapture %}
 {% include section.html content=questions text=true %}
