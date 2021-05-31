@@ -1,0 +1,11 @@
+{%- capture bits -%}
+	{% for keyvalue in include %}
+		{% assign key=keyvalue[0] %}
+		{% assign value=keyvalue[1] %}
+		{% if forloop.index > 1 %}
+			&
+		{% endif %}
+		{{ key }}={{ value | trim | url_encode }}
+	{% endfor %}
+{%- endcapture -%}
+{{ bits | strip_newlines | replace: ' ', '' | replace: '	', ''}}

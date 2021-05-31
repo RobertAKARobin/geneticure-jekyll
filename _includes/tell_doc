@@ -1,0 +1,11 @@
+{%- capture subject -%}
+I'm interested in this hypertension test
+{%- endcapture -%}
+{%- capture body -%}
+Hello! I came across Geneticure's hypertension test. It uses my DNA to figure out which high blood pressure treatment my body is most likely to respond to. Is this something we could look at?
+
+You can read more and see their research at https://geneticure.com. They have a printable brochure at https://geneticure.github.io/brochure.pdf.
+
+Thank you!
+{%- endcapture -%}
+mailto:PUT_EMAIL_ADDRESS_HERE?{% include querystring cc=site.email subject=subject body=body %}
