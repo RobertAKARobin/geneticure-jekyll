@@ -19,7 +19,7 @@ Each Geneticure test kit contains two sterile cheek swabs, and a prepaid envelop
 
 <a class="button button--low" href="{% include tell_doc %}" target="_blank">Tell your doctor</a> <a class="button" href="{{ site.contact.url }}">Contact us</a>
 {% endcapture %}
-{% include section.html align='right' content=product_intro height='full' img_alt='Geneticure kit' img_src='/assets/img/kit-w-contents.jpg' img_style='object-fit: contain' layout='text-display' reverse=true %}
+{% include section.html align='right' content=product_intro img_alt='Geneticure kit' img_src='/assets/img/kit-w-contents.jpg' img_style='object-fit: contain' layout='text-display' reverse=true %}
 
 {% capture product_sequence_section %}
 ## How does it work?
