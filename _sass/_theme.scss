@@ -273,15 +273,9 @@ h2 img {
 }
 
 .buttonset {
-  @include flex--center();
-
-  margin-top: $margin--main;
-  padding-left: ($margin--main / 2);
-  padding-right: ($margin--main / 2);
-}
-
-.buttonset .button {
-  margin-bottom: $margin--main;
+  @media #{$bp--sm} {
+    text-align: center;
+  }
 }
 
 .cta {
