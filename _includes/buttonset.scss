@@ -1,0 +1,5 @@
+.buttonset {
+  @media #{$bp--sm} {
+    text-align: center;
+  }
+}

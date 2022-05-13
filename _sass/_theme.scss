@@ -272,12 +272,6 @@ h2 img {
   @include button--transparent--on-dark;
 }
 
-.buttonset {
-  @media #{$bp--sm} {
-    text-align: center;
-  }
-}
-
 .cta {
   @include cta;
 }

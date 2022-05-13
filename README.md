@@ -15,3 +15,9 @@ $ bundle install
 ```sh
 $ bin/dev
 ```
+
+# Dev notes
+
+## Reusable blocks
+
+Use `include` or just use CSS classes? `include/capture` is gross, and does add some unnecessary overhead, but is ultimately is better at enforcing consistency.
