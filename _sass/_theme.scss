@@ -244,7 +244,8 @@ h2 img {
 
 // Buttons
 
-.button {
+.button,
+.buttonset > * {
   @include button;
   @include button--default;
 
@@ -254,22 +255,28 @@ h2 img {
   @media print {
     display: none !important;
   }
+
+  &.button--low {
+    @include button--low;
+  }
+  
+  &.button--high {
+    @include button--high;
+  }
+  
+  &.button--transparent {
+    @include button--transparent;
+  }
+  
+  &.button--transparent--on-dark {
+    @include button--transparent--on-dark;
+  }
 }
 
-.button--low {
-  @include button--low;
-}
-
-.button--high {
-  @include button--high;
-}
-
-.button--transparent {
-  @include button--transparent;
-}
-
-.button--transparent--on-dark {
-  @include button--transparent--on-dark;
+.buttonset {
+  @media #{$bp--sm} {
+    text-align: center;
+  }
 }
 
 .cta {

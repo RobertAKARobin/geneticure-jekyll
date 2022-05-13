@@ -6,11 +6,18 @@ title: Medicine Personalized by Your DNA
 {% capture tagline %}
 # Our algorithms<br> use cutting-edge research<br> to turn your DNA<br> into a **treatment for high blood pressure.**
 
-{% capture buttons %}
-Tell your doctor > {% include tell_doc %} > button--transparent--on-dark > _blank
-Use our API > /api > button--transparent--on-dark
-{% endcapture %}
-{% include buttonset.html buttons=buttons %}
+<p class="buttonset">
+  <a
+    class="button--transparent--on-dark"
+    href="{% include tell_doc %}" 
+    target="_blank"
+  >Tell your doctor</a>
+
+  <a
+    class="button--transparent--on-dark"
+    href="/api"
+  >Use our API</a>
+</p>
 
 {% endcapture %}
 {% include section.html content=tagline height='full' layout='hero' overlay='text' img_alt='Lab with Geneticure test kit' img_src='/assets/img/bg/lab-kit.jpg' img_style='object-fit: cover; object-position: 75% bottom' margins=false %}
@@ -22,11 +29,17 @@ Geneticure uses a sample of your DNA to recommend blood pressure medications jus
 
 Each Geneticure test kit contains two sterile cheek swabs, and a prepaid envelope to mail them to us. Your doctor can [register your kit]({{ site.portal.url }}) on this website, swab your cheek, and drop the envelope in the mail. They'll be notified in 10-15 business days that your report is ready.
 
-{% capture buttons %}
-Tell your doctor > {% include tell_doc %} > button--low > _blank
-Contact us > {{ site.contact.url }}
-{% endcapture %}
-{% include buttonset.html buttons=buttons %}
+<p class="buttonset">
+  <a
+    class="button--low"
+    href="{% include tell_doc %}" 
+    target="_blank"
+  >Tell your doctor</a>
+
+  <a
+    href="{{ site.contact.url }}"
+  >Contact us</a>
+</p>
 
 {% endcapture %}
 {% include section.html align='right' content=product_intro img_alt='Geneticure kit' img_src='/assets/img/kit-w-contents.jpg' img_style='object-fit: contain' layout='text-display' reverse=true %}
@@ -49,11 +62,16 @@ Your report describes the responsiveness of 3 of your body's main organ systems:
 
 {% include sequence.html steps=site.data.organs direction='y' %}
 
-{% capture buttons %}
-See our research > /research > button--low
-Contact us > {{ site.contact.url }}
-{% endcapture buttons %}
-{% include buttonset.html buttons=buttons %}
+<p class="buttonset">
+  <a
+    class="button--low"
+    href="/research" 
+  >See our research</a>
+
+  <a
+    href="{{ site.contact.url }}"
+  >Contact us</a>
+</p>
 
 {% endcapture %}
 {% capture report_display %}
@@ -102,11 +120,16 @@ Contact us > {{ site.contact.url }}
 
 For 10 years we've put science and innovation to work, taking personalized medicine to the next level. Our unique focus on the physiology and combinatorial pharmacogenomics specific to each disease is unparalleled in a field of shotgun approaches to personalized medicine. Our first solution is helping to solve the trial-and-error approach in the leading preventable cause of death in the world: hypertension or high blood pressure. And we're just getting started.
 
-{% capture buttons %}
-Meet our team > /team > button--low
-Contact us > {{ site.contact.url }}
-{% endcapture %}
-{% include buttonset.html buttons=buttons %}
+<p class="buttonset">
+  <a
+    class="button--low"
+    href="/team" 
+  >Meet our team</a>
+
+  <a
+    href="{{ site.contact.url }}"
+  >Contact us</a>
+</p>
 
 {% endcapture %}
 {% capture map %}
@@ -120,11 +143,17 @@ Contact us > {{ site.contact.url }}
 {% assign press_latest = site.data.press|slice:0,3 %}
 {% include sequence-timeline.html steps=press_latest %}
 
-{% capture buttons %}
-See more press > /press > button--low
-Tell your doctor > {% include tell_doc %} > _blank
-{% endcapture buttons %}
-{% include buttonset.html buttons=buttons %}
+<p class="buttonset">
+  <a
+    class="button--low"
+    href="/press" 
+  >See more press</a>
+
+  <a
+    href="{% include tell_doc %}"
+    target="_blank"
+  >Contact us</a>
+</p>
 
 {% endcapture %}
 {% include section.html align='center' content=press_latest hide='sm,md' img_alt='People meeting' img_src='/assets/img/bg/meeting.jpg' img_style='object-position: top center' layout='hero' margins=false overlay='float' %}
